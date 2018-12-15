@@ -38,7 +38,9 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		D213461021C500DC00FA5CDC /* libRNASDKTinkoff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213460F21C500C200FA5CDC /* libRNASDKTinkoff.a */; };
+		D21346F621C5563400FA5CDC /* ASDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21346F521C5563400FA5CDC /* ASDKCore.framework */; };
+		D21346F821C5563400FA5CDC /* ASDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21346F721C5563400FA5CDC /* ASDKUI.framework */; };
+		D213476B21C558A700FA5CDC /* libRNASDKTinkoff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213476A21C5589400FA5CDC /* libRNASDKTinkoff.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,9 +317,9 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
-		D213460E21C500C200FA5CDC /* PBXContainerItemProxy */ = {
+		D213476921C5589400FA5CDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8D904ED337AE4AE5813A6458 /* RNASDKTinkoff.xcodeproj */;
+			containerPortal = C29AF39C3F194F3A860854F7 /* RNASDKTinkoff.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNASDKTinkoff;
@@ -331,12 +333,12 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* RNASDKTinkoffExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNASDKTinkoffExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* exampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exampleTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* RNASDKTinkoffExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNASDKTinkoffExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = example/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = example/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -344,15 +346,17 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = example/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = example/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* example-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* example-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "example-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNASDKTinkoffExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNASDKTinkoffExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		8D904ED337AE4AE5813A6458 /* RNASDKTinkoff.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNASDKTinkoff.xcodeproj; path = "../node_modules/rn-asdk-tinkoff/ios/RNASDKTinkoff.xcodeproj"; sourceTree = "<group>"; };
 		A48DE854442240A9A974BF1B /* libRNASDKTinkoff.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNASDKTinkoff.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		C29AF39C3F194F3A860854F7 /* RNASDKTinkoff.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNASDKTinkoff.xcodeproj; path = "../node_modules/rn-asdk-tinkoff/ios/RNASDKTinkoff.xcodeproj"; sourceTree = "<group>"; };
+		D21346F521C5563400FA5CDC /* ASDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21346F721C5563400FA5CDC /* ASDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,7 +372,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D213461021C500DC00FA5CDC /* libRNASDKTinkoff.a in Frameworks */,
+				D213476B21C558A700FA5CDC /* libRNASDKTinkoff.a in Frameworks */,
+				D21346F621C5563400FA5CDC /* ASDKCore.framework in Frameworks */,
+				D21346F821C5563400FA5CDC /* ASDKUI.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -530,6 +536,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D21346F521C5563400FA5CDC /* ASDKCore.framework */,
+				D21346F721C5563400FA5CDC /* ASDKUI.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 			);
 			name = Frameworks;
@@ -568,7 +576,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				8D904ED337AE4AE5813A6458 /* RNASDKTinkoff.xcodeproj */,
+				C29AF39C3F194F3A860854F7 /* RNASDKTinkoff.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -600,10 +608,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* example.app */,
-				00E356EE1AD99517003FC87E /* exampleTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* example-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* example-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* RNASDKTinkoffExample.app */,
+				00E356EE1AD99517003FC87E /* RNASDKTinkoffExampleTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -625,10 +633,10 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		D213460B21C500C200FA5CDC /* Products */ = {
+		D213474121C5589400FA5CDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D213460F21C500C200FA5CDC /* libRNASDKTinkoff.a */,
+				D213476A21C5589400FA5CDC /* libRNASDKTinkoff.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -636,9 +644,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* exampleTests */ = {
+		00E356ED1AD99517003FC87E /* RNASDKTinkoffExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "exampleTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExampleTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -649,14 +657,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = exampleTests;
+			name = RNASDKTinkoffExampleTests;
 			productName = exampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* exampleTests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* RNASDKTinkoffExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* example */ = {
+		13B07F861A680F5B00A75B9A /* RNASDKTinkoffExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "example" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExample" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -667,14 +675,14 @@
 			);
 			dependencies = (
 			);
-			name = example;
+			name = RNASDKTinkoffExample;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* example.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* RNASDKTinkoffExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* example-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExample-tvOS" */;
 			buildPhases = (
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -685,14 +693,14 @@
 			);
 			dependencies = (
 			);
-			name = "example-tvOS";
+			name = "RNASDKTinkoffExample-tvOS";
 			productName = "example-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* example-tvOS.app */;
+			productReference = 2D02E47B1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* example-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExample-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -703,9 +711,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "example-tvOSTests";
+			name = "RNASDKTinkoffExample-tvOSTests";
 			productName = "example-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* example-tvOSTests.xctest */;
+			productReference = 2D02E4901E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -732,7 +740,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "example" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNASDKTinkoffExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -793,16 +801,16 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = D213460B21C500C200FA5CDC /* Products */;
-					ProjectRef = 8D904ED337AE4AE5813A6458 /* RNASDKTinkoff.xcodeproj */;
+					ProductGroup = D213474121C5589400FA5CDC /* Products */;
+					ProjectRef = C29AF39C3F194F3A860854F7 /* RNASDKTinkoff.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* example */,
-				00E356ED1AD99517003FC87E /* exampleTests */,
-				2D02E47A1E0B4A5D006451C7 /* example-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* example-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* RNASDKTinkoffExample */,
+				00E356ED1AD99517003FC87E /* RNASDKTinkoffExampleTests */,
+				2D02E47A1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1067,11 +1075,11 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D213460F21C500C200FA5CDC /* libRNASDKTinkoff.a */ = {
+		D213476A21C5589400FA5CDC /* libRNASDKTinkoff.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNASDKTinkoff.a;
-			remoteRef = D213460E21C500C200FA5CDC /* PBXContainerItemProxy */;
+			remoteRef = D213476921C5589400FA5CDC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1181,12 +1189,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* example */;
+			target = 13B07F861A680F5B00A75B9A /* RNASDKTinkoffExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* example-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* RNASDKTinkoffExample-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1215,30 +1223,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-				);
-				INFOPLIST_FILE = exampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 				);
 				INFOPLIST_FILE = exampleTests/Info.plist;
@@ -1253,7 +1239,35 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNASDKTinkoffExample.app/RNASDKTinkoffExample";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+				);
+				INFOPLIST_FILE = exampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNASDKTinkoffExample.app/RNASDKTinkoffExample";
 			};
 			name = Release;
 		};
@@ -1267,6 +1281,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1275,7 +1292,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = example;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.trikoz.RNASDKTinkoffExample;
+				PRODUCT_NAME = RNASDKTinkoffExample;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1289,6 +1307,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1297,7 +1318,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = example;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.trikoz.RNASDKTinkoffExample;
+				PRODUCT_NAME = RNASDKTinkoffExample;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1316,6 +1338,9 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOS/Info.plist";
@@ -1351,6 +1376,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1384,6 +1412,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1398,7 +1429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.example-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example-tvOS.app/example-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNASDKTinkoffExample-tvOS.app/RNASDKTinkoffExample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -1417,6 +1448,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1431,7 +1465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.example-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example-tvOS.app/example-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RNASDKTinkoffExample-tvOS.app/RNASDKTinkoffExample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1515,7 +1549,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "exampleTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1524,7 +1558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "example" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1533,7 +1567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExample-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1542,7 +1576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "example-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RNASDKTinkoffExample-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1551,7 +1585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "example" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RNASDKTinkoffExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
