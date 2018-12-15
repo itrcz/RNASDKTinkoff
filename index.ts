@@ -1,3 +1,9 @@
+/**
+ * React-native ASDKTinkoff
+ * Created by Ilya Trikoz on 15.12.18.
+ * Copyright © 2018 Ilya Trikoz. All rights reserved.
+ */
+
 import { NativeModules } from 'react-native';
 
 interface IMakePayment {
