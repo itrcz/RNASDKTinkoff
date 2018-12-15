@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  ASDKSampleApp
+
+  Created by e.orlova on 17.02.16.
+  Copyright © 2016 TCS Bank. All rights reserved.
+*/
+
+"OnlineShop" = "Online Shop";
+"Close" = "Close";
+"Cancel" = "Cancel";
+"CanceledPayment" = "The payment is canceled";
+"Done" = "Done";
+"Delete" = "DELETE";
+"Details" = "Details";
+"AddToBag" = "ADD TO BAG";
+"Pay" = "PAY";
+"Buy" = "BUY";
+"Bag" = "Bag";
+"BagIsEmpty" = "The bag is empty";
+"Total" = "Total: %@";
+"Books" = "Books";
+"ALotOfBooks" = "A lot of books";
+"BuyingSuccessful" = "Buying in the amount\n%@\nis successful";
+"ProductAddedToBag" = "Product added to bag";
+"ActiveTerminal" = "Active terminal";
+"Purchasehistory" = "Purchase history";
+"SelectAnotherCard" = "Select another payment card";
+"FromCard" = "from card";
+"PaymentScreenSettings" = "Payment screen settings";
+"PaymentScreenSettingsDescription" = "Switch this settings we are can change to use standart close button or custom, change pay button color and title. navigationBar items text color, navigation bar color and navigationBarStyle.";
+"AttachCard.successfull" = "Attach card successfully";

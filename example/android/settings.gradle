@@ -1,0 +1,5 @@
+rootProject.name = 'example'
+include ':rn-asdk-tinkoff'
+project(':rn-asdk-tinkoff').projectDir = new File(rootProject.projectDir, '../node_modules/rn-asdk-tinkoff/android')
+
+include ':app'
