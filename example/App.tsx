@@ -1,3 +1,9 @@
+/**
+ * React-native ASDKTinkoff sample
+ * Created by Ilya Trikoz on 15.12.18.
+ * Copyright © 2018 Ilya Trikoz. All rights reserved.
+ */
+
 import React from 'react';
 import { View, Text, Button, Alert } from 'react-native';
 import ASDKTinkoff from 'rn-asdk-tinkoff';
