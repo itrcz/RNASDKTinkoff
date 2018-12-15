@@ -3096,9 +3096,9 @@ rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
 
-rn-asdk-tinkoff@^0.1.104:
-  version "0.1.104"
-  resolved "https://registry.yarnpkg.com/rn-asdk-tinkoff/-/rn-asdk-tinkoff-0.1.104.tgz#6e58ea88116f95f839012e9e05fe1ae1d6e2c427"
+rn-asdk-tinkoff@^0.1.105:
+  version "0.1.105"
+  resolved "https://registry.yarnpkg.com/rn-asdk-tinkoff/-/rn-asdk-tinkoff-0.1.105.tgz#df2fc365536ccb1f90914d87e275f74e11151aeb"
 
 rsvp@^3.3.3:
   version "3.6.2"
