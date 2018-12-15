@@ -14,10 +14,9 @@
 
 #### Для iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `rn-asdk-tinkoff` and add `RNASDKTinkoff.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNASDKTinkoff.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+1. В настройках проекта в XCode, найдите `Libraries` ➜ `Add Files to...`
+2. Добавте `RNASDKTinkoff.xcodeproj` из `./node_modules/rn-asdk-tinkoff` 
+3. Затем добавте `libRNASDKTinkoff.a` в разделе `Build Phases` ➜ `Link Binary With Libraries`
 
 #### Для Android
 
