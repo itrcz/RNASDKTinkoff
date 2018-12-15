@@ -33,6 +33,18 @@ RCT_EXPORT_MODULE()
     return acquiringSdk;
 }
 
+
+/*
+ * Проверка ApplePay
+ */
+RCT_EXPORT_METHOD(isApplePayAvailable:(NSDictionary*) params
+                  resolve:(RCTPromiseResolveBlock)resolve
+                  reject:(RCTPromiseRejectBlock)reject)
+{
+    [ASDKPaymentFormStarter isPayWithAppleAvailable];
+}
+
+
 /*
  * Оплата картой
  */
