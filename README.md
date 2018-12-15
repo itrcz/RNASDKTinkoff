@@ -19,6 +19,7 @@
 3. Затем добавте `libRNASDKTinkoff.a` в разделе `Build Phases` ➜ `Link Binary With Libraries`
 
 #### Для Android
+#### Пока не работает по вердо - дальше можно не читать ;)
 
 1. Открыть `android/app/src/main/java/[...]/MainActivity.java`
   - Добавить `import com.reactlibrary.fonov.RNASDKTinkoffPackage;` в начало файла
@@ -72,6 +73,6 @@ const Tinkoff = new ASDKTinkoff({
 
 ### Чего нужно доделать
 
-1. Не написан модуль под Andrid (пока только iOS)
+1. Не написан модуль под Ведро (пока только iOS)
 2. Не реализовано сканирование карт
   
