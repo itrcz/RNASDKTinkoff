@@ -12,6 +12,7 @@
 		D213468921C5157800FA5CDC /* CardIO.m in Sources */ = {isa = PBXBuildFile; fileRef = D213467F21C5157800FA5CDC /* CardIO.m */; };
 		D213468A21C5157800FA5CDC /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213468021C5157800FA5CDC /* libCardIO.a */; };
 		D213468B21C5157800FA5CDC /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213468521C5157800FA5CDC /* libopencv_imgproc.a */; };
+		D251819421C6336300B42557 /* ASDKCardIOScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D251818E21C6336300B42557 /* ASDKCardIOScanner.m */; };
 		D2ACA83921C5915600885BDB /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ACA82221C5912900885BDB /* libcxxreact.a */; };
 		D2ACA83A21C5915D00885BDB /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ACA81A21C5912900885BDB /* libReact.a */; };
 		D2ACA83B21C5920500885BDB /* ASDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F2FDAA21C584C700F082D8 /* ASDKCore.framework */; };
@@ -175,6 +176,8 @@
 		D213468521C5157800FA5CDC /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
 		D213468621C5157800FA5CDC /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
 		D213468721C5157800FA5CDC /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		D251818E21C6336300B42557 /* ASDKCardIOScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKCardIOScanner.m; sourceTree = "<group>"; };
+		D251819321C6336300B42557 /* ASDKCardIOScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKCardIOScanner.h; sourceTree = "<group>"; };
 		D2ACA7AC21C58FE100885BDB /* ASDKUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASDKUI.xcodeproj; path = "tinkoff-asdk-ios/ASDKUI.xcodeproj"; sourceTree = "<group>"; };
 		D2ACA80621C5912800885BDB /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASDKCore.xcodeproj; path = "tinkoff-asdk-ios/ASDKCore.xcodeproj"; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 			children = (
 				B3E7B5881CC2AC0600A0062D /* RNASDKTinkoff.h */,
 				B3E7B5891CC2AC0600A0062D /* RNASDKTinkoff.m */,
+				D251819321C6336300B42557 /* ASDKCardIOScanner.h */,
+				D251818E21C6336300B42557 /* ASDKCardIOScanner.m */,
 				D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */,
 				D2ACA7AC21C58FE100885BDB /* ASDKUI.xcodeproj */,
 				D2ACA80621C5912800885BDB /* React.xcodeproj */,
@@ -486,6 +491,7 @@
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNASDKTinkoff.m in Sources */,
 				D213468921C5157800FA5CDC /* CardIO.m in Sources */,
+				D251819421C6336300B42557 /* ASDKCardIOScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

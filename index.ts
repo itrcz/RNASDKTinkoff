@@ -6,51 +6,100 @@
 
 import { NativeModules } from 'react-native';
 
-interface IMakePayment {
+interface IPayWithCard {
     /**
      * номер заказа в системе Продавца
     */
-    orderId: string,
+    orderId: string
     /**
      * сумма
      */
-    amount: number,
+    amount: number
     /**
      * заголовок товара
      */
-    title: string,
+    title: string
     /**
      * описание товара
      */
-    description: string,
+    description: string
     /**
      * идентификатор карты в системе Банка
      */
-    cardId?: string,
+    cardId?: string
     /**
      * адрес почты покупателя
      */
-    email?: string,
+    email?: string
     /**
      * идентификатор покупателя в системе Продавца
      */
-    customerKey?: string,
+    customerKey?: string
     /**
      * сделать платеж родительским
      */
-    recurrent?: boolean,
+    recurrent?: boolean
     /**
      * сделать charge
      */
-    makeCharge?: boolean,
+    makeCharge?: boolean
     /**
      * дополнительные параметры (могут быть пустыми)
      */
-    additionalPaymentData?: object,
+    additionalPaymentData?: object
     /**
      * данные чека (могут быть пустыми)
      */
-    receiptData?: object,
+    receiptData?: object
+}
+
+interface IPayWithApplePay {
+    /**
+     * сумма
+     */
+    amount: number
+    /**
+ * номер заказа в системе Продавца
+*/
+    orderId: string
+    /**
+     * описание товара
+     */
+    description: string
+    /**
+     * идентификатор покупателя в системе Продавца
+     */
+    customerKey?: string
+    /**
+     * Отправить квитанцию об оплате
+     */
+    sendEmail?: boolean
+    /**
+     * адрес почты покупателя
+     */
+    email?: string
+
+    // /**
+    //  * Идентификатор мерчант ApplePay
+    //  */
+    // appleMerchantId: string
+
+    shippingMethods?: null
+    shippingContact?: null
+    shippingEditableFields?: null
+
+    /**
+     * сделать платеж родительским
+     */
+    recurrent?: boolean
+    /**
+     * дополнительные параметры (могут быть пустыми)
+     */
+    additionalPaymentData?: object
+    /**
+     * данные чека (могут быть пустыми)
+     */
+    receiptData?: object
 }
 
 interface ICard {
@@ -103,31 +152,56 @@ interface IPGetCardList {
 
 type IPRemoveCard = ICard;
 
+interface ASDKDesignConfiguration {
+    /**
+     * Текст на кнопке оплаты
+     */
+    payButtonTitle?: string
+}
 
+interface ASDKTinkoffParams {
+    terminal: string
+    password: string
+    publicKey: string
+    test: boolean
+    appleMerchantId: string
+    design?: ASDKDesignConfiguration
+    enableCardScanner?: boolean
+}
 
-export default class ASDKTinkoff {
+interface ASDKTinkoff {
+    params: ASDKTinkoffParams
+}
 
-    protected terminal: string;
-    protected password: string;
-    protected publicKey: string;
-    protected test: boolean;
+class ASDKTinkoff {
 
-    constructor(param: { terminal: string, password: string, publicKey: string, test: boolean }) {
-        this.terminal = param.terminal;
-        this.password = param.password;
-        this.publicKey = param.publicKey;
-        this.test = param.test;
+    constructor(params: ASDKTinkoffParams) {
+        this.params = params;
+        if (!this.params.design) {
+            this.params.design = {};
+        }
+    }
+
+    /**
+     * Засетить текст на кнопку оплаты
+     */
+    set payButtonTitle(title: string) {
+        this.params.design!.payButtonTitle = title;
+    }
+
+    /**
+     * Доступность ApplePay
+     */
+    async isApplePayAvailable(): Promise<boolean> {
+        return NativeModules.RNASDKTinkoff.isApplePayAvailable();
     }
 
     /**
      * Открыть окно оплаты
      */
-    makePayment(params: IMakePayment): Promise<IPaymentInfo | null> {
-        return NativeModules.RNASDKTinkoff.makePayment({
-            terminal: this.terminal,
-            password: this.password,
-            publicKey: this.publicKey,
-            test: this.test,
+    payWithCard(params: IPayWithCard): Promise<IPaymentInfo | null> {
+        return NativeModules.RNASDKTinkoff.payWithCard({
+            ...this.params,
 
             orderId: params.orderId,
             amount: params.amount,
@@ -144,15 +218,31 @@ export default class ASDKTinkoff {
     }
 
     /**
+     * Открыть окно ApplePay
+     */
+    payWithApplePay(params: IPayWithApplePay): Promise<IPaymentInfo | null> {
+        return NativeModules.RNASDKTinkoff.payWithApplePay({
+            ...this.params,
+
+            orderId: params.orderId,
+            amount: params.amount,
+            description: params.description,
+            email: params.email,
+            sendEmail: params.sendEmail,
+            customerKey: params.customerKey,
+            recurrent: params.recurrent,
+            additionalPaymentData: params.additionalPaymentData,
+            receiptData: params.receiptData
+        })
+    }
+
+    /**
      * Выполнить плату по реккурентному платежу
      * @warning FUNC NOT TESTED
      */
     chargePayment(params: IPChargePayment): Promise<IPaymentInfo | null> {
         return NativeModules.RNASDKTinkoff.chargePayment({
-            terminal: this.terminal,
-            password: this.password,
-            publicKey: this.publicKey,
-            test: this.test,
+            ...this.params,
 
             paymentId: params.paymentId,
             rebillId: params.rebillId,
@@ -164,10 +254,7 @@ export default class ASDKTinkoff {
      */
     getCardList(params: IPGetCardList): Promise<ICard[]> {
         return NativeModules.RNASDKTinkoff.getCardList({
-            terminal: this.terminal,
-            password: this.password,
-            publicKey: this.publicKey,
-            test: this.test,
+            ...this.params,
 
             customerKey: params.customerKey,
         })
@@ -178,13 +265,12 @@ export default class ASDKTinkoff {
      */
     removeCard(params: IPRemoveCard): Promise<ICard> {
         return NativeModules.RNASDKTinkoff.removeCard({
-            terminal: this.terminal,
-            password: this.password,
-            publicKey: this.publicKey,
-            test: this.test,
+            ...this.params,
 
             customerKey: params.customerKey,
             cardId: params.cardId,
         })
     }
 }
+
+export default ASDKTinkoff;
