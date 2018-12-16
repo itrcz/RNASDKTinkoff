@@ -74,6 +74,7 @@ const Tinkoff = new ASDKTinkoff({
 ### Чего нужно доделать
 
 1. Ведро (пока только iOS)
-2. ApplePay
-2. CardIO сканирование
+2. доставка и контакты для ApplePay
+3. камера вью для CardIO
+4. расширение design объекта
   
