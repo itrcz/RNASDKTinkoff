@@ -9,7 +9,7 @@
 #import "RNASDKTinkoff.h"
 #import <ASDKCore/ASDKCore.h>
 #import <ASDKUI/ASDKUI.h>
-#import "ASDKCardIOScanner.h";
+#import "ASDKCardIOScanner.h"
 
 @implementation RNASDKTinkoff
 
@@ -60,7 +60,7 @@ RCT_EXPORT_METHOD(payWithCard:(NSDictionary*) params
                                        acquiringSdkWithTerminal:[params objectForKey:@"terminal"]
                                        password:[params objectForKey:@"password"]
                                        publicKey:[params objectForKey:@"publicKey"]
-                                       test:[params objectForKey:@"test"]];
+                                       test:[[params objectForKey:@"test"] boolValue]];
     
     
     ASDKPaymentFormStarter * form = [ASDKPaymentFormStarter paymentFormStarterWithAcquiringSdk:acquiringSdk];
@@ -80,7 +80,7 @@ RCT_EXPORT_METHOD(payWithCard:(NSDictionary*) params
         //Настройка сканнера карт
         form.cardScanner = [ASDKCardIOScanner scanner];
     }
-    
+
     [form presentPaymentFormFromViewController:rootViewController
                                        orderId:[params objectForKey:@"orderId"]
                                         amount:[params objectForKey:@"amount"]
@@ -92,6 +92,8 @@ RCT_EXPORT_METHOD(payWithCard:(NSDictionary*) params
                                      recurrent:[params objectForKey:@"recurrent"]
                                     makeCharge:[params objectForKey:@"makeCharge"]
                          additionalPaymentData:[params objectForKey:@"additionalPaymentData"]
+                                         shops:[params objectForKey:@"shops"]
+
                                    receiptData:[params objectForKey:@"receiptData"]
                                        success:^(ASDKPaymentInfo *paymentInfo) { resolve(paymentInfo); }
                                      cancelled:^{ resolve(NULL); }
@@ -115,7 +117,7 @@ RCT_EXPORT_METHOD(payWithApplePay:(NSDictionary*) params
     
     
     ASDKPaymentFormStarter * form = [ASDKPaymentFormStarter paymentFormStarterWithAcquiringSdk:acquiringSdk];
-    
+//
     [form payWithApplePayFromViewController:rootViewController
                                      amount:[params objectForKey:@"amount"]
                                     orderId:[params objectForKey:@"orderId"]
@@ -129,6 +131,7 @@ RCT_EXPORT_METHOD(payWithApplePay:(NSDictionary*) params
                      shippingEditableFields:PKAddressFieldNone
                                   recurrent:[params objectForKey:@"recurrent"]
                       additionalPaymentData:[params objectForKey:@"additionalPaymentData"]
+                                      shops:[[NSArray alloc] initWithObjects: [params objectForKey:@"shops"], nil]
                                 receiptData:[params objectForKey:@"receiptData"]
                                     success:^(ASDKPaymentInfo *paymentInfo) { resolve(paymentInfo); }
                                   cancelled:^{ resolve(NULL); }
