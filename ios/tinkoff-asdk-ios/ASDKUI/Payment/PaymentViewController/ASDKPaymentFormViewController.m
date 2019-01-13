@@ -92,6 +92,7 @@ NSUInteger const CellPyamentCardID = CellEmptyFlexibleSpace + 1;
 
 @property (nonatomic, strong) ASDKCard *selectedCard;
 @property (nonatomic, strong) NSDictionary *additionalPaymentData;
+@property (nonatomic, strong) NSArray *shops;
 @property (nonatomic, strong) NSDictionary *receiptData;
 
 @property (nonatomic, assign) BOOL updateCardCell;
@@ -125,7 +126,8 @@ NSUInteger const CellPyamentCardID = CellEmptyFlexibleSpace + 1;
 				   customerKey:(NSString *)customerKey
 					 recurrent:(BOOL)recurrent
 					makeCharge:(BOOL)makeCharge
-		 additionalPaymentData:(NSDictionary *)data
+         additionalPaymentData:(NSDictionary *)data
+                         shops:(NSArray *)shops
 				   receiptData:(NSDictionary *)receiptData
                        success:(void (^)(ASDKPaymentInfo *paymentInfo))success
                      cancelled:(void (^)(void))cancelled
@@ -147,6 +149,7 @@ NSUInteger const CellPyamentCardID = CellEmptyFlexibleSpace + 1;
         _customerKey = customerKey;
 		_requrent = recurrent;
 		_additionalPaymentData = data;
+        _shops = shops;
 		_receiptData = receiptData;
 		_updateCardCell = NO;
 		_makeCharge = makeCharge;
@@ -956,6 +959,7 @@ NSUInteger const CellPyamentCardID = CellEmptyFlexibleSpace + 1;
                           customerKey:_customerKey
 							recurrent:_requrent
 				additionalPaymentData:[paymentData copy]
+                                shops:_shops
 						  receiptData:_receiptData
                               success:^(ASDKInitResponse *response)
     {

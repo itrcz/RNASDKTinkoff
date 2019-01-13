@@ -30,6 +30,7 @@
 @property (nonatomic, copy) NSString *payForm;
 @property (nonatomic) BOOL recurrent;
 @property (nonatomic, strong) NSDictionary *additionalPaymentData;
+@property (nonatomic, strong) NSArray *shops;
 @property (nonatomic, strong) NSDictionary *receiptData;
 
 - (ASDKInitRequest *)initWithTerminalKey:(NSString *)terminalKey
@@ -41,7 +42,8 @@
 								 payType:(NSString *)payType
                              customerKey:(NSString *)customerKey
                                recurrent:(BOOL)recurrent
-				   additionalPaymentData:(NSDictionary *)data
+                   additionalPaymentData:(NSDictionary *)data
+                                   shops:(NSArray *)shops
 							 receiptData:(NSDictionary *)receiptData;
 
 @end

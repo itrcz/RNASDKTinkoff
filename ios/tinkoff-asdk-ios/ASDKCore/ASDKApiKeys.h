@@ -59,6 +59,7 @@
 #define kASDKMessage                        @"Message"
 #define kASDKDescription                    @"Description"
 #define kASDKDATA                           @"DATA"
+#define kASDKShops                          @"Shops"
 #define kASDKReceipt						@"Receipt"
 #define kASDKPayForm                        @"PayForm"
 #define kASDKPayType                        @"PayType"
