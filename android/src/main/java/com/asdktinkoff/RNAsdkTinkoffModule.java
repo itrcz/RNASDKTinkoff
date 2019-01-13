@@ -1,21 +1,22 @@
-package com.reactlibrary.fonov;
+
+package com.asdktinkoff;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
-public class RNASDKTinkoffModule extends ReactContextBaseJavaModule {
+public class RNAsdkTinkoffModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
 
-  public RNASDKTinkoffModule(ReactApplicationContext reactContext) {
+  public RNAsdkTinkoffModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
   }
 
   @Override
   public String getName() {
-    return "RNASDKTinkoff";
+    return "RNAsdkTinkoff";
   }
 }

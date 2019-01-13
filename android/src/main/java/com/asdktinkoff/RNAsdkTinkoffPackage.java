@@ -1,4 +1,5 @@
-package com.reactlibrary.fonov;
+
+package com.asdktinkoff;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,10 +10,10 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
-public class RNASDKTinkoffPackage implements ReactPackage {
+public class RNAsdkTinkoffPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNASDKTinkoffModule(reactContext));
+      return Arrays.<NativeModule>asList(new RNAsdkTinkoffModule(reactContext));
     }
 
     // Deprecated from RN 0.47
