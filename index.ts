@@ -100,6 +100,17 @@ interface IPayWithApplePay {
      * данные чека (могут быть пустыми)
      */
     receiptData?: object
+    /**
+     * Для маркетплейс
+     */
+    shops?: IShop[]
+}
+
+interface IShop {
+    ShopCode: number | string,
+    Amount: number
+    Fee: number
+    Name: string
 }
 
 interface ICard {
