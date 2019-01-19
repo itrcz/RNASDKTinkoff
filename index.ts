@@ -51,6 +51,10 @@ interface IPayWithCard {
      * данные чека (могут быть пустыми)
      */
     receiptData?: object
+    /**
+     * Для маркетплейс
+     */
+    shops?: IShop[]
 }
 
 interface IPayWithApplePay {
@@ -224,7 +228,8 @@ class ASDKTinkoff {
             recurrent: params.recurrent,
             makeCharge: params.makeCharge,
             additionalPaymentData: params.additionalPaymentData,
-            receiptData: params.receiptData
+            receiptData: params.receiptData,
+            shops: params.shops
         })
     }
 
@@ -243,7 +248,8 @@ class ASDKTinkoff {
             customerKey: params.customerKey,
             recurrent: params.recurrent,
             additionalPaymentData: params.additionalPaymentData,
-            receiptData: params.receiptData
+            receiptData: params.receiptData,
+            shops: params.shops
         })
     }
 
