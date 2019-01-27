@@ -12,6 +12,7 @@
 		D213468921C5157800FA5CDC /* CardIO.m in Sources */ = {isa = PBXBuildFile; fileRef = D213467F21C5157800FA5CDC /* CardIO.m */; };
 		D213468A21C5157800FA5CDC /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213468021C5157800FA5CDC /* libCardIO.a */; };
 		D213468B21C5157800FA5CDC /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213468521C5157800FA5CDC /* libopencv_imgproc.a */; };
+		D261903021FE17EC009A2ED5 /* ASDKCardIOScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D261902F21FE17EB009A2ED5 /* ASDKCardIOScanner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		D213468521C5157800FA5CDC /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
 		D213468621C5157800FA5CDC /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
 		D213468721C5157800FA5CDC /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		D261902A21FE17EB009A2ED5 /* ASDKCardIOScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKCardIOScanner.h; sourceTree = "<group>"; };
+		D261902F21FE17EB009A2ED5 /* ASDKCardIOScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKCardIOScanner.m; sourceTree = "<group>"; };
 		D2ACA7E021C5906E00885BDB /* ASDKUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASDKUI.xcodeproj; path = "tinkoff-asdk-ios/ASDKUI.xcodeproj"; sourceTree = "<group>"; };
 		D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASDKCore.xcodeproj; path = "tinkoff-asdk-ios/ASDKCore.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +91,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				D261902A21FE17EB009A2ED5 /* ASDKCardIOScanner.h */,
+				D261902F21FE17EB009A2ED5 /* ASDKCardIOScanner.m */,
 				B3E7B5881CC2AC0600A0062D /* RNASDKTinkoff.h */,
 				B3E7B5891CC2AC0600A0062D /* RNASDKTinkoff.m */,
 				D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */,
@@ -217,6 +222,7 @@
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNASDKTinkoff.m in Sources */,
 				D213468921C5157800FA5CDC /* CardIO.m in Sources */,
+				D261903021FE17EC009A2ED5 /* ASDKCardIOScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

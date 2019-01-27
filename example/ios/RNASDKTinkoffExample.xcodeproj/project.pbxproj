@@ -37,6 +37,9 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		D261902521FE15A7009A2ED5 /* libRNASDKTinkoff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D261901F21FE0F7E009A2ED5 /* libRNASDKTinkoff.a */; };
+		D261902721FE1634009A2ED5 /* ASDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D261902621FE1634009A2ED5 /* ASDKCore.framework */; };
+		D261902921FE1634009A2ED5 /* ASDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D261902821FE1634009A2ED5 /* ASDKUI.framework */; };
 		D2ACA79A21C58D1400885BDB /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ACA79521C5891200885BDB /* libRNGestureHandler.a */; };
 /* End PBXBuildFile section */
 
@@ -314,19 +317,19 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		D261901E21FE0F7E009A2ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D261901621FE0F7E009A2ED5 /* RNASDKTinkoff.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNASDKTinkoff;
+		};
 		D2ACA79421C5891200885BDB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A715A09705694B8BA439E761 /* RNGestureHandler.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNGestureHandler;
-		};
-		D2ACA7DE21C5906300885BDB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2ACA7D521C5906300885BDB /* RNASDKTinkoff.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RNASDKTinkoff;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -359,7 +362,11 @@
 		A48DE854442240A9A974BF1B /* libRNASDKTinkoff.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNASDKTinkoff.a; sourceTree = "<group>"; };
 		A715A09705694B8BA439E761 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		D2ACA7D521C5906300885BDB /* RNASDKTinkoff.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNASDKTinkoff.xcodeproj; path = "../node_modules/rn-asdk-tinkoff/ios/RNASDKTinkoff.xcodeproj"; sourceTree = "<group>"; };
+		D261901621FE0F7E009A2ED5 /* RNASDKTinkoff.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNASDKTinkoff.xcodeproj; path = ../../ios/RNASDKTinkoff.xcodeproj; sourceTree = "<group>"; };
+		D261902121FE10DA009A2ED5 /* ASDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261902321FE10DA009A2ED5 /* ASDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261902621FE1634009A2ED5 /* ASDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D261902821FE1634009A2ED5 /* ASDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ACA7EA21C590BB00885BDB /* ASDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ACA7EC21C590BB00885BDB /* ASDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ASDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -377,6 +384,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D261902721FE1634009A2ED5 /* ASDKCore.framework in Frameworks */,
+				D261902921FE1634009A2ED5 /* ASDKUI.framework in Frameworks */,
+				D261902521FE15A7009A2ED5 /* libRNASDKTinkoff.a in Frameworks */,
 				D2ACA79A21C58D1400885BDB /* libRNGestureHandler.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
@@ -538,6 +548,10 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D261902621FE1634009A2ED5 /* ASDKCore.framework */,
+				D261902821FE1634009A2ED5 /* ASDKUI.framework */,
+				D261902121FE10DA009A2ED5 /* ASDKCore.framework */,
+				D261902321FE10DA009A2ED5 /* ASDKUI.framework */,
 				D2ACA7EA21C590BB00885BDB /* ASDKCore.framework */,
 				D2ACA7EC21C590BB00885BDB /* ASDKUI.framework */,
 			);
@@ -565,7 +579,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D2ACA7D521C5906300885BDB /* RNASDKTinkoff.xcodeproj */,
+				D261901621FE0F7E009A2ED5 /* RNASDKTinkoff.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -636,18 +650,18 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		D2ACA79121C5891200885BDB /* Products */ = {
+		D261901721FE0F7E009A2ED5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2ACA79521C5891200885BDB /* libRNGestureHandler.a */,
+				D261901F21FE0F7E009A2ED5 /* libRNASDKTinkoff.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2ACA7D621C5906300885BDB /* Products */ = {
+		D2ACA79121C5891200885BDB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2ACA7DF21C5906300885BDB /* libRNASDKTinkoff.a */,
+				D2ACA79521C5891200885BDB /* libRNGestureHandler.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -812,8 +826,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = D2ACA7D621C5906300885BDB /* Products */;
-					ProjectRef = D2ACA7D521C5906300885BDB /* RNASDKTinkoff.xcodeproj */;
+					ProductGroup = D261901721FE0F7E009A2ED5 /* Products */;
+					ProjectRef = D261901621FE0F7E009A2ED5 /* RNASDKTinkoff.xcodeproj */;
 				},
 				{
 					ProductGroup = D2ACA79121C5891200885BDB /* Products */;
@@ -1090,18 +1104,18 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		D261901F21FE0F7E009A2ED5 /* libRNASDKTinkoff.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNASDKTinkoff.a;
+			remoteRef = D261901E21FE0F7E009A2ED5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D2ACA79521C5891200885BDB /* libRNGestureHandler.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNGestureHandler.a;
 			remoteRef = D2ACA79421C5891200885BDB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D2ACA7DF21C5906300885BDB /* libRNASDKTinkoff.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNASDKTinkoff.a;
-			remoteRef = D2ACA7DE21C5906300885BDB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1244,10 +1258,10 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = exampleTests/Info.plist;
@@ -1274,10 +1288,10 @@
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = exampleTests/Info.plist;
@@ -1306,11 +1320,8 @@
 				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(PROJECT_DIR)/../../ios/**",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1333,11 +1344,8 @@
 				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(PROJECT_DIR)/../../ios/**",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1366,10 +1374,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOS/Info.plist";
@@ -1405,10 +1413,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOS/Info.plist";
@@ -1443,10 +1451,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOSTests/Info.plist";
@@ -1481,10 +1489,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
-					"$(SRCROOT)/../node_modules/rn-asdk-tinkoff/ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
+					"$(SRCROOT)/../ios/**",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 				);
 				INFOPLIST_FILE = "example-tvOSTests/Info.plist";

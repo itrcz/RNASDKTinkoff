@@ -16,27 +16,49 @@ const Tinkoff = new ASDKTinkoff({
 	appleMerchantId: "merchant.tcsbank.ApplePayTestMerchantId",
 	enableCardScanner: true
 });
+
 export default class App extends React.Component {
+
+	async payCard() {
+		try {
+			const res = await Tinkoff.payWithCard({
+				orderId: (Math.random() * 100000000000).toFixed(0),
+				amount: 100,
+				title: "Покупка",
+				description: "Описание покупки"
+			});
+			if (res) {
+				Alert.alert("Оплата", "Успех!");
+			} else {
+				Alert.alert("Оплата", "Отмена")
+			}
+		} catch (error) {
+			Alert.alert("Ошибка оплаты", error.message);
+		}
+	}
+
+	async payApplePay() {
+		try {
+			const res = await Tinkoff.payWithApplePay({
+				orderId: (Math.random() * 100000000000).toFixed(0),
+				amount: 100,
+				description: "Описание покупки"
+			});
+			if (res) {
+				Alert.alert("Оплата", "Успех!");
+			} else {
+				Alert.alert("Оплата", "Отмена")
+			}
+		} catch (error) {
+			Alert.alert("Ошибка оплаты", error.message);
+		}
+	}
+
 	render() {
 		return (
 			<View style={{ padding: 40, justifyContent: "center" }}>
-				<Button onPress={async () => {
-					try {
-						const res = await Tinkoff.payWithCard({
-							orderId: (Math.random() * 100000000000).toFixed(0),
-							amount: 100,
-							title: "Покупка",
-							description: "Описание покупки"
-						});
-						if (res) {
-							Alert.alert("Оплата", "Успех!");
-						} else {
-							Alert.alert("Оплата", "Отмена")
-						}
-					} catch (error) {
-						Alert.alert("Ошибка оплаты", error.message);
-					}
-				}} title="Открыть окно оплаты" />
+				<Button onPress={this.payCard} title="Оплатить картой" />
+				<Button onPress={this.payApplePay} title="Pay with Pay" />
 			</View>
 		)
 	}
