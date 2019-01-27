@@ -76,7 +76,6 @@
 								   recurrent:(BOOL)recurrent
 								  makeCharge:(BOOL)makeCharge
 					   additionalPaymentData:(NSDictionary *)data
-                                       shops:(NSArray *)shops
 								 receiptData:(NSDictionary *)receiptData
                                      success:(void (^)(ASDKPaymentInfo *paymentInfo))onSuccess
                                    cancelled:(void (^)(void))onCancelled
@@ -88,7 +87,6 @@
 			   description:(NSString *)description
 			   customerKey:(NSString *)customerKey
 	 additionalPaymentData:(NSDictionary *)data
-                     shops:(NSArray *)shops
 			   receiptData:(NSDictionary *)receiptData
 				   success:(void (^)(ASDKPaymentInfo *paymentInfo))onSuccess
 					 error:(void (^)(ASDKAcquringSdkError *error))onError;
@@ -120,13 +118,12 @@
  * PKAddressFieldNone - ни одного (и не показывать) 
  * PKAddressFieldPostalAddress|PKAddressFieldName|PKAddressFieldEmail|PKAddressFieldPhone - Адрес ФИО Email и Телефон
  *
- * @param additionalPaymentData - JSON объект содержащий дополнительные параметры в виде “ключ”:”значение”.
- * Максимальная длина для каждого передаваемого параметра:
+ * @param additionalPaymentData - JSON объект содержащий дополнительные параметры в виде “ключ”:”значение”. 
+ * Данные параметры будут переданы на страницу оплаты (в случае ее кастомизации). 
+ * Максимальная длина для каждого передаваемого параметра: 
  *  Ключ – 20 знаков,
  *  Значение – 100 знаков.
  * Максимальное количество пар «ключ-значение» не может превышать 20.
- *
- * @param shops - массив для маркетплейс.
  *
  * @param receiptData - JSON объект с данными чека, https://oplata.tinkoff.ru/landing/develop/documentation/Init "Структура объекта Receipt"
  *
@@ -147,8 +144,7 @@
 						  shippingContact:(PKContact *)shippingContact //кому доставить и адрес доставки
 				   shippingEditableFields:(PKAddressField)shippingEditableFields //какие поля можно показывать и редактировть на форме оплаты ApplePay
 								recurrent:(BOOL)recurrent
-                    additionalPaymentData:(NSDictionary *)additionalPaymentData//JSON объект содержащий дополнительные параметры, например @{@"Email" : @"a@test.ru"}
-                                    shops:(NSArray *)shops //JSON массив содерджет @{ @"ShopCode": @12345, @"Amount": @10000, @"Fee": @1000, @"Name": NULL }
+					additionalPaymentData:(NSDictionary *)additionalPaymentData //JSON объект содержащий дополнительные параметры, например @{@"Email" : @"a@test.ru"}
 							  receiptData:(NSDictionary *)receiptData // JSON объект с данными чека, обязательно должен быть объект Items в который вложены позиции чека Email и Taxation - Система налогообложения, значения: osn, usn_income, usn_income_outcome, envd, esn, или patent
 								  success:(void (^)(ASDKPaymentInfo *paymentInfo))onSuccess
 								cancelled:(void (^)(void))onCancelled

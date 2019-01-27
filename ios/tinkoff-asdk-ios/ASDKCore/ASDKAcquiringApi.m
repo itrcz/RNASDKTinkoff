@@ -252,14 +252,10 @@ typedef NS_ENUM(NSInteger, APIVersion)
         [parameters setObject:@"Y" forKey:kASDKRecurrent];
     }
 	
-    if ([request.additionalPaymentData.allKeys count] > 0)
-    {
-        [parameters setObject:request.additionalPaymentData forKey:kASDKDATA];
-    }
-    if ([request.shops count] > 0)
-    {
-        [parameters setObject:request.shops forKey:kASDKShops];
-    }
+	if ([request.additionalPaymentData.allKeys count] > 0)
+	{
+		[parameters setObject:request.additionalPaymentData forKey:kASDKDATA];
+	}
 	
 	if (request.receiptData)
 	{
@@ -440,10 +436,10 @@ typedef NS_ENUM(NSInteger, APIVersion)
 {
 	NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{kASDKTerminalKey: request.terminalKey, @"CardData": request.cardData, @"RequestKey": request.requestKey, kASDKToken: request.token}];
 	
-    if ([request.additionalData.allKeys count] > 0)
-    {
-        [parameters setObject:request.additionalData forKey:@"DATA"];
-    }
+	if ([request.additionalData.allKeys count] > 0)
+	{
+		[parameters setObject:request.additionalData forKey:@"DATA"];
+	}
 
 	[self apiVersion:APIVersion_v2 path:@"AttachCard" parameters:parameters success:^(NSDictionary *responseDictionary, NSURLResponse *response) {
 		ASDKResponseAttachCard *responseAttachCard = [[ASDKResponseAttachCard alloc] initWithDictionary:responseDictionary];

@@ -29,7 +29,6 @@
 @property (nonatomic, copy) NSString *payType;
 @property (nonatomic) BOOL recurrent;
 @property (nonatomic, strong) NSDictionary *additionalPaymentData;
-@property (nonatomic, strong) NSArray *shops;
 @property (nonatomic, strong) NSDictionary *receiptData;
 
 @end
@@ -45,8 +44,7 @@
                                     recurrent:(BOOL)recurrent
                                   terminalKey:(NSString *)terminalKey
                                      password:(NSString *)password
-                        additionalPaymentData:(NSDictionary *)data
-                                        shops:(NSArray *)shops
+						additionalPaymentData:(NSDictionary *)data
 								  receiptData:(NSDictionary *)receiptData
 {
     ASDKInitRequestBuilder *builder = [[ASDKInitRequestBuilder alloc] init];
@@ -62,8 +60,7 @@
         builder.recurrent = recurrent;
         builder.terminalKey = terminalKey;
         builder.password = password;
-        builder.additionalPaymentData = data;
-        builder.shops = shops;
+		builder.additionalPaymentData = data;
 		builder.receiptData = receiptData;
     }
 
@@ -95,17 +92,15 @@
                                                                 customerKey:self.customerKey
                                                                   recurrent:self.recurrent
 													  additionalPaymentData:self.additionalPaymentData
-                                                                      shops:self.shops
 																receiptData:self.receiptData];
 
     return request;
 }
 
-//TODO: Shops array needs to be validate too
 - (void)validateError:(ASDKAcquringSdkError **)error
 {
     ASDKAcquringSdkError *validationError;
-    
+
 //ОБЯЗАТЕЛЬНЫЕ ПОЛЯ
 #define kASDKAmountDescription @"Сумма в копейках."
 #define kASDKAmountMaxLength 10

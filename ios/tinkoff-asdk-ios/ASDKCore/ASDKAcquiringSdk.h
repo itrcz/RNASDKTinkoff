@@ -71,7 +71,6 @@
            customerKey:(NSString *)customerKey
              recurrent:(BOOL)recurrent
  additionalPaymentData:(NSDictionary *)data
-                 shops:(NSArray *)shops
 		   receiptData:(NSDictionary *)receiptData
                success:(void (^)(ASDKInitResponse *response))success
                failure:(void (^)(ASDKAcquringSdkError *error))failure;
