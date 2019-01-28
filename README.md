@@ -6,32 +6,32 @@
 
 `$ yarn add rn-asdk-tinkoff --save`
 
-### Автоматическая настройка проекта
-
-`$ react-native link rn-asdk-tinkoff`
-
-### Ручная настройка проекта
+### Настройка проекта
 
 #### Для iOS
 
 1. В настройках проекта в XCode, найдите `Libraries` ➜ `Add Files to...`
 2. Добавте `RNASDKTinkoff.xcodeproj` из `./node_modules/rn-asdk-tinkoff` 
-3. Затем добавте `libRNASDKTinkoff.a` в разделе `Build Phases` ➜ `Link Binary With Libraries`
+3. Затем добавте `libRNASDKTinkoff.a, ASDKCore.framework, ASDKUI.framework` в разделе `Build Phases` ➜ `Link Binary With Libraries`
 
 #### Для Android
 #### Пока не работает по вердо - дальше можно не читать ;)
 
 1. Открыть `android/app/src/main/java/[...]/MainActivity.java`
-  - Добавить `import com.reactlibrary.fonov.RNASDKTinkoffPackage;` в начало файла
+  - Добавить `import com.rnasdktinkoff.RNASDKTinkoffPackage;` в начало файла
   - Добавить `new RNASDKTinkoffPackage()` в список метода `getPackages()`
 2. Добавить в `android/settings.gradle`:
   	```
-  	include ':rn-asdk-tinkoff'
-  	project(':rn-asdk-tinkoff').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-asdk-tinkoff/android')
+		include ':rn-asdk-tinkoff'
+		project(':rn-asdk-tinkoff').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-asdk-tinkoff/android')
+		include ':core'
+		project(':core').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-asdk-tinkoff/android/asdk/core')
+		include ':ui'
+		project(':ui').projectDir = new File(rootProject.projectDir, '../node_modules/rn-asdk-tinkoff/android/asdk/ui')
   	```
 3. Добавить зависимость в блок `dependencies` в файл `android/app/build.gradle`:
   	```
-      compile project(':rn-asdk-tinkoff')
+      implementation project(':rn-asdk-tinkoff')
   	```
 
 
@@ -73,8 +73,9 @@ const Tinkoff = new ASDKTinkoff({
 
 ### Чего нужно доделать
 
-1. Ведро (пока только iOS)
+1. Добавить shops и receipts в ведро
+2. googlepay
+3. куча всего для ведра не готово
 2. доставка и контакты для ApplePay
-3. камера вью для CardIO
 4. расширение design объекта
   

@@ -6,7 +6,11 @@
 
 import React from 'react';
 import { View, Text, Button, Alert } from 'react-native';
-import ASDKTinkoff from 'rn-asdk-tinkoff';
+/**
+ * '../index' not working for some reason
+ * so I'd copy file
+ */
+import ASDKTinkoff from './ASDKTinkoff';
 
 const Tinkoff = new ASDKTinkoff({
 	terminal: "TestSDK",
@@ -18,6 +22,16 @@ const Tinkoff = new ASDKTinkoff({
 });
 
 export default class App extends React.Component {
+
+	state = {
+		isApplePayAvailable: false
+	};
+
+	async componentWillMount() {
+		this.setState({
+			isApplePayAvailable: await Tinkoff.isApplePayAvailable()
+		});
+	}
 
 	async payCard() {
 		try {
@@ -58,7 +72,9 @@ export default class App extends React.Component {
 		return (
 			<View style={{ padding: 40, justifyContent: "center" }}>
 				<Button onPress={this.payCard} title="Оплатить картой" />
-				<Button onPress={this.payApplePay} title="Pay with Pay" />
+				{this.state.isApplePayAvailable && (
+					<Button onPress={this.payApplePay} title="Pay" />
+				)}
 			</View>
 		)
 	}

@@ -1,36 +1,30 @@
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:1.3.1'
-    }
-}
-
 apply plugin: 'com.android.library'
+apply from: './asdk/gradle/versions.gradle'
+
+def DEFAULT_GOOGLE_PLAY_SERVICES_VERSION    = "+"
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode 2
+        versionName "1.1"
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
     }
     lintOptions {
-        abortOnError false
+       warning 'InvalidPackage'
     }
-}
-
-repositories {
-    mavenCentral()
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
+    // def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : DEFAULT_GOOGLE_PLAY_SERVICES_VERSION
+    implementation 'ru.tinkoff.acquiring:ui:1.4.4'
+    implementation 'com.facebook.react:react-native:+'
+    
+    // implementation "com.google.android.gms:play-services-gcm:$googlePlayServicesVersion"
 }
-  

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tinkoff ASDK</string>
+
+    <string name="activity_title_details">Книга</string>
+    <string name="activity_title_cart">Корзина</string>
+    <string name="activity_title_attach_card">Привязать карту</string>
+    <string name="activity_title_about">О программе</string>
+    <string name="activity_title_settings">Настройки</string>
+    <string name="activity_title_payment_result">Подтверждение</string>
+
+    <string name="author">Автор</string>
+    <string name="year">Год выпуска</string>
+    <string name="book_details">ПОДРОБНЕЕ</string>
+    <string name="book_price">%1$s P</string>
+    <string name="book_price_total">Итого: %1$s P</string>
+    <string name="add_to_cart">В корзину</string>
+    <string name="buy_now">Купить</string>
+    <string name="total">Итого</string>
+    <string name="pay">Оплатить</string>
+    <string name="empty_cart">Корзина пуста :(</string>
+    <string name="added_to_cart">Книга добавлена в корзину</string>
+    <string name="clear_cart">Очистить корзину</string>
+    <string name="delete">Удалить</string>
+    <string name="payment_result_success">Покупка на сумму %1$s\nпрошла успешно</string>
+    <string name="attachment_result_success">Привязка карты с ID=%1$s\nпрошла успешно</string>
+    <string name="close">Закрыть</string>
+    <string name="version">Tinkoff Acquiring SDK v%1$s(%2$d)</string>
+
+    <string name="payment_failed">Невозможно совершить оплату</string>
+    <string name="payment_succeeded">Оплата прошла успешно</string>
+    <string name="payment_cancelled">Оплата была отменена</string>
+    <string name="payment_loading">Ожидание оплаты</string>
+
+    <string name="pay_form_title_single">Покупка книги</string>
+    <string name="pay_form_title_multiple">Покупка книг</string>
+
+    <string name="cart_list_item_count_format">"%1$d шт. "</string>
+
+    <string name="settings_title_use_system_keyboard">Использовать системную клавиатуру</string>
+    <string name="settings_title_recurrent_payment">Рекуррентный платёж</string>
+    <string name="settings_title_use_first_saved_card">Подставлять привязанную карту</string>
+    <string name="settings_title_google_pay">GooglePay</string>
+    <string name="settings_title_terminal_id">Терминал</string>
+    <string name="settings_title_style_id">Стиль</string>
+    <string name="settings_title_check_type_id">CheckType</string>
+    <string name="settings_title_camera">Модуль камеры</string>
+
+    <string name="acq_pay_replenish">Пополнить</string>
+    <string name="acq_pay_with_amount_custom">Пополнить %s $</string>
+    <string name="acq_money_amount_format_custom">%s $</string>
+    <string name="acq_screen_title_custom">Пополнение</string>
+
+    <string name="attachment_failed">Невозможно завершить привязку карты</string>
+    <string name="attachment_succeeded">Привязка карты успешно завершена</string>
+    <string name="attachment_cancelled">Привязка карты была отменена</string>
+    <string name="attachment_loading">Ожидание привязки карты</string>
+
+    <string name="attachment_toolbar_title">Привязка карты</string>
+    <string name="attachment_title">Заголовок привязки карты</string>
+    <string name="attachment_description">Описание привязки карты</string>
+    <string name="attachment_button">Привязать карту</string>
+    <string name="attachment_button_ex">"Привязать карту ¯\\_(ツ)_/¯"</string>
+</resources>

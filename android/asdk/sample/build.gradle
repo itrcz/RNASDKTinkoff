@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply from: '../gradle/versions.gradle'
+
+
+android {
+    compileSdkVersion compileSdk
+    buildToolsVersion buildTools
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        doNotStrip '*/mips/*.so'
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    defaultConfig {
+        applicationId "ru.tinkoff.acquiring.sample"
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+        versionCode 41
+        versionName "1.4.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api "com.android.support:appcompat-v7:$supportVersion"
+    implementation project(':ui')
+    implementation project(':card-io')
+    implementation project(':payment')
+
+    androidTestImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
+}
