@@ -37,9 +37,15 @@ export default class App extends React.Component {
 		try {
 			const res = await Tinkoff.payWithCard({
 				orderId: (Math.random() * 100000000000).toFixed(0),
-				amount: 100,
+				amount: 1000,
 				title: "Покупка",
-				description: "Описание покупки"
+				description: "Описание покупки",
+				shops: [{
+					ShopCode: "100",
+					Amount: 1000,
+					Fee: 100,
+					Name: null,
+				}]
 			});
 			if (res) {
 				Alert.alert("Оплата", "Успех!");

@@ -23,8 +23,14 @@ android {
 
 dependencies {
     // def googlePlayServicesVersion = project.hasProperty('googlePlayServicesVersion') ? project.googlePlayServicesVersion : DEFAULT_GOOGLE_PLAY_SERVICES_VERSION
-    implementation 'ru.tinkoff.acquiring:ui:1.4.4'
+    // implementation 'ru.tinkoff.acquiring:core:1.4.4'
+    // implementation 'ru.tinkoff.acquiring:ui:1.4.4'
+    // implementation 'ru.tinkoff.acquiring:payment:1.4.4'
+    // implementation 'ru.tinkoff.acquiring:card-io:1.4.4'
     implementation 'com.facebook.react:react-native:+'
-    
     // implementation "com.google.android.gms:play-services-gcm:$googlePlayServicesVersion"
+    implementation project(':core')
+    implementation project(':ui')
+    // implementation project(':payment')
+    implementation project(':card-io')
 }

@@ -124,7 +124,7 @@ public class PaymentTestActivity extends AppCompatActivity {
         receipts.add(receipt);
 
         ArrayList<Shop> shops = new ArrayList<>();
-        Shop shop = new Shop("100", "Название товара 1", 5000L);
+        Shop shop = new Shop("100", "Название товара 1", 5000L, 0L);
         shops.add(shop);
 
         return new MarketPlaceData(shops, receipts);
