@@ -118,14 +118,12 @@ interface IShop {
 }
 
 interface ICard {
-    /**
-     * идентификатор покупателя в системе Продавца
-     */
-    customerKey: string
-    /**
-     * идентификатор карты
-     */
-    cardId: string
+    CardId: string
+    CardType: string
+    ExpDate: string
+    Pan: string
+    RebillId: string
+    Status: string
 }
 
 interface IPaymentInfo {
@@ -165,7 +163,10 @@ interface IPGetCardList {
     customerKey: string
 }
 
-type IPRemoveCard = ICard;
+type IPRemoveCard = {
+    customerKey: string
+    cardId: string
+};
 
 interface ASDKDesignConfiguration {
     /**

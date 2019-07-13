@@ -53,6 +53,21 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
     }
 
     /*
+     * Проверка GooglePay
+     */
+    @ReactMethod
+    public void payWithGooglePay(ReadableMap params, Promise promise) {
+
+        this.promise = promise;
+
+        Journal.setDebug(params.getBoolean("test"));
+        Journal.setDeveloperMode(params.getBoolean("test"));
+
+
+        promise.resolve(false);
+    }
+
+    /*
      * Оплата картой
      */
     @ReactMethod
