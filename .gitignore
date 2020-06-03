@@ -44,3 +44,7 @@ local.properties
 buck-out/
 \.buckd/
 *.keystore
+
+
+# CocoaPods
+/ios/Pods/
