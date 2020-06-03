@@ -15,7 +15,6 @@
 3. Затем добавте `libRNASDKTinkoff.a, ASDKCore.framework, ASDKUI.framework` в разделе `Build Phases` ➜ `Link Binary With Libraries`
 
 #### Для Android
-#### Пока не работает по вердо - дальше можно не читать ;)
 
 1. Открыть `android/app/src/main/java/[...]/MainActivity.java`
   - Добавить `import com.rnasdktinkoff.RNASDKTinkoffPackage;` в начало файла
@@ -67,15 +66,7 @@ const Tinkoff = new ASDKTinkoff({
 
 ```
 
-### Чаво
-
-Модуль написан на Typescript, все функции описаны, поэтому описания в README больше не будет, сорян ;)
-
 ### Чего нужно доделать
 
-1. Добавить shops и receipts в ведро
-2. googlepay
-3. куча всего для ведра не готово
-2. доставка и контакты для ApplePay
-4. расширение design объекта
+1. расширение design объекта
   

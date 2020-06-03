@@ -7,30 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2F737648F491F257D85607 /* Pods_RNASDKTinkoff.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0031E29D101DE86819232CF /* Pods_RNASDKTinkoff.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNASDKTinkoff.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNASDKTinkoff.m */; };
-		D213468821C5157800FA5CDC /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213467E21C5157800FA5CDC /* libopencv_core.a */; };
-		D213468921C5157800FA5CDC /* CardIO.m in Sources */ = {isa = PBXBuildFile; fileRef = D213467F21C5157800FA5CDC /* CardIO.m */; };
-		D213468A21C5157800FA5CDC /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213468021C5157800FA5CDC /* libCardIO.a */; };
-		D213468B21C5157800FA5CDC /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D213468521C5157800FA5CDC /* libopencv_imgproc.a */; };
 		D261903021FE17EC009A2ED5 /* ASDKCardIOScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D261902F21FE17EB009A2ED5 /* ASDKCardIOScanner.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D2ACA7E721C5906E00885BDB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2ACA7E021C5906E00885BDB /* ASDKUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8316724F1C64798800533D85;
-			remoteInfo = ASDKUI;
-		};
-		D2F2FDA921C584C700F082D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 83166ED31C63984E00533D85;
-			remoteInfo = ASDKCore;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -46,24 +26,13 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNASDKTinkoff.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNASDKTinkoff.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		734D546A1A97B4E7A0429FAF /* Pods-RNASDKTinkoff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNASDKTinkoff.debug.xcconfig"; path = "Target Support Files/Pods-RNASDKTinkoff/Pods-RNASDKTinkoff.debug.xcconfig"; sourceTree = "<group>"; };
+		9330D600E021724707327225 /* Pods-RNASDKTinkoff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNASDKTinkoff.release.xcconfig"; path = "Target Support Files/Pods-RNASDKTinkoff/Pods-RNASDKTinkoff.release.xcconfig"; sourceTree = "<group>"; };
+		B0031E29D101DE86819232CF /* Pods_RNASDKTinkoff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNASDKTinkoff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNASDKTinkoff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNASDKTinkoff.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNASDKTinkoff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNASDKTinkoff.m; sourceTree = "<group>"; };
-		D213467C21C5157800FA5CDC /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
-		D213467D21C5157800FA5CDC /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
-		D213467E21C5157800FA5CDC /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
-		D213467F21C5157800FA5CDC /* CardIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardIO.m; sourceTree = "<group>"; };
-		D213468021C5157800FA5CDC /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
-		D213468121C5157800FA5CDC /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
-		D213468221C5157800FA5CDC /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
-		D213468321C5157800FA5CDC /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
-		D213468421C5157800FA5CDC /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
-		D213468521C5157800FA5CDC /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
-		D213468621C5157800FA5CDC /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
-		D213468721C5157800FA5CDC /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		D261902A21FE17EB009A2ED5 /* ASDKCardIOScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDKCardIOScanner.h; sourceTree = "<group>"; };
 		D261902F21FE17EB009A2ED5 /* ASDKCardIOScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDKCardIOScanner.m; sourceTree = "<group>"; };
-		D2ACA7E021C5906E00885BDB /* ASDKUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASDKUI.xcodeproj; path = "tinkoff-asdk-ios/ASDKUI.xcodeproj"; sourceTree = "<group>"; };
-		D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ASDKCore.xcodeproj; path = "tinkoff-asdk-ios/ASDKCore.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D213468A21C5157800FA5CDC /* libCardIO.a in Frameworks */,
-				D213468821C5157800FA5CDC /* libopencv_core.a in Frameworks */,
-				D213468B21C5157800FA5CDC /* libopencv_imgproc.a in Frameworks */,
+				5E2F737648F491F257D85607 /* Pods_RNASDKTinkoff.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,46 +62,27 @@
 				D261902F21FE17EB009A2ED5 /* ASDKCardIOScanner.m */,
 				B3E7B5881CC2AC0600A0062D /* RNASDKTinkoff.h */,
 				B3E7B5891CC2AC0600A0062D /* RNASDKTinkoff.m */,
-				D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */,
-				D2ACA7E021C5906E00885BDB /* ASDKUI.xcodeproj */,
-				D213467B21C5157800FA5CDC /* CardIO */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				64DBE81F5A2DCBA31ACBAF0F /* Pods */,
+				C833099D9509DA54CFDD5049 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D213467B21C5157800FA5CDC /* CardIO */ = {
+		64DBE81F5A2DCBA31ACBAF0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D213467C21C5157800FA5CDC /* CardIODetectionMode.h */,
-				D213467D21C5157800FA5CDC /* CardIOUtilities.h */,
-				D213467E21C5157800FA5CDC /* libopencv_core.a */,
-				D213467F21C5157800FA5CDC /* CardIO.m */,
-				D213468021C5157800FA5CDC /* libCardIO.a */,
-				D213468121C5157800FA5CDC /* CardIOView.h */,
-				D213468221C5157800FA5CDC /* CardIOPaymentViewController.h */,
-				D213468321C5157800FA5CDC /* CardIOViewDelegate.h */,
-				D213468421C5157800FA5CDC /* CardIOCreditCardInfo.h */,
-				D213468521C5157800FA5CDC /* libopencv_imgproc.a */,
-				D213468621C5157800FA5CDC /* CardIOPaymentViewControllerDelegate.h */,
-				D213468721C5157800FA5CDC /* CardIO.h */,
+				734D546A1A97B4E7A0429FAF /* Pods-RNASDKTinkoff.debug.xcconfig */,
+				9330D600E021724707327225 /* Pods-RNASDKTinkoff.release.xcconfig */,
 			);
-			path = CardIO;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		D2ACA7E121C5906E00885BDB /* Products */ = {
+		C833099D9509DA54CFDD5049 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2ACA7E821C5906E00885BDB /* ASDKUI.framework */,
+				B0031E29D101DE86819232CF /* Pods_RNASDKTinkoff.framework */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D2F2FDA521C584C700F082D8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D2F2FDAA21C584C700F082D8 /* ASDKCore.framework */,
-			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +92,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNASDKTinkoff" */;
 			buildPhases = (
+				677C383DB69BE580DA7A3E1A /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -176,21 +125,12 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D2F2FDA521C584C700F082D8 /* Products */;
-					ProjectRef = D2F2FDA421C584C700F082D8 /* ASDKCore.xcodeproj */;
-				},
-				{
-					ProductGroup = D2ACA7E121C5906E00885BDB /* Products */;
-					ProjectRef = D2ACA7E021C5906E00885BDB /* ASDKUI.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNASDKTinkoff */,
@@ -198,22 +138,30 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		D2ACA7E821C5906E00885BDB /* ASDKUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ASDKUI.framework;
-			remoteRef = D2ACA7E721C5906E00885BDB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
+/* Begin PBXShellScriptBuildPhase section */
+		677C383DB69BE580DA7A3E1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNASDKTinkoff-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-		D2F2FDAA21C584C700F082D8 /* ASDKCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ASDKCore.framework;
-			remoteRef = D2F2FDA921C584C700F082D8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -221,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNASDKTinkoff.m in Sources */,
-				D213468921C5157800FA5CDC /* CardIO.m in Sources */,
 				D261903021FE17EC009A2ED5 /* ASDKCardIOScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +275,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 734D546A1A97B4E7A0429FAF /* Pods-RNASDKTinkoff.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -347,6 +295,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9330D600E021724707327225 /* Pods-RNASDKTinkoff.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

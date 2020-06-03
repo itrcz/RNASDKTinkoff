@@ -1,0 +1,29 @@
+PODS:
+  - ASDKCore (1.5.2)
+  - ASDKUI (1.5.2):
+    - ASDKCore
+  - CardIO (5.4.1)
+
+DEPENDENCIES:
+  - ASDKCore (from `https://raw.githubusercontent.com/TinkoffCreditSystems/tinkoff-asdk-ios/master/ASDKCore.podspec`)
+  - ASDKUI (from `https://raw.githubusercontent.com/TinkoffCreditSystems/tinkoff-asdk-ios/master/ASDKUI.podspec`)
+  - CardIO
+
+SPEC REPOS:
+  trunk:
+    - CardIO
+
+EXTERNAL SOURCES:
+  ASDKCore:
+    :podspec: https://raw.githubusercontent.com/TinkoffCreditSystems/tinkoff-asdk-ios/master/ASDKCore.podspec
+  ASDKUI:
+    :podspec: https://raw.githubusercontent.com/TinkoffCreditSystems/tinkoff-asdk-ios/master/ASDKUI.podspec
+
+SPEC CHECKSUMS:
+  ASDKCore: efa86af4fc224f4e9850afc33950355c1449e644
+  ASDKUI: 694e028c0ccbb126eec17effad64cf2bb6d94ed4
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+
+PODFILE CHECKSUM: 479a3aa4be083439a9ccdfcd5fc6e1238e7b8848
+
+COCOAPODS: 1.8.4

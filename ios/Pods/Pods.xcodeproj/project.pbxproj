@@ -1,0 +1,1666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A5AFDBFF44C91B5332DDBF2B370A941E /* CardIO */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BE2D23DBDD07ECE5D86E860EE36B0BD2 /* Build configuration list for PBXAggregateTarget "CardIO" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = CardIO;
+			productName = CardIO;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		002F967657A7421F5562B9F65FD854AB /* ASDKPaymentFormSummCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 709F1D8BB2FB5BBFD999EA1B2B920F10 /* ASDKPaymentFormSummCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		017E5B7489251C2FD9AF039D6EE32AB2 /* ASDKBaseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4931EDEB8E831270C3C46A0DFA705A64 /* ASDKBaseObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02F6727BFBCD2C562267FF0DC4338EDC /* ASDKRequestBuilderGetAttachCardState.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F69EB1E58A28A8C1BA6E563A9AA53E1 /* ASDKRequestBuilderGetAttachCardState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03CC0F1C41CAFFCADB33BCB47B998066 /* ASDKBaseCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6445831D6AFCA9C54A13ADFF450AE60F /* ASDKBaseCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04B9E6ACAAB5297B1161B58F7F41DBD5 /* ASDKHighlightedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EF03F2C63DAA1BBEBDE9E9D951734AF8 /* ASDKHighlightedButton.m */; };
+		09BF0596044221CBFEF0AD03FC43AA0B /* ASDKUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0261B0E9074FEF5B79D47A73A27F9B /* ASDKUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C2DCBE1F32337BD0C5E6A2D7C570715 /* ASDKPaymentInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 35282B211E3A5124C79C73C7FB214267 /* ASDKPaymentInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C4AB1A5FE2656C95699C10ED41BB9B1 /* ASDKCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C83445E783124C77F2ECC0C162DF1C0D /* ASDKCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C8C3E2A75CA70A816B641F22802DCF3 /* ASDKCardData.m in Sources */ = {isa = PBXBuildFile; fileRef = D671A80FDAA44FA3998F5AA702271616 /* ASDKCardData.m */; };
+		10F278D305C3C603157633044444CF87 /* ASDKCardsListDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = FB4D091C1426FE9710E6D7D323F0532F /* ASDKCardsListDataController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12F05A513CFBE08F9E6DEEF47B38D4AD /* ASDKLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12FC408D5458D40B634FB26A6A0C668E /* ASDKLoaderViewController.xib */; };
+		12F69A0FACE7CD20A0FC5154D6C701D0 /* ASDKChargeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCF1D64F9F8174EF57EBA9330EE5EA2 /* ASDKChargeRequest.m */; };
+		13AACE156D4935EA3E5F88C94032B661 /* ASDKAddNewCardCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F9A0D042F23E762423A3BAB2B3456E /* ASDKAddNewCardCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13DFED01484C7B1E3692501E96EF43CC /* ASDKRequestBuilderSubmitRandomAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E091B9E128A833706B419E5014B219 /* ASDKRequestBuilderSubmitRandomAmount.m */; };
+		147B0AC2B5A9C0EAA6BAA408B6CCEB0C /* ASDKEmailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6FD99A273C9D778A44467F8E5CC58C /* ASDKEmailCell.m */; };
+		14AD728795B4866A3C0E0BA8C82D933B /* ASDKRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D789D50B41449DDA126543AD2D3698 /* ASDKRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1693D8D8616132F4FFF5EE6047AAC6DC /* ASDKNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D7B1AFBD0985D328A4F44EAA89F5F9 /* ASDKNumberCell.m */; };
+		18167049EEDFE38D1A08ECDE4605FB60 /* ASDKAcquringApiError.h in Headers */ = {isa = PBXBuildFile; fileRef = F64AD4F01D18A2632D5E1C7ABB3CFC59 /* ASDKAcquringApiError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AAB205BAF8BB4DD3B99F2B4DD0095D5 /* ASDKFinishAuthorizeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F38D4167DD074A1912276D5303EC318E /* ASDKFinishAuthorizeResponse.m */; };
+		1E94A5749564F10E06530C54705EF43F /* ASDKLoaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E8205477116DE13EB942CCDF10BA6D33 /* ASDKLoaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FA47D6A38E4A5A28139D3BBA728780F /* ASDKInitRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D30FFF580ABC434CB4CFF928596AC7 /* ASDKInitRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF3BE5F38B5ED0290171E235152B27F /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 02558CC002592F81AF494DCCFDB19034 /* UIView+AutoLayout.m */; };
+		2017F1DF06D628F3B92F7A4E83719BDA /* ASDKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB13FFF140C909CB1E49C6BFB551C4E2 /* ASDKBaseViewController.m */; };
+		207E0A8EB95C07EC057CCC119151CD31 /* ASDKResponseGetAddCardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA35BDAFD1C8D1FE5E2BDF1BE6F4C19 /* ASDKResponseGetAddCardState.m */; };
+		22410CBF0281AD637ABFD66B223AEA03 /* ASDKChargeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BADF29A2F41D14B7AB4B6C3E996D1F46 /* ASDKChargeRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22D2424C20793AB6984131CFE1604A63 /* ASDKAcquiringResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BBEE94F81C5200F345E57D75EE3ACC47 /* ASDKAcquiringResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24B0E980A2B1AAA4623C1B4368B03316 /* ASDKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 629C4396446398AED6475EBCB65F40BF /* ASDKNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24C820EFE49BE1160EEBC37385A58CBD /* ASDKAddNewCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E938F0E129E12F23E54FE262A4452E /* ASDKAddNewCardCell.xib */; };
+		25A307998EA09D6A0F83D1C132AC9BF7 /* ASDKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D134ECED91FD824B829570AC59E03903 /* ASDKCore-dummy.m */; };
+		26AB1AC5F3AAB613A8F006D8020B3FC4 /* ASDKPaymentFormHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC20D5A1737138A8E2AC48D4C109F65 /* ASDKPaymentFormHeaderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		271A8FB00301C912A6418ADBDC86B3D7 /* ASDK3DSViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE0225620E9D3A928E0B0D2BCD02ADD /* ASDK3DSViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C73CA08E90F63A489B9F185678C2F23 /* ASDKRemoveCardRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5ABF9BA7C7102FE702584D858913D /* ASDKRemoveCardRequestBuilder.m */; };
+		2CD5349B16BF4A9BFE954CBBCA5A191C /* ASDKLocalized.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A70E97C566FC193E24DA939D2B584 /* ASDKLocalized.m */; };
+		2DF18E45BEC9F5EC9231BF5712D56887 /* ASDKFinishAuthorizeRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 413C41346F2FFC6F1146B183E0AE3484 /* ASDKFinishAuthorizeRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		323E417C8F4E97F5E9C4F5997114DB26 /* Pods-RNASDKTinkoff-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35832CE41FBA6620E9E61DC299EA6F75 /* Pods-RNASDKTinkoff-dummy.m */; };
+		32DD9C9CB9639DAA6977C69C06FE28DB /* ASDKFooterCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C64CDFFDC1BE49F7E747E32CCE1BD7E5 /* ASDKFooterCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3372BCB07F048AB700E4A6B78892B8E1 /* ASDKGetCardListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 56FDB202BDD28B03EA9DE791F76FF1F6 /* ASDKGetCardListRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34AAB05ACE80461F88C1E923CC434C02 /* ASDKAttachCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A2C6A20A88512A9A394E69F5DAB6F9 /* ASDKAttachCardViewController.m */; };
+		35381A1E9CB06CEA76FDDFD341305773 /* RSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0C2322D826E515D273953A68B700A2 /* RSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3579884C03D10AA32EB7655091658503 /* ASDKThreeDsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C4ECF0A4C75BC0B1EC2E559415DADE /* ASDKThreeDsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36B04E93AE9EFADEA594ED5431296F85 /* ASDKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 223CEEF394D1B0C9F679A043BF8E21D9 /* ASDKCard.m */; };
+		391D93D40EB8F50EBF1C9A2817E6191E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58633255A71DFCDE0093F8A2A34D63C /* Foundation.framework */; };
+		39498A1D3186D580B6B37A1BCAFAB60F /* ASDKCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF565CEE1BFEDD8BDFCD6FFF90046FA /* ASDKCardCell.m */; };
+		39629EC8B99CB365CB1286ABC7B482C7 /* ASDKCardInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913B4A4C37A6511D3CC638795BE8E3F3 /* ASDKCardInputTableViewCell.xib */; };
+		39ADE3BF2F94111644D1B6E8A12E2FE3 /* ASDKUtilsAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = A791519A8FDD25B205E80FA6A1179135 /* ASDKUtilsAmount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A75F7EAC1C225E50CEFA1763408FCB4 /* ASDKCancelRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8FC0D6F82DE6B35F29932564A6A075 /* ASDKCancelRequest.m */; };
+		3C1B4169467E1AC651F1000B5C4305E3 /* ASDKAcquiringSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 00141ACB8B20F3EB22CD27322B217920 /* ASDKAcquiringSdk.m */; };
+		3E025892467D3BF10AC813D5C7060F63 /* ASDKPaymentFormHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DEADF7202042AAA7DCB12484BBB2CC6 /* ASDKPaymentFormHeaderCell.xib */; };
+		3F4E4D59283C3768A382FC0309E69994 /* ASDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EB0806FF1B0F021A4C1305394AF6E9 /* ASDKLocalizable.strings */; };
+		3FC3C7D8E9FA180CE219D5E9C0F659D0 /* ASDKGetCardListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0040E7C9CCD234EF008231E34A219C42 /* ASDKGetCardListResponse.m */; };
+		409B27F0B8B7924B52692A48306788F2 /* ASDKRemoveCardResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 483B2BAB772838C8676D12AF7836B9DC /* ASDKRemoveCardResponse.m */; };
+		40D3ED8E5C5F7595DF191E36F6BD1BB1 /* ASDKInitResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FD8D47704A6E1612331D54D7ABCA69 /* ASDKInitResponse.m */; };
+		41E47C6E443798A3E13D4AC27E15B278 /* ASDKRequestBuilderCheck3dsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 61087A57769D72E58C2274F5D165403C /* ASDKRequestBuilderCheck3dsVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43257AA5E70D6E501731138F22AA1A93 /* ASDKAddNewCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0216565911A481FC5288E6343FA46BD /* ASDKAddNewCardCell.m */; };
+		444F3712CA7278E31969CAB7D0470D76 /* ASDKRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC84B2A4A7CE18D8599EBAC8563BAA8 /* ASDKRequestBuilder.m */; };
+		44C9AF98EAB2DC06EAE41B0CDA19E304 /* ASDKResponseAttachCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 405FA662A3A8835EBF66E62E5A0CA874 /* ASDKResponseAttachCard.m */; };
+		4526A6562D1FF8B22BF3C86272AC005B /* ASDKBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DA1274475B59BAEC3ADF3169055036 /* ASDKBaseViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4669810D4BF98F137E8097AC7481862B /* ASDKCardCell.h in Headers */ = {isa = PBXBuildFile; fileRef = D134F6C4DE36193000106235785BEDE3 /* ASDKCardCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		466EAE1B1050E9A4C4462B7DEFC78AC2 /* ASDKRequestCheck3dsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 6386BEC0A777073BCBF3CB10A2287D36 /* ASDKRequestCheck3dsVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4738E1E68DF79B3560B35AFF966C1254 /* ASDKAcquringSdkError.h in Headers */ = {isa = PBXBuildFile; fileRef = 388B879CE894861A14B0B454FF7A1E6E /* ASDKAcquringSdkError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A2275AB80354A1EBA043A60A26F7A15 /* ASDKCancelRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = AABD68F61EA918F1EBE9E22C46444B2D /* ASDKCancelRequestBuilder.m */; };
+		4B71B766DB29CB97D08FA0B1CA4EE42F /* ASDKRequestGetAttachCardState.h in Headers */ = {isa = PBXBuildFile; fileRef = B289188E0B4F453932D8189511E1DDF1 /* ASDKRequestGetAttachCardState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50E9D12E17BD99D19BE10F1AA2809F27 /* ASDKInitRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D54D336B550CE6AAFA0BA8BBA32AEB64 /* ASDKInitRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53C63E655B96BAAE0D1CB093C7AB6D5C /* ASDKLocalized.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A2C8EF96F22DA9CF90F66C1D654130 /* ASDKLocalized.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		546D74657F315704CDAC0165E6A0F68B /* ASDKGetStateRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10B17BD89D35E2257DF35C82EF7AF5 /* ASDKGetStateRequestBuilder.m */; };
+		55B267F8AB6475D447CEEA6D9D4EC99B /* ASDKResponseAddCardInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6402B56FB3D1DCD69CA8E3FC881931 /* ASDKResponseAddCardInit.m */; };
+		55B3EC0ABD8364665C90FB7FB5E896BB /* ASDKUtilsAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5551CB19E9772AC727C328DAFF199A /* ASDKUtilsAmount.m */; };
+		56221720B696963E867E9544B2393E6B /* ASDKInitResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA29774B00A736139B8FFF0F5C981F2 /* ASDKInitResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A02D44F6B3EF11643AD128D11FA9A5D /* ASDKGetCardListResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E6FCA0D5B955CF889D518C8EB756DA /* ASDKGetCardListResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A71B9F0AC1337271D8FBEFE8E845B0B /* ASDKExternalCardsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A45A46E0575256F8785C7E1BE3CCA9 /* ASDKExternalCardsCell.xib */; };
+		5A8CB55072CAF07CEE44762BDE9C3B1D /* ASDKCryptoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EFC8634C5AE534EDD9288E2E5EDB1D /* ASDKCryptoUtils.m */; };
+		5AC40F99F86F236B6EE807A23EC88BDE /* ASDKPaymentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F561D5575B05FEB7EE7EFC455F0224 /* ASDKPaymentInfo.m */; };
+		5B5EE06C165ED815CA95D95FEA4390FD /* ASDKRemoveCardRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8EFEF7748E4F43D98739C8D0ED9B97 /* ASDKRemoveCardRequest.m */; };
+		5C3CA247CA2CD0DED8C88774B3CFFEF2 /* ASDKResponseAddCardInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA5C3D8B62075D3FADA0E780E47A171 /* ASDKResponseAddCardInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C6A3C5D7EE457A95082E4A4BC84B155 /* ASDKRequestBuilderCheck3dsVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 160D3EB15C787B919CBCCAD6ED211C31 /* ASDKRequestBuilderCheck3dsVersion.m */; };
+		5E03E72B65DC313D37E8F64E2CE400CB /* ASDKNumberCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5E006782EEDDE3809E64AACAC0BD6E /* ASDKNumberCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E0CD1168C34F6BFF55F8C9EA02F62D9 /* ASDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D995613173B51B6A981310D183FCA69 /* ASDKCore.framework */; };
+		5F5CCDF414F59008D5DB49839601E55E /* ASDKLoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AF794E53FF557B690C81FD6F75AA22 /* ASDKLoaderViewController.m */; };
+		5F5DDCE64FB66C7A2AC8C03309B7249A /* ASDKAcquiringApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E0A4A10FDDDDED86ABAA0A2230EF9DF /* ASDKAcquiringApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6221EB61E072D82B8D2E141B9AA7C263 /* ASDKAcquiringApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F85918BBC6959CED58B974031308E5D /* ASDKAcquiringApi.m */; };
+		624E1605A989EE791AC0060562876B0F /* ASDKUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C71DAAC2099071B1313A5F0821B0F41B /* ASDKUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		629EFC7560F5560DE0EFAD2B35678F0E /* ASDKDeleteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E4364C9A105171E4C47A7E70EAA7D /* ASDKDeleteCell.xib */; };
+		63A098FE85B0762AA58878FA2D07DCE5 /* ASDKCardInputTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5DE01D4AC8B6A8B8896E33B021A41E /* ASDKCardInputTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6509730FD72F5B4332626B63AD2A754B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58633255A71DFCDE0093F8A2A34D63C /* Foundation.framework */; };
+		6683BCE35DAC3CEE729B24B3239E7342 /* ASDKCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 496021BD120EC1E51B8E4B1D2094B339 /* ASDKCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6717AFCE01CBE71FAC1428EABA85B786 /* ASDKCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E131381A845291FED03A186938A2255 /* ASDKCardCell.xib */; };
+		676DA58BC3674CE842EC13EA1C40DDC3 /* ASDKResponseCheck3dsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BD0B19BF116DB43A49B9BB656DF78B /* ASDKResponseCheck3dsVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CC91BE4FF33BF13437FEBFA5737EE4 /* ASDKHighlightedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2956ACB01B14F284684F448E7265D370 /* ASDKHighlightedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CBE3EC5A00DFC6E322085C3EC5AE253 /* ASDKEmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAE7030478AEFE7EEEDC6B8FBD49BECE /* ASDKEmptyTableViewCell.xib */; };
+		6CCBEDD99A3C288F3BC28B9F292B6C53 /* ASDKAcquiringSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B14E43D0DFEED5B5E22A2ABE7B59E33 /* ASDKAcquiringSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CDB69D8912932904252613DD1D060EB /* ASDKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A13887309E01C6498DD0865EBE7BB2 /* ASDKLabel.m */; };
+		707C82D38F946EA639ED179CA6FBA0F8 /* ASDKDesignConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FC2C72F8B52BD3530C95E154D7977 /* ASDKDesignConfiguration.m */; };
+		71859C8695872E2CECC7D046772D3A38 /* ASDKRequestBuilderSubmitRandomAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = 8115925ADDAB69797A315ACC711DDA76 /* ASDKRequestBuilderSubmitRandomAmount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71FB15D2C822927980170C2855A3834D /* ASDKRequestSubmitRandomAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = 49444D08CB97E8B0AAC4189B573278E7 /* ASDKRequestSubmitRandomAmount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73386D85ECA913A333AECC0C1B4A3B1C /* ASDKPaymentFormHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2246323C25DB16E4D18CDF93E76AF7F /* ASDKPaymentFormHeaderCell.m */; };
+		769EF3E56B922185FD577BB3508690EF /* ASDKChargeRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE7DBA805A5687A7E2FF1485378445 /* ASDKChargeRequestBuilder.m */; };
+		77DCFF125D3AF28ABD063854E1A6DDC2 /* ASDKDesignConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E111453E2996969DDF1A460CCD4DB50A /* ASDKDesignConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		781251F7D4D5DEF41983E18B92FD6DDA /* ASDKRequestCheck3dsVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = BED77744DFB18ACE9068B7A948BBC4EE /* ASDKRequestCheck3dsVersion.m */; };
+		7AB3A62B393343A82C49A278138AFE50 /* ASDKCancelRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3456E767418577F95DD42200E69EBFF1 /* ASDKCancelRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D8843778B1C923E522DE840550E2EB3 /* ASDKPayButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA9FA720D827C83F6881640B3A4C930 /* ASDKPayButtonCell.xib */; };
+		7DE329B6A56D2F43E4CC25AB1AD1526F /* ASDKGetStateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E70865907C297B0E63178A86C51337 /* ASDKGetStateResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F93F0E248AFD726B5C3FC640829E3DC /* ASDKCancelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCFB95F5F5C84F1693B398C46AF99B3 /* ASDKCancelResponse.m */; };
+		812918751E0D8AC7B493ABF635FF12E1 /* ASDKExternalCardsCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EC279E1EE0D14716E815AF7301EA5C /* ASDKExternalCardsCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83C78A572F60D7B1DF21B5FC980D401C /* ASDKUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 703899AECD42B10ABBB6DEF6DE61AC0D /* ASDKUI-dummy.m */; };
+		87255FF1852B055999F99306A2DD60FE /* ASDKFinishAuthorizeRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6443E3BF5FCA478763C2F25FC6EBBB46 /* ASDKFinishAuthorizeRequestBuilder.m */; };
+		8887F3575271B7F7BB31C7023AE875B5 /* ASDKRequestBuilderAttachCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A55E2CADF905EA4B982FD2B282E8C5 /* ASDKRequestBuilderAttachCard.m */; };
+		88B993D04F2003F1C56253D675D40468 /* ASDKMacroses.h in Headers */ = {isa = PBXBuildFile; fileRef = 127081FD0A38F3923D99ACA2E94AD943 /* ASDKMacroses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		895AB49AF2E22C2DA4663165578B6A9D /* ASDKExternalCardsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE23DCE099969C3D0E1FB63C3C07C0A /* ASDKExternalCardsCell.m */; };
+		8A59718356C52CB236299AED8A5FA0D3 /* ASDKGetCardListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D6967EE91E6858A73047A7F744877FBE /* ASDKGetCardListRequest.m */; };
+		8AC94872DF352C31537829B790FD9971 /* ASDKGetStateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 74347B601E5A5C8C0F48D4F6E4AB892C /* ASDKGetStateResponse.m */; };
+		8AD431DA69B111BB98F50E18DA94FF5B /* ASDKDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D63F446A0B0942AA78AB815AF62232A /* ASDKDesign.m */; };
+		8B00CE3430231C6592FB0D93DB207A9C /* ASDKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = AA238112F04B5DF10708809C5DC6FB4F /* ASDKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C658F74B74FEAD55CE201D5CCFBF9D7 /* ASDKPayButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8100C9986B8E89AAA7F64EA9B722DF /* ASDKPayButtonCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E7B9010C46DB0051A7819AF4C5C17B6 /* ASDKPaymentFormSummCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6216D5179925CEF11CCA114BE7064C25 /* ASDKPaymentFormSummCell.m */; };
+		8EE94AA3C2B807586A878BBC85120869 /* ASDKCard.h in Headers */ = {isa = PBXBuildFile; fileRef = D3DB382F00DB1A2CF5E64370F6EC7022 /* ASDKCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FB34ADE28A1B67DD4E2E326804F127B /* ASDKBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F2365E3AD4E185CB043F974E53F688F4 /* ASDKBaseObject.m */; };
+		900E347306C6029ADAB27F4A0F687EA5 /* ASDKRSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3CA9FDEE5D51A139338DC2ACD5459F /* ASDKRSAEncryptor.m */; };
+		9062316BE0A870F433FE0E9ADC8C83C6 /* ASDKUtilsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF7C3331CE96F6A9F50523B3C22AAA6 /* ASDKUtilsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		931215B57431D673BDDFBA62EF23362E /* ASDKBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B543DC19F18388ED0B39250CEF4E2665 /* ASDKBaseTableViewController.m */; };
+		93312F70015AAA6D969BB0A18CDEFB68 /* ASDKBaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D214855BACFA0021D17D7D3E793D6D /* ASDKBaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		943DBB7ECF53E1FB9F38968D3D58D37E /* ASDKRequestBuilderAddCardInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 547040ADC14181C4EE14DDDDFDEEB95D /* ASDKRequestBuilderAddCardInit.m */; };
+		96EAB85ECBF29DB4B9446BDD813489B1 /* ASDK3DSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AC3C9D15A9707322376B47AD4FA291 /* ASDK3DSViewController.m */; };
+		96F694D1175071487FFB4C114107CC94 /* ASDKRequestSubmitRandomAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4E58F0677A3875A256CC8AF05DF715 /* ASDKRequestSubmitRandomAmount.m */; };
+		97E436ED2D38890F9DB8E037FE966C1D /* ASDKEmptyTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E748C3B0D285F9BBE339C176FEF9DD4D /* ASDKEmptyTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97F0FBEB3FB1960BDA704F622F4F3E3F /* ASDKChargeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 39068C3C63EEE19442B3FFE2D9058013 /* ASDKChargeResponse.m */; };
+		98610249AD64F4B951491B658790DC35 /* ASDKRequestAttachCard.m in Sources */ = {isa = PBXBuildFile; fileRef = E215623EF35C819C8E0007C9B7D981B2 /* ASDKRequestAttachCard.m */; };
+		9A8C19A5F00F0A9C3A0D5EA500B1DED5 /* ASDKRequestAddCardInit.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AD5DFD8E45F371F7552CA48DCA7151 /* ASDKRequestAddCardInit.m */; };
+		9ACA2E056F30AFABDA59D1A83725D008 /* ASDKRSAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6589A23558A018FCEB932EB3D584B2F7 /* ASDKRSAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BC0735287FCBC1328C0A81E0EAB6E1E /* ASDK3DSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2167B646781A0D43E7A677310B20D2B5 /* ASDK3DSViewController.xib */; };
+		9DFFC4556A8FBBE1A27752E1356DB8F2 /* ASDKApiKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = DA0C794F7F018FD7214C1BD5F535645F /* ASDKApiKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E6A0529D55304B9E34732BFD435CB1B /* ASDKAcquringSdkError.m in Sources */ = {isa = PBXBuildFile; fileRef = 149F86912E47AB91F8E32D51C0250C04 /* ASDKAcquringSdkError.m */; };
+		9F1EFEBC2392F973CC546E48342F95FA /* ASDKFinishAuthorizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EE8E1F7F9E11A7464AF9D3132522C4 /* ASDKFinishAuthorizeRequest.m */; };
+		A0476C67EECCAC897CE2E3E29891A111 /* ASDKAcquringApiError.m in Sources */ = {isa = PBXBuildFile; fileRef = AE59A348C5BA5E194FD1A9E405CE26C0 /* ASDKAcquringApiError.m */; };
+		A31E83B2A6BF991FEE49C2D95D2F4DB4 /* ASDKFinishAuthorizeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 03086388BE93DEF4F6E29ED012272480 /* ASDKFinishAuthorizeResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3469FC0418895566F74C778DDFFAED8 /* ASDKCardData.h in Headers */ = {isa = PBXBuildFile; fileRef = C0D1F79E7E1A0182E8B1789BD852A23B /* ASDKCardData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A35EFA8F948CB79A5ADFA33D2A0E9AF1 /* ASDKChargeRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E97D1ED0024B9426360214C35E91174 /* ASDKChargeRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3B4088A816CB3F77107FF4ED1ACF278 /* ASDKRequestGetAttachCardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 35944B77A62BCFCD10F525F4D3D36296 /* ASDKRequestGetAttachCardState.m */; };
+		A4ED6FC911B0C73A9D472FBDD4E12043 /* ASDKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EAC30FCE85EC4DF6BB7AA1EDC915A /* ASDKTextField.m */; };
+		A4F49E8BBEE916CC86070DB89EBFC91D /* ASDKRemoveCardResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AFC5A82113F74AA7CE3DB00F8525A3D /* ASDKRemoveCardResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8B73D2F6DBD84382F638B2DF3CFB60F /* ASDKPayButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B08198368F28126226927B689A76F182 /* ASDKPayButtonCell.m */; };
+		A8D41FC8C11DAE5BAF2C4786278AC6C7 /* ASDKDesign.h in Headers */ = {isa = PBXBuildFile; fileRef = 0858DB693DFFCB7BADA3CE9956D7946D /* ASDKDesign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B42C0442768984F2B9A8E138EABE2E /* ASDKEmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A816C140D35FCED9B6902786D853CAF /* ASDKEmailCell.xib */; };
+		A9EB7434DC703E36D9DA97B3F139063E /* ASDKLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = B249A99D82B48AC785BFEF3669521044 /* ASDKLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE5E2838F6DDBAE5DE0DE811D9643C8 /* ASDKResponseAttachCard.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D36F8A22C6053E43C63F3B2F2A11B7 /* ASDKResponseAttachCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03FA0C55CD734FE1EA4A60BAA88A634 /* ASDKAcquiringRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E78B80053AD6B2236F1F28C477FE2CD9 /* ASDKAcquiringRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B188097D86423C12B72F8BE5EA6BF5FF /* ASDKUIImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30B118135557DFD97437E1E2FC82774 /* ASDKUIImages.xcassets */; };
+		B23C82B9B85AA7FC9B985A4633DBF72A /* ASDKResponseGetAddCardState.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D5F7C7C6A03ADC412D722DF9D55081 /* ASDKResponseGetAddCardState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B43B432DD84A02A0AB5F26EA11E50424 /* ASDKInitRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3525C30AAB5CE21DCAB7050899A1E5 /* ASDKInitRequestBuilder.m */; };
+		B575BFE652F02F654E7C2B3AA187D2A1 /* ASDKChargeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 72D4312C71F40C7A91AB33281EEACD03 /* ASDKChargeResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B62ABD2CA72896C8D4339C05EA53409D /* ASDKDeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31380B6C383E6B42FA8E44B7EBE1D185 /* ASDKDeleteCell.m */; };
+		B7600148DDFB16B403BE2B66E8A46428 /* ASDKRemoveCardRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A809304FB081EDBCEAE884557CE882C9 /* ASDKRemoveCardRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B87BD2B22A139C4949D9C115A918C2C7 /* ASDKStringKeyCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = C028C9E12CDA1D658BE656F97A8F5879 /* ASDKStringKeyCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9753A3ABBB06C73EC1F3EAD31C8F8B3 /* UIView+AutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A22B8E90CA3FA9EB900174C1F77AA2F /* UIView+AutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA6B57675DBD5B2BCF62D540263759D2 /* ASDKLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF2719BD2A8616EF28D8D22CDED07A /* ASDKLoopViewController.m */; };
+		BA6E4AA707E4DA537E3F73CC063EC9FF /* Pods-RNASDKTinkoff-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3891E3414C60ED3A769C4D4CE518F1F /* Pods-RNASDKTinkoff-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB5E0DA5178641B0919C1CE1E6C545E9 /* ASDKNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC60209C85FCFA32CBB26138FC144742 /* ASDKNumberCell.xib */; };
+		BDC36C3128DC615629DC9DB19E44ABB1 /* ASDKCardsListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A55F03C2CA121C87482E575E9CB093F /* ASDKCardsListViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE02557EFE96F7DFC57E13B345180390 /* ASDKAttachCardViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BBAEAF0097C51FB2E5558FD87F69C9 /* ASDKAttachCardViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2AC71E3D5E9A23A107E24BD2B4F5EF0 /* ASDKBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C0094A47BD69004AA94E02A101B87F69 /* ASDKBaseCell.m */; };
+		C35CFDA2D4BFB2DFEF5A37D917AC3CC2 /* ASDKThreeDsData.m in Sources */ = {isa = PBXBuildFile; fileRef = ED17236C47F62C63863FB91F8801E78C /* ASDKThreeDsData.m */; };
+		C41B2710486F8CC0DC70788E0A76F96A /* ASDKEmptyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA65BCA03EA03F5CC14FAAAEEC70B1E /* ASDKEmptyTableViewCell.m */; };
+		C5061BBBD1EC4F4E41E3656E7F78758F /* ASDKUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B46A2B0B99652EBF9BE84AAD317B43 /* ASDKUtils.m */; };
+		C5691213178DEBB670071CDD835B7DA9 /* ASDKFinishAuthorizeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B4C5C406C39A9816A1C04D67AAF24DA /* ASDKFinishAuthorizeRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6C6A7E4BAA95F63E870BB8925F0E096 /* ASDKFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5EAF668C011E2C0F49F4778F51EC7EC /* ASDKFooterCell.xib */; };
+		C6F86DC2B83DF706550AF5D2A690F1B7 /* ASDKPaymentFormViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9B5C572FFA57F21510C66389B99EA2 /* ASDKPaymentFormViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C827C9E64275D0AA08F68206A5625692 /* ASDKStringKeyCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 983C915FD74FC470A172523021B1D74C /* ASDKStringKeyCreator.m */; };
+		C8302C86E9F99983F3DEB9E1EFBE5BCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58633255A71DFCDE0093F8A2A34D63C /* Foundation.framework */; };
+		C909F143C54D010E74594AC35F1A1E0F /* ASDKDeleteCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C666B43C0CCDA04686F1BA5657953EFE /* ASDKDeleteCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C90D4F7172BB9ACD1FDA231010CE5692 /* ASDKCardInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CA360EE9BF57AC1DD356F1DFAD9294 /* ASDKCardInputTableViewCell.m */; };
+		CA80DCF5AD9903E3D2BA7B0989C8EF76 /* ASDKFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BFEA9C9A220D8C4E52F083B5DBD6B6 /* ASDKFooterCell.m */; };
+		CF2E24C9CEA5FC515131CE4374EC1759 /* ASDKBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 29C44C2C82518067DC6C57B814D93419 /* ASDKBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D06929C472E96CFAD64E941B58738B57 /* ASDKGetCardListRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 533A672AE8EEF2EA8926927B00BB60C2 /* ASDKGetCardListRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D20406D87BDD918F01714C6F3E64C0BC /* ASDKRemoveCardRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8F94ECAD6B3A1EC27767FB513C2D52 /* ASDKRemoveCardRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D75ADE0AA7C7573762FABEF6BB11CE77 /* ASDKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9F8E02986F8CB16B71308E79C7FF /* ASDKNavigationController.m */; };
+		E10D564C073E7B261B9EE2663A03FE79 /* ASDKInitRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF5DFE6AE6BC30652B7FA8D5A54D14 /* ASDKInitRequest.m */; };
+		E26AB48D68A5F3EEF6480830CFA22D41 /* ASDKRequestAddCardInit.h in Headers */ = {isa = PBXBuildFile; fileRef = A600CBB11957A1DB779C914DB18278E7 /* ASDKRequestAddCardInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33A8EF913515CA81C4B7EBD0EA886E5 /* ASDKCancelRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E35EC4B2730567FDA8ECCF6E7A308BA0 /* ASDKCancelRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E35457E63519CCD0BA439D45BFAF5E24 /* ASDKPaymentFormStarter.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B1C36EE6957C97DC53609D20634E67 /* ASDKPaymentFormStarter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E43336117A4CED274EBE85AA341260F3 /* ASDKPaymentFormSummCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668F9D7E8FF4B758C84489921EF2402C /* ASDKPaymentFormSummCell.xib */; };
+		E57FD125B6F4D35442EE28D7802AC78F /* ASDKUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 178CE9F53A14C2F743089D6551D5F9FE /* ASDKUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62BB388B2FB01E8452DF10DD394474F /* ASDKGetCardListRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D3512DC28A6A34894F0E04C5C89E1 /* ASDKGetCardListRequestBuilder.m */; };
+		E67CC65F7CE7BC627A00D36EE9751117 /* ASDKAcquiringRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7848C2E5A94B5946E1ABE1A0EBA3503E /* ASDKAcquiringRequest.m */; };
+		E7E8169F24295D21BF4130B3DF051A66 /* ASDKCardsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42D4E1BEB617C941260414B5407EE87 /* ASDKCardsListViewController.m */; };
+		E8664F49E892C39E6CCB19E7A567E0CF /* ASDKGetStateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 59992668F5DC6093C365E2C5BF80D1A5 /* ASDKGetStateRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAE1C7587C8B8A7FA0356C8A02EA1374 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC4163BDA9C71BCD2ADA8D40825CA7 /* RSA.m */; };
+		EBAA5C1F98ED0F4FE72D8BE09283B847 /* ASDKBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EF68CCDE77C14834D09A5FFAC6DE35 /* ASDKBarButtonItem.m */; };
+		ECE2A27F4B0FDEFBDE1C7C9F6C23C735 /* ASDKResponseCheck3dsVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEDB9381971F2D96073C502E8590258 /* ASDKResponseCheck3dsVersion.m */; };
+		EDE5FE3768FE70AFE42B14A6453D2DE9 /* ASDKGetStateRequestBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 82691510CA11D01D17B80B817B31A1FF /* ASDKGetStateRequestBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE8DEF8D5E661281465CE8029D7A18AE /* ASDKRequestBuilderGetAttachCardState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F7F6AF263A6167871E0ED5B1A2CDA6D /* ASDKRequestBuilderGetAttachCardState.m */; };
+		EEADF718B34E2AACFA243E538CB444B6 /* ASDKUtilsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B1CECEC03942F875DDDB6B183F8771 /* ASDKUtilsRequest.m */; };
+		EF3CE3CCC941389D626F49D6534C48E8 /* ASDKLoopViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CEF11F24250DBE9FE8C5151553CD549 /* ASDKLoopViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F156E99C8229ADDEDDA87F88977D13A6 /* ASDKCardsListDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F91CCB1393B46663C5EC73E329A620 /* ASDKCardsListDataController.m */; };
+		F1E73F9D32B7CE86A901A312C6AFE0E4 /* ASDKRequestBuilderAddCardInit.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AD022897DBC37BA2FACBAF47C84819 /* ASDKRequestBuilderAddCardInit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F35B8A0F9ED50214B05A34E94DF67B49 /* ASDKAcquiringResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D9699403328BAA8ED80C1364A9B4C413 /* ASDKAcquiringResponse.m */; };
+		F3E1D8424097702FF7A8BCBC9D74F19C /* ASDKPaymentFormStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = C56E143C0B806806666B95F0BE1ED642 /* ASDKPaymentFormStarter.m */; };
+		F453805DA7F2D276F4BA606025579BB7 /* ASDKCryptoUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DC960D0E81BFC5783CA3875BC46E121B /* ASDKCryptoUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7CFFAA48EDD9FEFD4DCFA4B78680442 /* ASDKRequestAttachCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2280551520A93C64027F4CF2034EB35A /* ASDKRequestAttachCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA81D6A22A0152629B5EA93670876A10 /* ASDKPaymentFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3591F2F998DF2C27E47FB7B79CFF356 /* ASDKPaymentFormViewController.m */; };
+		FB1C7C34A55D159CBBFFFA8C42B0E0EA /* ASDKGetStateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EFD3E1CEFA9135E66A00CFEBA6AE79 /* ASDKGetStateRequest.m */; };
+		FCC99AE3351CD5352A89F9C870410B90 /* ASDKCancelResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FCF0899C7E61FE1F9DC4D39C0B4A3B /* ASDKCancelResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD19D643155389CB0FA9FAA5186A3C03 /* ASDKEmailCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB2562097C3D301BBF0C8BC9EDA257F /* ASDKEmailCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE05820EAF98E14A40F1DDF433785992 /* ASDKRequestBuilderAttachCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 549B227E15E6B11895A978127AD28916 /* ASDKRequestBuilderAttachCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0625B826905D478A587811031D6C81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13D747E3CD5F9839D0A3CAB49E5ABC32;
+			remoteInfo = ASDKCore;
+		};
+		B6E7B7EB6509D544BBAC51B1E9466F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5AFDBFF44C91B5332DDBF2B370A941E;
+			remoteInfo = CardIO;
+		};
+		BC5E004DD35563956720604D62A26848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13D747E3CD5F9839D0A3CAB49E5ABC32;
+			remoteInfo = ASDKCore;
+		};
+		D9E06E6AEF01124915F332F710AE1354 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3190722EE86430DA43D7BB218F21055A;
+			remoteInfo = ASDKUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00141ACB8B20F3EB22CD27322B217920 /* ASDKAcquiringSdk.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAcquiringSdk.m; path = ASDKCore/ASDKAcquiringSdk.m; sourceTree = "<group>"; };
+		0040E7C9CCD234EF008231E34A219C42 /* ASDKGetCardListResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKGetCardListResponse.m; path = "ASDKCore/API Objects/Response/GetCardList/ASDKGetCardListResponse.m"; sourceTree = "<group>"; };
+		02558CC002592F81AF494DCCFDB19034 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AutoLayout.m"; path = "ASDKUI/Helpers/UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		03086388BE93DEF4F6E29ED012272480 /* ASDKFinishAuthorizeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKFinishAuthorizeResponse.h; path = "ASDKCore/API Objects/Response/FinishAuthorize/ASDKFinishAuthorizeResponse.h"; sourceTree = "<group>"; };
+		04D9A714270D37774A8506965087CA41 /* ASDKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASDKCore-prefix.pch"; sourceTree = "<group>"; };
+		07B1C36EE6957C97DC53609D20634E67 /* ASDKPaymentFormStarter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKPaymentFormStarter.h; path = ASDKUI/Payment/PaymentFormStarter/ASDKPaymentFormStarter.h; sourceTree = "<group>"; };
+		0858DB693DFFCB7BADA3CE9956D7946D /* ASDKDesign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKDesign.h; path = ASDKUI/Helpers/ASDKDesign.h; sourceTree = "<group>"; };
+		0A0C2322D826E515D273953A68B700A2 /* RSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSA.h; path = "ASDKCore/API Objects/Card/RSA.h"; sourceTree = "<group>"; };
+		0A22B8E90CA3FA9EB900174C1F77AA2F /* UIView+AutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AutoLayout.h"; path = "ASDKUI/Helpers/UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		0B14E43D0DFEED5B5E22A2ABE7B59E33 /* ASDKAcquiringSdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAcquiringSdk.h; path = ASDKCore/ASDKAcquiringSdk.h; sourceTree = "<group>"; };
+		0D2C9DCA187778BC10216A415CD6A9E6 /* CardIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIO.h; path = CardIO/CardIO.h; sourceTree = "<group>"; };
+		0D995613173B51B6A981310D183FCA69 /* ASDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EA176ABFC0B8CE751A6ABB4B3EB61C4 /* ASDKLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = ASDKLocalizable.strings; path = en.lproj/ASDKLocalizable.strings; sourceTree = "<group>"; };
+		0F85918BBC6959CED58B974031308E5D /* ASDKAcquiringApi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAcquiringApi.m; path = ASDKCore/ASDKAcquiringApi.m; sourceTree = "<group>"; };
+		0FE23DCE099969C3D0E1FB63C3C07C0A /* ASDKExternalCardsCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKExternalCardsCell.m; path = ASDKUI/Payment/PaymentViewController/ASDKExternalCardsCell.m; sourceTree = "<group>"; };
+		11D7B1AFBD0985D328A4F44EAA89F5F9 /* ASDKNumberCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKNumberCell.m; path = ASDKUI/Payment/PaymentViewController/CustomInput/NumberCell/ASDKNumberCell.m; sourceTree = "<group>"; };
+		11E6FCA0D5B955CF889D518C8EB756DA /* ASDKGetCardListResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKGetCardListResponse.h; path = "ASDKCore/API Objects/Response/GetCardList/ASDKGetCardListResponse.h"; sourceTree = "<group>"; };
+		127081FD0A38F3923D99ACA2E94AD943 /* ASDKMacroses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKMacroses.h; path = ASDKUI/Helpers/ASDKMacroses.h; sourceTree = "<group>"; };
+		12FC408D5458D40B634FB26A6A0C668E /* ASDKLoaderViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKLoaderViewController.xib; path = ASDKUI/ASDKLoaderViewController.xib; sourceTree = "<group>"; };
+		13E2606D1C7150D0C51991C9A49FF6D4 /* Pods_RNASDKTinkoff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RNASDKTinkoff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		149F86912E47AB91F8E32D51C0250C04 /* ASDKAcquringSdkError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAcquringSdkError.m; path = "ASDKCore/API Objects/Errors/ASDKAcquringSdkError.m"; sourceTree = "<group>"; };
+		160D3EB15C787B919CBCCAD6ED211C31 /* ASDKRequestBuilderCheck3dsVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestBuilderCheck3dsVersion.m; path = ASDKCore/RequestBuilder/ASDKRequestBuilderCheck3dsVersion.m; sourceTree = "<group>"; };
+		178CE9F53A14C2F743089D6551D5F9FE /* ASDKUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKUI.h; path = ASDKUI/ASDKUI.h; sourceTree = "<group>"; };
+		187D3512DC28A6A34894F0E04C5C89E1 /* ASDKGetCardListRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKGetCardListRequestBuilder.m; path = ASDKCore/RequestBuilder/GetCardList/ASDKGetCardListRequestBuilder.m; sourceTree = "<group>"; };
+		18C4ECF0A4C75BC0B1EC2E559415DADE /* ASDKThreeDsData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKThreeDsData.h; path = "ASDKCore/API Objects/Response/ThreeDsData/ASDKThreeDsData.h"; sourceTree = "<group>"; };
+		1A3419F268676CAEF18A30731F396522 /* Pods-RNASDKTinkoff.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNASDKTinkoff.release.xcconfig"; sourceTree = "<group>"; };
+		1A816C140D35FCED9B6902786D853CAF /* ASDKEmailCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKEmailCell.xib; path = ASDKUI/Payment/PaymentViewController/EmailCell/ASDKEmailCell.xib; sourceTree = "<group>"; };
+		1CCF1D64F9F8174EF57EBA9330EE5EA2 /* ASDKChargeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKChargeRequest.m; path = "ASDKCore/API Objects/Request/Charge/ASDKChargeRequest.m"; sourceTree = "<group>"; };
+		1D7E9F8E02986F8CB16B71308E79C7FF /* ASDKNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKNavigationController.m; path = ASDKUI/ASDKNavigationController.m; sourceTree = "<group>"; };
+		2167B646781A0D43E7A677310B20D2B5 /* ASDK3DSViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDK3DSViewController.xib; path = ASDKUI/3DSController/ASDK3DSViewController.xib; sourceTree = "<group>"; };
+		223CEEF394D1B0C9F679A043BF8E21D9 /* ASDKCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCard.m; path = "ASDKCore/API Objects/Card/ASDKCard.m"; sourceTree = "<group>"; };
+		2280551520A93C64027F4CF2034EB35A /* ASDKRequestAttachCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestAttachCard.h; path = "ASDKCore/API Objects/Request/ASDKRequestAttachCard.h"; sourceTree = "<group>"; };
+		22EAC35FC0F24E09F9FB6B7BBA25A296 /* CardIODetectionMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIODetectionMode.h; path = CardIO/CardIODetectionMode.h; sourceTree = "<group>"; };
+		24F34D2C230877FB00645230A18E6CCE /* ASDKUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASDKUI.xcconfig; sourceTree = "<group>"; };
+		24F91CCB1393B46663C5EC73E329A620 /* ASDKCardsListDataController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCardsListDataController.m; path = ASDKUI/Payment/CardListDataSource/ASDKCardsListDataController.m; sourceTree = "<group>"; };
+		25EFD3E1CEFA9135E66A00CFEBA6AE79 /* ASDKGetStateRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKGetStateRequest.m; path = "ASDKCore/API Objects/Request/GetState/ASDKGetStateRequest.m"; sourceTree = "<group>"; };
+		26FCF0899C7E61FE1F9DC4D39C0B4A3B /* ASDKCancelResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCancelResponse.h; path = "ASDKCore/API Objects/Response/ASDKCancelResponse.h"; sourceTree = "<group>"; };
+		27D5F7C7C6A03ADC412D722DF9D55081 /* ASDKResponseGetAddCardState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKResponseGetAddCardState.h; path = "ASDKCore/API Objects/Response/ASDKResponseGetAddCardState.h"; sourceTree = "<group>"; };
+		28CFEAC3AFE8C55E0B2AFC6FC90CD9A7 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewControllerDelegate.h; path = CardIO/CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		28F7998F912C55633AA609C5B37C0C6B /* libopencv_core.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv_core.a; path = CardIO/libopencv_core.a; sourceTree = "<group>"; };
+		28F9A0D042F23E762423A3BAB2B3456E /* ASDKAddNewCardCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAddNewCardCell.h; path = ASDKUI/Payment/CardsListViewController/AddNewCardCell/ASDKAddNewCardCell.h; sourceTree = "<group>"; };
+		2956ACB01B14F284684F448E7265D370 /* ASDKHighlightedButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKHighlightedButton.h; path = ASDKUI/Payment/PaymentViewController/CustomInput/HighlightedButton/ASDKHighlightedButton.h; sourceTree = "<group>"; };
+		29A55E2CADF905EA4B982FD2B282E8C5 /* ASDKRequestBuilderAttachCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestBuilderAttachCard.m; path = ASDKCore/RequestBuilder/ASDKRequestBuilderAttachCard.m; sourceTree = "<group>"; };
+		29AF2719BD2A8616EF28D8D22CDED07A /* ASDKLoopViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKLoopViewController.m; path = ASDKUI/ASDKLoopViewController.m; sourceTree = "<group>"; };
+		29C44C2C82518067DC6C57B814D93419 /* ASDKBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKBarButtonItem.h; path = ASDKUI/ASDKBarButtonItem.h; sourceTree = "<group>"; };
+		2B6FD99A273C9D778A44467F8E5CC58C /* ASDKEmailCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKEmailCell.m; path = ASDKUI/Payment/PaymentViewController/EmailCell/ASDKEmailCell.m; sourceTree = "<group>"; };
+		2E131381A845291FED03A186938A2255 /* ASDKCardCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKCardCell.xib; path = ASDKUI/Payment/CardsListViewController/CardCell/ASDKCardCell.xib; sourceTree = "<group>"; };
+		2F4E58F0677A3875A256CC8AF05DF715 /* ASDKRequestSubmitRandomAmount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestSubmitRandomAmount.m; path = "ASDKCore/API Objects/Request/ASDKRequestSubmitRandomAmount.m"; sourceTree = "<group>"; };
+		31380B6C383E6B42FA8E44B7EBE1D185 /* ASDKDeleteCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKDeleteCell.m; path = ASDKUI/Payment/PaymentViewController/CustomInput/DeleteCell/ASDKDeleteCell.m; sourceTree = "<group>"; };
+		325EAC30FCE85EC4DF6BB7AA1EDC915A /* ASDKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKTextField.m; path = ASDKUI/Payment/PaymentViewController/InputCardCell/ASDKTextField.m; sourceTree = "<group>"; };
+		32F561D5575B05FEB7EE7EFC455F0224 /* ASDKPaymentInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKPaymentInfo.m; path = "ASDKCore/API Objects/Response/PaymentInfo/ASDKPaymentInfo.m"; sourceTree = "<group>"; };
+		33AD022897DBC37BA2FACBAF47C84819 /* ASDKRequestBuilderAddCardInit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestBuilderAddCardInit.h; path = ASDKCore/RequestBuilder/ASDKRequestBuilderAddCardInit.h; sourceTree = "<group>"; };
+		3456E767418577F95DD42200E69EBFF1 /* ASDKCancelRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCancelRequestBuilder.h; path = ASDKCore/RequestBuilder/ASDKCancelRequestBuilder.h; sourceTree = "<group>"; };
+		35282B211E3A5124C79C73C7FB214267 /* ASDKPaymentInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKPaymentInfo.h; path = "ASDKCore/API Objects/Response/PaymentInfo/ASDKPaymentInfo.h"; sourceTree = "<group>"; };
+		35832CE41FBA6620E9E61DC299EA6F75 /* Pods-RNASDKTinkoff-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNASDKTinkoff-dummy.m"; sourceTree = "<group>"; };
+		35944B77A62BCFCD10F525F4D3D36296 /* ASDKRequestGetAttachCardState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestGetAttachCardState.m; path = "ASDKCore/API Objects/Request/ASDKRequestGetAttachCardState.m"; sourceTree = "<group>"; };
+		374A4D8CB72FF5998DD68E89F2053516 /* Pods-RNASDKTinkoff-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNASDKTinkoff-acknowledgements.markdown"; sourceTree = "<group>"; };
+		388B879CE894861A14B0B454FF7A1E6E /* ASDKAcquringSdkError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAcquringSdkError.h; path = "ASDKCore/API Objects/Errors/ASDKAcquringSdkError.h"; sourceTree = "<group>"; };
+		39068C3C63EEE19442B3FFE2D9058013 /* ASDKChargeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKChargeResponse.m; path = "ASDKCore/API Objects/Response/Charge/ASDKChargeResponse.m"; sourceTree = "<group>"; };
+		39438E67AD6EBC3DC76293E4FD5D0D5D /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOCreditCardInfo.h; path = CardIO/CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		3A55F03C2CA121C87482E575E9CB093F /* ASDKCardsListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCardsListViewController.h; path = ASDKUI/Payment/CardsListViewController/ASDKCardsListViewController.h; sourceTree = "<group>"; };
+		3D2418479195C67AF6F2FAEE267E8332 /* Pods-RNASDKTinkoff.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNASDKTinkoff.debug.xcconfig"; sourceTree = "<group>"; };
+		3D2A70E97C566FC193E24DA939D2B584 /* ASDKLocalized.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKLocalized.m; path = ASDKUI/Payment/PaymentFormStarter/ASDKLocalized.m; sourceTree = "<group>"; };
+		3DEADF7202042AAA7DCB12484BBB2CC6 /* ASDKPaymentFormHeaderCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKPaymentFormHeaderCell.xib; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormHeaderCell.xib; sourceTree = "<group>"; };
+		3E97D1ED0024B9426360214C35E91174 /* ASDKChargeRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKChargeRequestBuilder.h; path = ASDKCore/RequestBuilder/Charge/ASDKChargeRequestBuilder.h; sourceTree = "<group>"; };
+		3F0FC2C72F8B52BD3530C95E154D7977 /* ASDKDesignConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKDesignConfiguration.m; path = ASDKUI/Payment/PaymentFormStarter/ASDKDesignConfiguration.m; sourceTree = "<group>"; };
+		3F69EB1E58A28A8C1BA6E563A9AA53E1 /* ASDKRequestBuilderGetAttachCardState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestBuilderGetAttachCardState.h; path = ASDKCore/RequestBuilder/ASDKRequestBuilderGetAttachCardState.h; sourceTree = "<group>"; };
+		405FA662A3A8835EBF66E62E5A0CA874 /* ASDKResponseAttachCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKResponseAttachCard.m; path = "ASDKCore/API Objects/Response/ASDKResponseAttachCard.m"; sourceTree = "<group>"; };
+		413C41346F2FFC6F1146B183E0AE3484 /* ASDKFinishAuthorizeRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKFinishAuthorizeRequestBuilder.h; path = ASDKCore/RequestBuilder/FinishAuthorize/ASDKFinishAuthorizeRequestBuilder.h; sourceTree = "<group>"; };
+		483B2BAB772838C8676D12AF7836B9DC /* ASDKRemoveCardResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRemoveCardResponse.m; path = "ASDKCore/API Objects/Response/RemoveCard/ASDKRemoveCardResponse.m"; sourceTree = "<group>"; };
+		4931EDEB8E831270C3C46A0DFA705A64 /* ASDKBaseObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKBaseObject.h; path = "ASDKCore/API Objects/ASDKBaseObject.h"; sourceTree = "<group>"; };
+		49444D08CB97E8B0AAC4189B573278E7 /* ASDKRequestSubmitRandomAmount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestSubmitRandomAmount.h; path = "ASDKCore/API Objects/Request/ASDKRequestSubmitRandomAmount.h"; sourceTree = "<group>"; };
+		496021BD120EC1E51B8E4B1D2094B339 /* ASDKCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASDKCore-umbrella.h"; sourceTree = "<group>"; };
+		4AB2562097C3D301BBF0C8BC9EDA257F /* ASDKEmailCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKEmailCell.h; path = ASDKUI/Payment/PaymentViewController/EmailCell/ASDKEmailCell.h; sourceTree = "<group>"; };
+		4BBE7DBA805A5687A7E2FF1485378445 /* ASDKChargeRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKChargeRequestBuilder.m; path = ASDKCore/RequestBuilder/Charge/ASDKChargeRequestBuilder.m; sourceTree = "<group>"; };
+		4C4E4364C9A105171E4C47A7E70EAA7D /* ASDKDeleteCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKDeleteCell.xib; path = ASDKUI/Payment/PaymentViewController/CustomInput/DeleteCell/ASDKDeleteCell.xib; sourceTree = "<group>"; };
+		4CC84B2A4A7CE18D8599EBAC8563BAA8 /* ASDKRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestBuilder.m; path = ASDKCore/RequestBuilder/ASDKRequestBuilder.m; sourceTree = "<group>"; };
+		4EB5ABF9BA7C7102FE702584D858913D /* ASDKRemoveCardRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRemoveCardRequestBuilder.m; path = ASDKCore/RequestBuilder/RemoveCard/ASDKRemoveCardRequestBuilder.m; sourceTree = "<group>"; };
+		4EC20D5A1737138A8E2AC48D4C109F65 /* ASDKPaymentFormHeaderCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKPaymentFormHeaderCell.h; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormHeaderCell.h; sourceTree = "<group>"; };
+		51AC3C9D15A9707322376B47AD4FA291 /* ASDK3DSViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDK3DSViewController.m; path = ASDKUI/3DSController/ASDK3DSViewController.m; sourceTree = "<group>"; };
+		52D30FFF580ABC434CB4CFF928596AC7 /* ASDKInitRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKInitRequest.h; path = "ASDKCore/API Objects/Request/Init/ASDKInitRequest.h"; sourceTree = "<group>"; };
+		533A672AE8EEF2EA8926927B00BB60C2 /* ASDKGetCardListRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKGetCardListRequestBuilder.h; path = ASDKCore/RequestBuilder/GetCardList/ASDKGetCardListRequestBuilder.h; sourceTree = "<group>"; };
+		547040ADC14181C4EE14DDDDFDEEB95D /* ASDKRequestBuilderAddCardInit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestBuilderAddCardInit.m; path = ASDKCore/RequestBuilder/ASDKRequestBuilderAddCardInit.m; sourceTree = "<group>"; };
+		549B227E15E6B11895A978127AD28916 /* ASDKRequestBuilderAttachCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestBuilderAttachCard.h; path = ASDKCore/RequestBuilder/ASDKRequestBuilderAttachCard.h; sourceTree = "<group>"; };
+		55B46A2B0B99652EBF9BE84AAD317B43 /* ASDKUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKUtils.m; path = ASDKUI/Helpers/ASDKUtils.m; sourceTree = "<group>"; };
+		55BFEA9C9A220D8C4E52F083B5DBD6B6 /* ASDKFooterCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKFooterCell.m; path = ASDKUI/Payment/PaymentViewController/ASDKFooterCell.m; sourceTree = "<group>"; };
+		56FDB202BDD28B03EA9DE791F76FF1F6 /* ASDKGetCardListRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKGetCardListRequest.h; path = "ASDKCore/API Objects/Request/GetCardList/ASDKGetCardListRequest.h"; sourceTree = "<group>"; };
+		59992668F5DC6093C365E2C5BF80D1A5 /* ASDKGetStateRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKGetStateRequest.h; path = "ASDKCore/API Objects/Request/GetState/ASDKGetStateRequest.h"; sourceTree = "<group>"; };
+		59A2C8EF96F22DA9CF90F66C1D654130 /* ASDKLocalized.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKLocalized.h; path = ASDKUI/Payment/PaymentFormStarter/ASDKLocalized.h; sourceTree = "<group>"; };
+		5D63F446A0B0942AA78AB815AF62232A /* ASDKDesign.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKDesign.m; path = ASDKUI/Helpers/ASDKDesign.m; sourceTree = "<group>"; };
+		5E0A4A10FDDDDED86ABAA0A2230EF9DF /* ASDKAcquiringApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAcquiringApi.h; path = ASDKCore/ASDKAcquiringApi.h; sourceTree = "<group>"; };
+		61087A57769D72E58C2274F5D165403C /* ASDKRequestBuilderCheck3dsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestBuilderCheck3dsVersion.h; path = ASDKCore/RequestBuilder/ASDKRequestBuilderCheck3dsVersion.h; sourceTree = "<group>"; };
+		6216D5179925CEF11CCA114BE7064C25 /* ASDKPaymentFormSummCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKPaymentFormSummCell.m; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormSummCell.m; sourceTree = "<group>"; };
+		629C4396446398AED6475EBCB65F40BF /* ASDKNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKNavigationController.h; path = ASDKUI/ASDKNavigationController.h; sourceTree = "<group>"; };
+		62EE38D6B266E0024D7B5391B2C0CC0A /* ASDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6386BEC0A777073BCBF3CB10A2287D36 /* ASDKRequestCheck3dsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestCheck3dsVersion.h; path = "ASDKCore/API Objects/Request/ASDKRequestCheck3dsVersion.h"; sourceTree = "<group>"; };
+		6443E3BF5FCA478763C2F25FC6EBBB46 /* ASDKFinishAuthorizeRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKFinishAuthorizeRequestBuilder.m; path = ASDKCore/RequestBuilder/FinishAuthorize/ASDKFinishAuthorizeRequestBuilder.m; sourceTree = "<group>"; };
+		6445831D6AFCA9C54A13ADFF450AE60F /* ASDKBaseCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKBaseCell.h; path = ASDKUI/ASDKBaseCell.h; sourceTree = "<group>"; };
+		6589A23558A018FCEB932EB3D584B2F7 /* ASDKRSAEncryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRSAEncryptor.h; path = ASDKCore/CryptoUtils/ASDKRSAEncryptor.h; sourceTree = "<group>"; };
+		668F9D7E8FF4B758C84489921EF2402C /* ASDKPaymentFormSummCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKPaymentFormSummCell.xib; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormSummCell.xib; sourceTree = "<group>"; };
+		68DA1274475B59BAEC3ADF3169055036 /* ASDKBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKBaseViewController.h; path = ASDKUI/ASDKBaseViewController.h; sourceTree = "<group>"; };
+		6B3CA9FDEE5D51A139338DC2ACD5459F /* ASDKRSAEncryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRSAEncryptor.m; path = ASDKCore/CryptoUtils/ASDKRSAEncryptor.m; sourceTree = "<group>"; };
+		6B4C5C406C39A9816A1C04D67AAF24DA /* ASDKFinishAuthorizeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKFinishAuthorizeRequest.h; path = "ASDKCore/API Objects/Request/FinishAuthorize/ASDKFinishAuthorizeRequest.h"; sourceTree = "<group>"; };
+		6BA35BDAFD1C8D1FE5E2BDF1BE6F4C19 /* ASDKResponseGetAddCardState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKResponseGetAddCardState.m; path = "ASDKCore/API Objects/Response/ASDKResponseGetAddCardState.m"; sourceTree = "<group>"; };
+		6BF565CEE1BFEDD8BDFCD6FFF90046FA /* ASDKCardCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCardCell.m; path = ASDKUI/Payment/CardsListViewController/CardCell/ASDKCardCell.m; sourceTree = "<group>"; };
+		6CEDB9381971F2D96073C502E8590258 /* ASDKResponseCheck3dsVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKResponseCheck3dsVersion.m; path = "ASDKCore/API Objects/Response/ASDKResponseCheck3dsVersion.m"; sourceTree = "<group>"; };
+		6F7F6AF263A6167871E0ED5B1A2CDA6D /* ASDKRequestBuilderGetAttachCardState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestBuilderGetAttachCardState.m; path = ASDKCore/RequestBuilder/ASDKRequestBuilderGetAttachCardState.m; sourceTree = "<group>"; };
+		703899AECD42B10ABBB6DEF6DE61AC0D /* ASDKUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASDKUI-dummy.m"; sourceTree = "<group>"; };
+		709F1D8BB2FB5BBFD999EA1B2B920F10 /* ASDKPaymentFormSummCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKPaymentFormSummCell.h; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormSummCell.h; sourceTree = "<group>"; };
+		72707A5BE8723902C93D0A07B981C1ED /* Pods-RNASDKTinkoff-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNASDKTinkoff-Info.plist"; sourceTree = "<group>"; };
+		72BBAEAF0097C51FB2E5558FD87F69C9 /* ASDKAttachCardViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAttachCardViewController.h; path = ASDKUI/Payment/ASDKAttachCardViewController.h; sourceTree = "<group>"; };
+		72D4312C71F40C7A91AB33281EEACD03 /* ASDKChargeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKChargeResponse.h; path = "ASDKCore/API Objects/Response/Charge/ASDKChargeResponse.h"; sourceTree = "<group>"; };
+		74347B601E5A5C8C0F48D4F6E4AB892C /* ASDKGetStateResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKGetStateResponse.m; path = "ASDKCore/API Objects/Response/GetState/ASDKGetStateResponse.m"; sourceTree = "<group>"; };
+		7566EC4F1F66BB0C00D1C57B24300AAC /* ASDKCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ASDKCore.modulemap; sourceTree = "<group>"; };
+		76AF794E53FF557B690C81FD6F75AA22 /* ASDKLoaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKLoaderViewController.m; path = ASDKUI/ASDKLoaderViewController.m; sourceTree = "<group>"; };
+		7848C2E5A94B5946E1ABE1A0EBA3503E /* ASDKAcquiringRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAcquiringRequest.m; path = "ASDKCore/API Objects/Request/ASDKAcquiringRequest.m"; sourceTree = "<group>"; };
+		7CA5C3D8B62075D3FADA0E780E47A171 /* ASDKResponseAddCardInit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKResponseAddCardInit.h; path = "ASDKCore/API Objects/Response/ASDKResponseAddCardInit.h"; sourceTree = "<group>"; };
+		7CEF11F24250DBE9FE8C5151553CD549 /* ASDKLoopViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKLoopViewController.h; path = ASDKUI/ASDKLoopViewController.h; sourceTree = "<group>"; };
+		8115925ADDAB69797A315ACC711DDA76 /* ASDKRequestBuilderSubmitRandomAmount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestBuilderSubmitRandomAmount.h; path = ASDKCore/RequestBuilder/ASDKRequestBuilderSubmitRandomAmount.h; sourceTree = "<group>"; };
+		82691510CA11D01D17B80B817B31A1FF /* ASDKGetStateRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKGetStateRequestBuilder.h; path = ASDKCore/RequestBuilder/GetState/ASDKGetStateRequestBuilder.h; sourceTree = "<group>"; };
+		85E091B9E128A833706B419E5014B219 /* ASDKRequestBuilderSubmitRandomAmount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestBuilderSubmitRandomAmount.m; path = ASDKCore/RequestBuilder/ASDKRequestBuilderSubmitRandomAmount.m; sourceTree = "<group>"; };
+		86BD0B19BF116DB43A49B9BB656DF78B /* ASDKResponseCheck3dsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKResponseCheck3dsVersion.h; path = "ASDKCore/API Objects/Response/ASDKResponseCheck3dsVersion.h"; sourceTree = "<group>"; };
+		88EE8E1F7F9E11A7464AF9D3132522C4 /* ASDKFinishAuthorizeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKFinishAuthorizeRequest.m; path = "ASDKCore/API Objects/Request/FinishAuthorize/ASDKFinishAuthorizeRequest.m"; sourceTree = "<group>"; };
+		89E70865907C297B0E63178A86C51337 /* ASDKGetStateResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKGetStateResponse.h; path = "ASDKCore/API Objects/Response/GetState/ASDKGetStateResponse.h"; sourceTree = "<group>"; };
+		8AFC5A82113F74AA7CE3DB00F8525A3D /* ASDKRemoveCardResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRemoveCardResponse.h; path = "ASDKCore/API Objects/Response/RemoveCard/ASDKRemoveCardResponse.h"; sourceTree = "<group>"; };
+		8B5DE01D4AC8B6A8B8896E33B021A41E /* ASDKCardInputTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCardInputTableViewCell.h; path = ASDKUI/Payment/PaymentViewController/InputCardCell/ASDKCardInputTableViewCell.h; sourceTree = "<group>"; };
+		8B8863076484BACE8B779BCC7F7E8E4F /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOPaymentViewController.h; path = CardIO/CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		8B9A38F2F88FD91C191C4FEBB2323BE8 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOViewDelegate.h; path = CardIO/CardIOViewDelegate.h; sourceTree = "<group>"; };
+		8C3525C30AAB5CE21DCAB7050899A1E5 /* ASDKInitRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKInitRequestBuilder.m; path = ASDKCore/RequestBuilder/Init/ASDKInitRequestBuilder.m; sourceTree = "<group>"; };
+		8D5E006782EEDDE3809E64AACAC0BD6E /* ASDKNumberCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKNumberCell.h; path = ASDKUI/Payment/PaymentViewController/CustomInput/NumberCell/ASDKNumberCell.h; sourceTree = "<group>"; };
+		8D8FC0D6F82DE6B35F29932564A6A075 /* ASDKCancelRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCancelRequest.m; path = "ASDKCore/API Objects/Request/ASDKCancelRequest.m"; sourceTree = "<group>"; };
+		8EA65BCA03EA03F5CC14FAAAEEC70B1E /* ASDKEmptyTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKEmptyTableViewCell.m; path = ASDKUI/Payment/PaymentViewController/ASDKEmptyTableViewCell.m; sourceTree = "<group>"; };
+		8F6402B56FB3D1DCD69CA8E3FC881931 /* ASDKResponseAddCardInit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKResponseAddCardInit.m; path = "ASDKCore/API Objects/Response/ASDKResponseAddCardInit.m"; sourceTree = "<group>"; };
+		8F7E7687032F410FC5029395920961D3 /* libCardIO.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardIO.a; path = CardIO/libCardIO.a; sourceTree = "<group>"; };
+		8FCF5DFE6AE6BC30652B7FA8D5A54D14 /* ASDKInitRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKInitRequest.m; path = "ASDKCore/API Objects/Request/Init/ASDKInitRequest.m"; sourceTree = "<group>"; };
+		913B4A4C37A6511D3CC638795BE8E3F3 /* ASDKCardInputTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKCardInputTableViewCell.xib; path = ASDKUI/Payment/PaymentViewController/InputCardCell/ASDKCardInputTableViewCell.xib; sourceTree = "<group>"; };
+		92DC4163BDA9C71BCD2ADA8D40825CA7 /* RSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSA.m; path = "ASDKCore/API Objects/Card/RSA.m"; sourceTree = "<group>"; };
+		983C915FD74FC470A172523021B1D74C /* ASDKStringKeyCreator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKStringKeyCreator.m; path = ASDKCore/CryptoUtils/ASDKStringKeyCreator.m; sourceTree = "<group>"; };
+		9928A696DEB1B615B684D390C7E02AF8 /* CardIOView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOView.h; path = CardIO/CardIOView.h; sourceTree = "<group>"; };
+		99A13887309E01C6498DD0865EBE7BB2 /* ASDKLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKLabel.m; path = ASDKUI/Payment/PaymentViewController/InputCardCell/ASDKLabel.m; sourceTree = "<group>"; };
+		9B8F94ECAD6B3A1EC27767FB513C2D52 /* ASDKRemoveCardRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRemoveCardRequestBuilder.h; path = ASDKCore/RequestBuilder/RemoveCard/ASDKRemoveCardRequestBuilder.h; sourceTree = "<group>"; };
+		9D5551CB19E9772AC727C328DAFF199A /* ASDKUtilsAmount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKUtilsAmount.m; path = ASDKCore/ASDKUtilsAmount.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0AD66E3150BE05ABA6C677C78DAA438 /* Pods-RNASDKTinkoff.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RNASDKTinkoff.modulemap"; sourceTree = "<group>"; };
+		A3D789D50B41449DDA126543AD2D3698 /* ASDKRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestBuilder.h; path = ASDKCore/RequestBuilder/ASDKRequestBuilder.h; sourceTree = "<group>"; };
+		A600CBB11957A1DB779C914DB18278E7 /* ASDKRequestAddCardInit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestAddCardInit.h; path = "ASDKCore/API Objects/Request/ASDKRequestAddCardInit.h"; sourceTree = "<group>"; };
+		A6CA360EE9BF57AC1DD356F1DFAD9294 /* ASDKCardInputTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCardInputTableViewCell.m; path = ASDKUI/Payment/PaymentViewController/InputCardCell/ASDKCardInputTableViewCell.m; sourceTree = "<group>"; };
+		A791519A8FDD25B205E80FA6A1179135 /* ASDKUtilsAmount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKUtilsAmount.h; path = ASDKCore/ASDKUtilsAmount.h; sourceTree = "<group>"; };
+		A809304FB081EDBCEAE884557CE882C9 /* ASDKRemoveCardRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRemoveCardRequest.h; path = "ASDKCore/API Objects/Request/RemoveCard/ASDKRemoveCardRequest.h"; sourceTree = "<group>"; };
+		A842606928A7209DC3B91966C6A8C000 /* ASDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FD8D47704A6E1612331D54D7ABCA69 /* ASDKInitResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKInitResponse.m; path = "ASDKCore/API Objects/Response/Init/ASDKInitResponse.m"; sourceTree = "<group>"; };
+		AA238112F04B5DF10708809C5DC6FB4F /* ASDKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKTextField.h; path = ASDKUI/Payment/PaymentViewController/InputCardCell/ASDKTextField.h; sourceTree = "<group>"; };
+		AABD68F61EA918F1EBE9E22C46444B2D /* ASDKCancelRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCancelRequestBuilder.m; path = ASDKCore/RequestBuilder/ASDKCancelRequestBuilder.m; sourceTree = "<group>"; };
+		ACA9FA720D827C83F6881640B3A4C930 /* ASDKPayButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKPayButtonCell.xib; path = ASDKUI/Payment/PaymentViewController/ASDKPayButtonCell.xib; sourceTree = "<group>"; };
+		AE59A348C5BA5E194FD1A9E405CE26C0 /* ASDKAcquringApiError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAcquringApiError.m; path = "ASDKCore/API Objects/Errors/ASDKAcquringApiError.m"; sourceTree = "<group>"; };
+		AE8EFEF7748E4F43D98739C8D0ED9B97 /* ASDKRemoveCardRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRemoveCardRequest.m; path = "ASDKCore/API Objects/Request/RemoveCard/ASDKRemoveCardRequest.m"; sourceTree = "<group>"; };
+		AEA29774B00A736139B8FFF0F5C981F2 /* ASDKInitResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKInitResponse.h; path = "ASDKCore/API Objects/Response/Init/ASDKInitResponse.h"; sourceTree = "<group>"; };
+		B08198368F28126226927B689A76F182 /* ASDKPayButtonCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKPayButtonCell.m; path = ASDKUI/Payment/PaymentViewController/ASDKPayButtonCell.m; sourceTree = "<group>"; };
+		B0EFC8634C5AE534EDD9288E2E5EDB1D /* ASDKCryptoUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCryptoUtils.m; path = ASDKCore/CryptoUtils/ASDKCryptoUtils.m; sourceTree = "<group>"; };
+		B2246323C25DB16E4D18CDF93E76AF7F /* ASDKPaymentFormHeaderCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKPaymentFormHeaderCell.m; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormHeaderCell.m; sourceTree = "<group>"; };
+		B249A99D82B48AC785BFEF3669521044 /* ASDKLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKLabel.h; path = ASDKUI/Payment/PaymentViewController/InputCardCell/ASDKLabel.h; sourceTree = "<group>"; };
+		B289188E0B4F453932D8189511E1DDF1 /* ASDKRequestGetAttachCardState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKRequestGetAttachCardState.h; path = "ASDKCore/API Objects/Request/ASDKRequestGetAttachCardState.h"; sourceTree = "<group>"; };
+		B543DC19F18388ED0B39250CEF4E2665 /* ASDKBaseTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKBaseTableViewController.m; path = ASDKUI/ASDKBaseTableViewController.m; sourceTree = "<group>"; };
+		B5EAF668C011E2C0F49F4778F51EC7EC /* ASDKFooterCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKFooterCell.xib; path = ASDKUI/Payment/PaymentViewController/ASDKFooterCell.xib; sourceTree = "<group>"; };
+		B6D36F8A22C6053E43C63F3B2F2A11B7 /* ASDKResponseAttachCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKResponseAttachCard.h; path = "ASDKCore/API Objects/Response/ASDKResponseAttachCard.h"; sourceTree = "<group>"; };
+		B7A2C6A20A88512A9A394E69F5DAB6F9 /* ASDKAttachCardViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAttachCardViewController.m; path = ASDKUI/Payment/ASDKAttachCardViewController.m; sourceTree = "<group>"; };
+		B7B1CECEC03942F875DDDB6B183F8771 /* ASDKUtilsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKUtilsRequest.m; path = ASDKCore/ASDKUtilsRequest.m; sourceTree = "<group>"; };
+		B801D87C6A08C2E52CB9DCEAEB48A27C /* ASDKCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ASDKCore-Info.plist"; sourceTree = "<group>"; };
+		B9DB714F18B68A6CAE670E1F85ED93A4 /* CardIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CardIO.xcconfig; sourceTree = "<group>"; };
+		BADF29A2F41D14B7AB4B6C3E996D1F46 /* ASDKChargeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKChargeRequest.h; path = "ASDKCore/API Objects/Request/Charge/ASDKChargeRequest.h"; sourceTree = "<group>"; };
+		BAF7C3331CE96F6A9F50523B3C22AAA6 /* ASDKUtilsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKUtilsRequest.h; path = ASDKCore/ASDKUtilsRequest.h; sourceTree = "<group>"; };
+		BBEE94F81C5200F345E57D75EE3ACC47 /* ASDKAcquiringResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAcquiringResponse.h; path = "ASDKCore/API Objects/Response/ASDKAcquiringResponse.h"; sourceTree = "<group>"; };
+		BCCFB95F5F5C84F1693B398C46AF99B3 /* ASDKCancelResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCancelResponse.m; path = "ASDKCore/API Objects/Response/ASDKCancelResponse.m"; sourceTree = "<group>"; };
+		BED77744DFB18ACE9068B7A948BBC4EE /* ASDKRequestCheck3dsVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestCheck3dsVersion.m; path = "ASDKCore/API Objects/Request/ASDKRequestCheck3dsVersion.m"; sourceTree = "<group>"; };
+		C0094A47BD69004AA94E02A101B87F69 /* ASDKBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKBaseCell.m; path = ASDKUI/ASDKBaseCell.m; sourceTree = "<group>"; };
+		C028C9E12CDA1D658BE656F97A8F5879 /* ASDKStringKeyCreator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKStringKeyCreator.h; path = ASDKCore/CryptoUtils/ASDKStringKeyCreator.h; sourceTree = "<group>"; };
+		C0D1F79E7E1A0182E8B1789BD852A23B /* ASDKCardData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCardData.h; path = "ASDKCore/API Objects/Card/ASDKCardData.h"; sourceTree = "<group>"; };
+		C1EC279E1EE0D14716E815AF7301EA5C /* ASDKExternalCardsCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKExternalCardsCell.h; path = ASDKUI/Payment/PaymentViewController/ASDKExternalCardsCell.h; sourceTree = "<group>"; };
+		C2531F7D9580757D3FA3AF620C6993AA /* CardIOUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CardIOUtilities.h; path = CardIO/CardIOUtilities.h; sourceTree = "<group>"; };
+		C30B118135557DFD97437E1E2FC82774 /* ASDKUIImages.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = ASDKUIImages.xcassets; path = ASDKUI/Resources/ASDKUIImages.xcassets; sourceTree = "<group>"; };
+		C56E143C0B806806666B95F0BE1ED642 /* ASDKPaymentFormStarter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKPaymentFormStarter.m; path = ASDKUI/Payment/PaymentFormStarter/ASDKPaymentFormStarter.m; sourceTree = "<group>"; };
+		C58633255A71DFCDE0093F8A2A34D63C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C64CDFFDC1BE49F7E747E32CCE1BD7E5 /* ASDKFooterCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKFooterCell.h; path = ASDKUI/Payment/PaymentViewController/ASDKFooterCell.h; sourceTree = "<group>"; };
+		C666B43C0CCDA04686F1BA5657953EFE /* ASDKDeleteCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKDeleteCell.h; path = ASDKUI/Payment/PaymentViewController/CustomInput/DeleteCell/ASDKDeleteCell.h; sourceTree = "<group>"; };
+		C678D581978033BD5035720896DD59CD /* ASDKLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = ASDKLocalizable.strings; path = ru.lproj/ASDKLocalizable.strings; sourceTree = "<group>"; };
+		C71DAAC2099071B1313A5F0821B0F41B /* ASDKUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKUtils.h; path = ASDKUI/Helpers/ASDKUtils.h; sourceTree = "<group>"; };
+		C83445E783124C77F2ECC0C162DF1C0D /* ASDKCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCore.h; path = ASDKCore/ASDKCore.h; sourceTree = "<group>"; };
+		CA0261B0E9074FEF5B79D47A73A27F9B /* ASDKUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASDKUI-umbrella.h"; sourceTree = "<group>"; };
+		CC60209C85FCFA32CBB26138FC144742 /* ASDKNumberCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKNumberCell.xib; path = ASDKUI/Payment/PaymentViewController/CustomInput/NumberCell/ASDKNumberCell.xib; sourceTree = "<group>"; };
+		CF9B5C572FFA57F21510C66389B99EA2 /* ASDKPaymentFormViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKPaymentFormViewController.h; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormViewController.h; sourceTree = "<group>"; };
+		CFE0225620E9D3A928E0B0D2BCD02ADD /* ASDK3DSViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDK3DSViewController.h; path = ASDKUI/3DSController/ASDK3DSViewController.h; sourceTree = "<group>"; };
+		D134ECED91FD824B829570AC59E03903 /* ASDKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASDKCore-dummy.m"; sourceTree = "<group>"; };
+		D134F6C4DE36193000106235785BEDE3 /* ASDKCardCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCardCell.h; path = ASDKUI/Payment/CardsListViewController/CardCell/ASDKCardCell.h; sourceTree = "<group>"; };
+		D3591F2F998DF2C27E47FB7B79CFF356 /* ASDKPaymentFormViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKPaymentFormViewController.m; path = ASDKUI/Payment/PaymentViewController/ASDKPaymentFormViewController.m; sourceTree = "<group>"; };
+		D3891E3414C60ED3A769C4D4CE518F1F /* Pods-RNASDKTinkoff-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RNASDKTinkoff-umbrella.h"; sourceTree = "<group>"; };
+		D3DB382F00DB1A2CF5E64370F6EC7022 /* ASDKCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCard.h; path = "ASDKCore/API Objects/Card/ASDKCard.h"; sourceTree = "<group>"; };
+		D49EDB5258A2085CFB88FBCBDCC7BA95 /* ASDKUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ASDKUI-Info.plist"; sourceTree = "<group>"; };
+		D4A1EA8F0B7BD763E6B8ECA8A2027DF8 /* ASDKUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ASDKUI.modulemap; sourceTree = "<group>"; };
+		D4E938F0E129E12F23E54FE262A4452E /* ASDKAddNewCardCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKAddNewCardCell.xib; path = ASDKUI/Payment/CardsListViewController/AddNewCardCell/ASDKAddNewCardCell.xib; sourceTree = "<group>"; };
+		D54D336B550CE6AAFA0BA8BBA32AEB64 /* ASDKInitRequestBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKInitRequestBuilder.h; path = ASDKCore/RequestBuilder/Init/ASDKInitRequestBuilder.h; sourceTree = "<group>"; };
+		D671A80FDAA44FA3998F5AA702271616 /* ASDKCardData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCardData.m; path = "ASDKCore/API Objects/Card/ASDKCardData.m"; sourceTree = "<group>"; };
+		D6967EE91E6858A73047A7F744877FBE /* ASDKGetCardListRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKGetCardListRequest.m; path = "ASDKCore/API Objects/Request/GetCardList/ASDKGetCardListRequest.m"; sourceTree = "<group>"; };
+		D9699403328BAA8ED80C1364A9B4C413 /* ASDKAcquiringResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAcquiringResponse.m; path = "ASDKCore/API Objects/Response/ASDKAcquiringResponse.m"; sourceTree = "<group>"; };
+		DA0C794F7F018FD7214C1BD5F535645F /* ASDKApiKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKApiKeys.h; path = ASDKCore/ASDKApiKeys.h; sourceTree = "<group>"; };
+		DAE7030478AEFE7EEEDC6B8FBD49BECE /* ASDKEmptyTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKEmptyTableViewCell.xib; path = ASDKUI/Payment/PaymentViewController/ASDKEmptyTableViewCell.xib; sourceTree = "<group>"; };
+		DC8100C9986B8E89AAA7F64EA9B722DF /* ASDKPayButtonCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKPayButtonCell.h; path = ASDKUI/Payment/PaymentViewController/ASDKPayButtonCell.h; sourceTree = "<group>"; };
+		DC960D0E81BFC5783CA3875BC46E121B /* ASDKCryptoUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCryptoUtils.h; path = ASDKCore/CryptoUtils/ASDKCryptoUtils.h; sourceTree = "<group>"; };
+		E111453E2996969DDF1A460CCD4DB50A /* ASDKDesignConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKDesignConfiguration.h; path = ASDKUI/Payment/PaymentFormStarter/ASDKDesignConfiguration.h; sourceTree = "<group>"; };
+		E215623EF35C819C8E0007C9B7D981B2 /* ASDKRequestAttachCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestAttachCard.m; path = "ASDKCore/API Objects/Request/ASDKRequestAttachCard.m"; sourceTree = "<group>"; };
+		E35EC4B2730567FDA8ECCF6E7A308BA0 /* ASDKCancelRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCancelRequest.h; path = "ASDKCore/API Objects/Request/ASDKCancelRequest.h"; sourceTree = "<group>"; };
+		E748C3B0D285F9BBE339C176FEF9DD4D /* ASDKEmptyTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKEmptyTableViewCell.h; path = ASDKUI/Payment/PaymentViewController/ASDKEmptyTableViewCell.h; sourceTree = "<group>"; };
+		E78B80053AD6B2236F1F28C477FE2CD9 /* ASDKAcquiringRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAcquiringRequest.h; path = "ASDKCore/API Objects/Request/ASDKAcquiringRequest.h"; sourceTree = "<group>"; };
+		E7C2636D6F53756A096F099177438924 /* libopencv_imgproc.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv_imgproc.a; path = CardIO/libopencv_imgproc.a; sourceTree = "<group>"; };
+		E7D214855BACFA0021D17D7D3E793D6D /* ASDKBaseTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKBaseTableViewController.h; path = ASDKUI/ASDKBaseTableViewController.h; sourceTree = "<group>"; };
+		E8205477116DE13EB942CCDF10BA6D33 /* ASDKLoaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKLoaderViewController.h; path = ASDKUI/ASDKLoaderViewController.h; sourceTree = "<group>"; };
+		EB13FFF140C909CB1E49C6BFB551C4E2 /* ASDKBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKBaseViewController.m; path = ASDKUI/ASDKBaseViewController.m; sourceTree = "<group>"; };
+		ED10B17BD89D35E2257DF35C82EF7AF5 /* ASDKGetStateRequestBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKGetStateRequestBuilder.m; path = ASDKCore/RequestBuilder/GetState/ASDKGetStateRequestBuilder.m; sourceTree = "<group>"; };
+		ED17236C47F62C63863FB91F8801E78C /* ASDKThreeDsData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKThreeDsData.m; path = "ASDKCore/API Objects/Response/ThreeDsData/ASDKThreeDsData.m"; sourceTree = "<group>"; };
+		EDB4FD0A4DA08306B09C6D021D0FDF5C /* ASDKCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASDKCore.xcconfig; sourceTree = "<group>"; };
+		EF03F2C63DAA1BBEBDE9E9D951734AF8 /* ASDKHighlightedButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKHighlightedButton.m; path = ASDKUI/Payment/PaymentViewController/CustomInput/HighlightedButton/ASDKHighlightedButton.m; sourceTree = "<group>"; };
+		F0216565911A481FC5288E6343FA46BD /* ASDKAddNewCardCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKAddNewCardCell.m; path = ASDKUI/Payment/CardsListViewController/AddNewCardCell/ASDKAddNewCardCell.m; sourceTree = "<group>"; };
+		F2365E3AD4E185CB043F974E53F688F4 /* ASDKBaseObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKBaseObject.m; path = "ASDKCore/API Objects/ASDKBaseObject.m"; sourceTree = "<group>"; };
+		F2A45A46E0575256F8785C7E1BE3CCA9 /* ASDKExternalCardsCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ASDKExternalCardsCell.xib; path = ASDKUI/Payment/PaymentViewController/ASDKExternalCardsCell.xib; sourceTree = "<group>"; };
+		F2AD5DFD8E45F371F7552CA48DCA7151 /* ASDKRequestAddCardInit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKRequestAddCardInit.m; path = "ASDKCore/API Objects/Request/ASDKRequestAddCardInit.m"; sourceTree = "<group>"; };
+		F38D4167DD074A1912276D5303EC318E /* ASDKFinishAuthorizeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKFinishAuthorizeResponse.m; path = "ASDKCore/API Objects/Response/FinishAuthorize/ASDKFinishAuthorizeResponse.m"; sourceTree = "<group>"; };
+		F42D4E1BEB617C941260414B5407EE87 /* ASDKCardsListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKCardsListViewController.m; path = ASDKUI/Payment/CardsListViewController/ASDKCardsListViewController.m; sourceTree = "<group>"; };
+		F64AD4F01D18A2632D5E1C7ABB3CFC59 /* ASDKAcquringApiError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKAcquringApiError.h; path = "ASDKCore/API Objects/Errors/ASDKAcquringApiError.h"; sourceTree = "<group>"; };
+		F7EF68CCDE77C14834D09A5FFAC6DE35 /* ASDKBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ASDKBarButtonItem.m; path = ASDKUI/ASDKBarButtonItem.m; sourceTree = "<group>"; };
+		F91F48FB5CF2D0303929948337A39138 /* Pods-RNASDKTinkoff-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNASDKTinkoff-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB4D091C1426FE9710E6D7D323F0532F /* ASDKCardsListDataController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ASDKCardsListDataController.h; path = ASDKUI/Payment/CardListDataSource/ASDKCardsListDataController.h; sourceTree = "<group>"; };
+		FED17800CA18708F9DF9D01F6C2AE6C8 /* ASDKUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASDKUI-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F93F092199131C059773B34C98E3624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E0CD1168C34F6BFF55F8C9EA02F62D9 /* ASDKCore.framework in Frameworks */,
+				6509730FD72F5B4332626B63AD2A754B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9F9BD607AAFC1056DF3528BEC0D2FEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391D93D40EB8F50EBF1C9A2817E6191E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C3A94B5513C5AA01999F8305E7646A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8302C86E9F99983F3DEB9E1EFBE5BCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1320EEB04D73E8840FA1BD54DC114103 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C9DCA187778BC10216A415CD6A9E6 /* CardIO.h */,
+				39438E67AD6EBC3DC76293E4FD5D0D5D /* CardIOCreditCardInfo.h */,
+				22EAC35FC0F24E09F9FB6B7BBA25A296 /* CardIODetectionMode.h */,
+				8B8863076484BACE8B779BCC7F7E8E4F /* CardIOPaymentViewController.h */,
+				28CFEAC3AFE8C55E0B2AFC6FC90CD9A7 /* CardIOPaymentViewControllerDelegate.h */,
+				C2531F7D9580757D3FA3AF620C6993AA /* CardIOUtilities.h */,
+				9928A696DEB1B615B684D390C7E02AF8 /* CardIOView.h */,
+				8B9A38F2F88FD91C191C4FEBB2323BE8 /* CardIOViewDelegate.h */,
+				2CF472C0E836921D0BF5CB1F99519EA6 /* Frameworks */,
+				524C7DE542641F992A8F97CAB6BF53BE /* Support Files */,
+			);
+			path = CardIO;
+			sourceTree = "<group>";
+		};
+		19E07C1BCC7780B0EFA2929348619C6A /* Pods-RNASDKTinkoff */ = {
+			isa = PBXGroup;
+			children = (
+				A0AD66E3150BE05ABA6C677C78DAA438 /* Pods-RNASDKTinkoff.modulemap */,
+				374A4D8CB72FF5998DD68E89F2053516 /* Pods-RNASDKTinkoff-acknowledgements.markdown */,
+				F91F48FB5CF2D0303929948337A39138 /* Pods-RNASDKTinkoff-acknowledgements.plist */,
+				35832CE41FBA6620E9E61DC299EA6F75 /* Pods-RNASDKTinkoff-dummy.m */,
+				72707A5BE8723902C93D0A07B981C1ED /* Pods-RNASDKTinkoff-Info.plist */,
+				D3891E3414C60ED3A769C4D4CE518F1F /* Pods-RNASDKTinkoff-umbrella.h */,
+				3D2418479195C67AF6F2FAEE267E8332 /* Pods-RNASDKTinkoff.debug.xcconfig */,
+				1A3419F268676CAEF18A30731F396522 /* Pods-RNASDKTinkoff.release.xcconfig */,
+			);
+			name = "Pods-RNASDKTinkoff";
+			path = "Target Support Files/Pods-RNASDKTinkoff";
+			sourceTree = "<group>";
+		};
+		2CF472C0E836921D0BF5CB1F99519EA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F7E7687032F410FC5029395920961D3 /* libCardIO.a */,
+				28F7998F912C55633AA609C5B37C0C6B /* libopencv_core.a */,
+				E7C2636D6F53756A096F099177438924 /* libopencv_imgproc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		524C7DE542641F992A8F97CAB6BF53BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9DB714F18B68A6CAE670E1F85ED93A4 /* CardIO.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CardIO";
+			sourceTree = "<group>";
+		};
+		5593DBCFE011EB7CF790907553624A59 /* ASDKUI */ = {
+			isa = PBXGroup;
+			children = (
+				CFE0225620E9D3A928E0B0D2BCD02ADD /* ASDK3DSViewController.h */,
+				51AC3C9D15A9707322376B47AD4FA291 /* ASDK3DSViewController.m */,
+				28F9A0D042F23E762423A3BAB2B3456E /* ASDKAddNewCardCell.h */,
+				F0216565911A481FC5288E6343FA46BD /* ASDKAddNewCardCell.m */,
+				72BBAEAF0097C51FB2E5558FD87F69C9 /* ASDKAttachCardViewController.h */,
+				B7A2C6A20A88512A9A394E69F5DAB6F9 /* ASDKAttachCardViewController.m */,
+				29C44C2C82518067DC6C57B814D93419 /* ASDKBarButtonItem.h */,
+				F7EF68CCDE77C14834D09A5FFAC6DE35 /* ASDKBarButtonItem.m */,
+				6445831D6AFCA9C54A13ADFF450AE60F /* ASDKBaseCell.h */,
+				C0094A47BD69004AA94E02A101B87F69 /* ASDKBaseCell.m */,
+				E7D214855BACFA0021D17D7D3E793D6D /* ASDKBaseTableViewController.h */,
+				B543DC19F18388ED0B39250CEF4E2665 /* ASDKBaseTableViewController.m */,
+				68DA1274475B59BAEC3ADF3169055036 /* ASDKBaseViewController.h */,
+				EB13FFF140C909CB1E49C6BFB551C4E2 /* ASDKBaseViewController.m */,
+				D134F6C4DE36193000106235785BEDE3 /* ASDKCardCell.h */,
+				6BF565CEE1BFEDD8BDFCD6FFF90046FA /* ASDKCardCell.m */,
+				8B5DE01D4AC8B6A8B8896E33B021A41E /* ASDKCardInputTableViewCell.h */,
+				A6CA360EE9BF57AC1DD356F1DFAD9294 /* ASDKCardInputTableViewCell.m */,
+				FB4D091C1426FE9710E6D7D323F0532F /* ASDKCardsListDataController.h */,
+				24F91CCB1393B46663C5EC73E329A620 /* ASDKCardsListDataController.m */,
+				3A55F03C2CA121C87482E575E9CB093F /* ASDKCardsListViewController.h */,
+				F42D4E1BEB617C941260414B5407EE87 /* ASDKCardsListViewController.m */,
+				C666B43C0CCDA04686F1BA5657953EFE /* ASDKDeleteCell.h */,
+				31380B6C383E6B42FA8E44B7EBE1D185 /* ASDKDeleteCell.m */,
+				0858DB693DFFCB7BADA3CE9956D7946D /* ASDKDesign.h */,
+				5D63F446A0B0942AA78AB815AF62232A /* ASDKDesign.m */,
+				E111453E2996969DDF1A460CCD4DB50A /* ASDKDesignConfiguration.h */,
+				3F0FC2C72F8B52BD3530C95E154D7977 /* ASDKDesignConfiguration.m */,
+				4AB2562097C3D301BBF0C8BC9EDA257F /* ASDKEmailCell.h */,
+				2B6FD99A273C9D778A44467F8E5CC58C /* ASDKEmailCell.m */,
+				E748C3B0D285F9BBE339C176FEF9DD4D /* ASDKEmptyTableViewCell.h */,
+				8EA65BCA03EA03F5CC14FAAAEEC70B1E /* ASDKEmptyTableViewCell.m */,
+				C1EC279E1EE0D14716E815AF7301EA5C /* ASDKExternalCardsCell.h */,
+				0FE23DCE099969C3D0E1FB63C3C07C0A /* ASDKExternalCardsCell.m */,
+				C64CDFFDC1BE49F7E747E32CCE1BD7E5 /* ASDKFooterCell.h */,
+				55BFEA9C9A220D8C4E52F083B5DBD6B6 /* ASDKFooterCell.m */,
+				2956ACB01B14F284684F448E7265D370 /* ASDKHighlightedButton.h */,
+				EF03F2C63DAA1BBEBDE9E9D951734AF8 /* ASDKHighlightedButton.m */,
+				B249A99D82B48AC785BFEF3669521044 /* ASDKLabel.h */,
+				99A13887309E01C6498DD0865EBE7BB2 /* ASDKLabel.m */,
+				E8205477116DE13EB942CCDF10BA6D33 /* ASDKLoaderViewController.h */,
+				76AF794E53FF557B690C81FD6F75AA22 /* ASDKLoaderViewController.m */,
+				59A2C8EF96F22DA9CF90F66C1D654130 /* ASDKLocalized.h */,
+				3D2A70E97C566FC193E24DA939D2B584 /* ASDKLocalized.m */,
+				7CEF11F24250DBE9FE8C5151553CD549 /* ASDKLoopViewController.h */,
+				29AF2719BD2A8616EF28D8D22CDED07A /* ASDKLoopViewController.m */,
+				127081FD0A38F3923D99ACA2E94AD943 /* ASDKMacroses.h */,
+				629C4396446398AED6475EBCB65F40BF /* ASDKNavigationController.h */,
+				1D7E9F8E02986F8CB16B71308E79C7FF /* ASDKNavigationController.m */,
+				8D5E006782EEDDE3809E64AACAC0BD6E /* ASDKNumberCell.h */,
+				11D7B1AFBD0985D328A4F44EAA89F5F9 /* ASDKNumberCell.m */,
+				DC8100C9986B8E89AAA7F64EA9B722DF /* ASDKPayButtonCell.h */,
+				B08198368F28126226927B689A76F182 /* ASDKPayButtonCell.m */,
+				4EC20D5A1737138A8E2AC48D4C109F65 /* ASDKPaymentFormHeaderCell.h */,
+				B2246323C25DB16E4D18CDF93E76AF7F /* ASDKPaymentFormHeaderCell.m */,
+				07B1C36EE6957C97DC53609D20634E67 /* ASDKPaymentFormStarter.h */,
+				C56E143C0B806806666B95F0BE1ED642 /* ASDKPaymentFormStarter.m */,
+				709F1D8BB2FB5BBFD999EA1B2B920F10 /* ASDKPaymentFormSummCell.h */,
+				6216D5179925CEF11CCA114BE7064C25 /* ASDKPaymentFormSummCell.m */,
+				CF9B5C572FFA57F21510C66389B99EA2 /* ASDKPaymentFormViewController.h */,
+				D3591F2F998DF2C27E47FB7B79CFF356 /* ASDKPaymentFormViewController.m */,
+				AA238112F04B5DF10708809C5DC6FB4F /* ASDKTextField.h */,
+				325EAC30FCE85EC4DF6BB7AA1EDC915A /* ASDKTextField.m */,
+				178CE9F53A14C2F743089D6551D5F9FE /* ASDKUI.h */,
+				C71DAAC2099071B1313A5F0821B0F41B /* ASDKUtils.h */,
+				55B46A2B0B99652EBF9BE84AAD317B43 /* ASDKUtils.m */,
+				0A22B8E90CA3FA9EB900174C1F77AA2F /* UIView+AutoLayout.h */,
+				02558CC002592F81AF494DCCFDB19034 /* UIView+AutoLayout.m */,
+				80CC0486FE5ED4F5ECB812CD0627035E /* Resources */,
+				6E3889AF10F30C9333F9E59A7BD51AA7 /* Support Files */,
+			);
+			path = ASDKUI;
+			sourceTree = "<group>";
+		};
+		579FAA0802D732D1944C48759A0EAF05 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7566EC4F1F66BB0C00D1C57B24300AAC /* ASDKCore.modulemap */,
+				EDB4FD0A4DA08306B09C6D021D0FDF5C /* ASDKCore.xcconfig */,
+				D134ECED91FD824B829570AC59E03903 /* ASDKCore-dummy.m */,
+				B801D87C6A08C2E52CB9DCEAEB48A27C /* ASDKCore-Info.plist */,
+				04D9A714270D37774A8506965087CA41 /* ASDKCore-prefix.pch */,
+				496021BD120EC1E51B8E4B1D2094B339 /* ASDKCore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ASDKCore";
+			sourceTree = "<group>";
+		};
+		5A530A987CED21E7D6F847F159A553B1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19E07C1BCC7780B0EFA2929348619C6A /* Pods-RNASDKTinkoff */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		667F8432F90E18B1D793A810092883A7 /* ASDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A4A10FDDDDED86ABAA0A2230EF9DF /* ASDKAcquiringApi.h */,
+				0F85918BBC6959CED58B974031308E5D /* ASDKAcquiringApi.m */,
+				E78B80053AD6B2236F1F28C477FE2CD9 /* ASDKAcquiringRequest.h */,
+				7848C2E5A94B5946E1ABE1A0EBA3503E /* ASDKAcquiringRequest.m */,
+				BBEE94F81C5200F345E57D75EE3ACC47 /* ASDKAcquiringResponse.h */,
+				D9699403328BAA8ED80C1364A9B4C413 /* ASDKAcquiringResponse.m */,
+				0B14E43D0DFEED5B5E22A2ABE7B59E33 /* ASDKAcquiringSdk.h */,
+				00141ACB8B20F3EB22CD27322B217920 /* ASDKAcquiringSdk.m */,
+				F64AD4F01D18A2632D5E1C7ABB3CFC59 /* ASDKAcquringApiError.h */,
+				AE59A348C5BA5E194FD1A9E405CE26C0 /* ASDKAcquringApiError.m */,
+				388B879CE894861A14B0B454FF7A1E6E /* ASDKAcquringSdkError.h */,
+				149F86912E47AB91F8E32D51C0250C04 /* ASDKAcquringSdkError.m */,
+				DA0C794F7F018FD7214C1BD5F535645F /* ASDKApiKeys.h */,
+				4931EDEB8E831270C3C46A0DFA705A64 /* ASDKBaseObject.h */,
+				F2365E3AD4E185CB043F974E53F688F4 /* ASDKBaseObject.m */,
+				E35EC4B2730567FDA8ECCF6E7A308BA0 /* ASDKCancelRequest.h */,
+				8D8FC0D6F82DE6B35F29932564A6A075 /* ASDKCancelRequest.m */,
+				3456E767418577F95DD42200E69EBFF1 /* ASDKCancelRequestBuilder.h */,
+				AABD68F61EA918F1EBE9E22C46444B2D /* ASDKCancelRequestBuilder.m */,
+				26FCF0899C7E61FE1F9DC4D39C0B4A3B /* ASDKCancelResponse.h */,
+				BCCFB95F5F5C84F1693B398C46AF99B3 /* ASDKCancelResponse.m */,
+				D3DB382F00DB1A2CF5E64370F6EC7022 /* ASDKCard.h */,
+				223CEEF394D1B0C9F679A043BF8E21D9 /* ASDKCard.m */,
+				C0D1F79E7E1A0182E8B1789BD852A23B /* ASDKCardData.h */,
+				D671A80FDAA44FA3998F5AA702271616 /* ASDKCardData.m */,
+				BADF29A2F41D14B7AB4B6C3E996D1F46 /* ASDKChargeRequest.h */,
+				1CCF1D64F9F8174EF57EBA9330EE5EA2 /* ASDKChargeRequest.m */,
+				3E97D1ED0024B9426360214C35E91174 /* ASDKChargeRequestBuilder.h */,
+				4BBE7DBA805A5687A7E2FF1485378445 /* ASDKChargeRequestBuilder.m */,
+				72D4312C71F40C7A91AB33281EEACD03 /* ASDKChargeResponse.h */,
+				39068C3C63EEE19442B3FFE2D9058013 /* ASDKChargeResponse.m */,
+				C83445E783124C77F2ECC0C162DF1C0D /* ASDKCore.h */,
+				DC960D0E81BFC5783CA3875BC46E121B /* ASDKCryptoUtils.h */,
+				B0EFC8634C5AE534EDD9288E2E5EDB1D /* ASDKCryptoUtils.m */,
+				6B4C5C406C39A9816A1C04D67AAF24DA /* ASDKFinishAuthorizeRequest.h */,
+				88EE8E1F7F9E11A7464AF9D3132522C4 /* ASDKFinishAuthorizeRequest.m */,
+				413C41346F2FFC6F1146B183E0AE3484 /* ASDKFinishAuthorizeRequestBuilder.h */,
+				6443E3BF5FCA478763C2F25FC6EBBB46 /* ASDKFinishAuthorizeRequestBuilder.m */,
+				03086388BE93DEF4F6E29ED012272480 /* ASDKFinishAuthorizeResponse.h */,
+				F38D4167DD074A1912276D5303EC318E /* ASDKFinishAuthorizeResponse.m */,
+				56FDB202BDD28B03EA9DE791F76FF1F6 /* ASDKGetCardListRequest.h */,
+				D6967EE91E6858A73047A7F744877FBE /* ASDKGetCardListRequest.m */,
+				533A672AE8EEF2EA8926927B00BB60C2 /* ASDKGetCardListRequestBuilder.h */,
+				187D3512DC28A6A34894F0E04C5C89E1 /* ASDKGetCardListRequestBuilder.m */,
+				11E6FCA0D5B955CF889D518C8EB756DA /* ASDKGetCardListResponse.h */,
+				0040E7C9CCD234EF008231E34A219C42 /* ASDKGetCardListResponse.m */,
+				59992668F5DC6093C365E2C5BF80D1A5 /* ASDKGetStateRequest.h */,
+				25EFD3E1CEFA9135E66A00CFEBA6AE79 /* ASDKGetStateRequest.m */,
+				82691510CA11D01D17B80B817B31A1FF /* ASDKGetStateRequestBuilder.h */,
+				ED10B17BD89D35E2257DF35C82EF7AF5 /* ASDKGetStateRequestBuilder.m */,
+				89E70865907C297B0E63178A86C51337 /* ASDKGetStateResponse.h */,
+				74347B601E5A5C8C0F48D4F6E4AB892C /* ASDKGetStateResponse.m */,
+				52D30FFF580ABC434CB4CFF928596AC7 /* ASDKInitRequest.h */,
+				8FCF5DFE6AE6BC30652B7FA8D5A54D14 /* ASDKInitRequest.m */,
+				D54D336B550CE6AAFA0BA8BBA32AEB64 /* ASDKInitRequestBuilder.h */,
+				8C3525C30AAB5CE21DCAB7050899A1E5 /* ASDKInitRequestBuilder.m */,
+				AEA29774B00A736139B8FFF0F5C981F2 /* ASDKInitResponse.h */,
+				A9FD8D47704A6E1612331D54D7ABCA69 /* ASDKInitResponse.m */,
+				35282B211E3A5124C79C73C7FB214267 /* ASDKPaymentInfo.h */,
+				32F561D5575B05FEB7EE7EFC455F0224 /* ASDKPaymentInfo.m */,
+				A809304FB081EDBCEAE884557CE882C9 /* ASDKRemoveCardRequest.h */,
+				AE8EFEF7748E4F43D98739C8D0ED9B97 /* ASDKRemoveCardRequest.m */,
+				9B8F94ECAD6B3A1EC27767FB513C2D52 /* ASDKRemoveCardRequestBuilder.h */,
+				4EB5ABF9BA7C7102FE702584D858913D /* ASDKRemoveCardRequestBuilder.m */,
+				8AFC5A82113F74AA7CE3DB00F8525A3D /* ASDKRemoveCardResponse.h */,
+				483B2BAB772838C8676D12AF7836B9DC /* ASDKRemoveCardResponse.m */,
+				A600CBB11957A1DB779C914DB18278E7 /* ASDKRequestAddCardInit.h */,
+				F2AD5DFD8E45F371F7552CA48DCA7151 /* ASDKRequestAddCardInit.m */,
+				2280551520A93C64027F4CF2034EB35A /* ASDKRequestAttachCard.h */,
+				E215623EF35C819C8E0007C9B7D981B2 /* ASDKRequestAttachCard.m */,
+				A3D789D50B41449DDA126543AD2D3698 /* ASDKRequestBuilder.h */,
+				4CC84B2A4A7CE18D8599EBAC8563BAA8 /* ASDKRequestBuilder.m */,
+				33AD022897DBC37BA2FACBAF47C84819 /* ASDKRequestBuilderAddCardInit.h */,
+				547040ADC14181C4EE14DDDDFDEEB95D /* ASDKRequestBuilderAddCardInit.m */,
+				549B227E15E6B11895A978127AD28916 /* ASDKRequestBuilderAttachCard.h */,
+				29A55E2CADF905EA4B982FD2B282E8C5 /* ASDKRequestBuilderAttachCard.m */,
+				61087A57769D72E58C2274F5D165403C /* ASDKRequestBuilderCheck3dsVersion.h */,
+				160D3EB15C787B919CBCCAD6ED211C31 /* ASDKRequestBuilderCheck3dsVersion.m */,
+				3F69EB1E58A28A8C1BA6E563A9AA53E1 /* ASDKRequestBuilderGetAttachCardState.h */,
+				6F7F6AF263A6167871E0ED5B1A2CDA6D /* ASDKRequestBuilderGetAttachCardState.m */,
+				8115925ADDAB69797A315ACC711DDA76 /* ASDKRequestBuilderSubmitRandomAmount.h */,
+				85E091B9E128A833706B419E5014B219 /* ASDKRequestBuilderSubmitRandomAmount.m */,
+				6386BEC0A777073BCBF3CB10A2287D36 /* ASDKRequestCheck3dsVersion.h */,
+				BED77744DFB18ACE9068B7A948BBC4EE /* ASDKRequestCheck3dsVersion.m */,
+				B289188E0B4F453932D8189511E1DDF1 /* ASDKRequestGetAttachCardState.h */,
+				35944B77A62BCFCD10F525F4D3D36296 /* ASDKRequestGetAttachCardState.m */,
+				49444D08CB97E8B0AAC4189B573278E7 /* ASDKRequestSubmitRandomAmount.h */,
+				2F4E58F0677A3875A256CC8AF05DF715 /* ASDKRequestSubmitRandomAmount.m */,
+				7CA5C3D8B62075D3FADA0E780E47A171 /* ASDKResponseAddCardInit.h */,
+				8F6402B56FB3D1DCD69CA8E3FC881931 /* ASDKResponseAddCardInit.m */,
+				B6D36F8A22C6053E43C63F3B2F2A11B7 /* ASDKResponseAttachCard.h */,
+				405FA662A3A8835EBF66E62E5A0CA874 /* ASDKResponseAttachCard.m */,
+				86BD0B19BF116DB43A49B9BB656DF78B /* ASDKResponseCheck3dsVersion.h */,
+				6CEDB9381971F2D96073C502E8590258 /* ASDKResponseCheck3dsVersion.m */,
+				27D5F7C7C6A03ADC412D722DF9D55081 /* ASDKResponseGetAddCardState.h */,
+				6BA35BDAFD1C8D1FE5E2BDF1BE6F4C19 /* ASDKResponseGetAddCardState.m */,
+				6589A23558A018FCEB932EB3D584B2F7 /* ASDKRSAEncryptor.h */,
+				6B3CA9FDEE5D51A139338DC2ACD5459F /* ASDKRSAEncryptor.m */,
+				C028C9E12CDA1D658BE656F97A8F5879 /* ASDKStringKeyCreator.h */,
+				983C915FD74FC470A172523021B1D74C /* ASDKStringKeyCreator.m */,
+				18C4ECF0A4C75BC0B1EC2E559415DADE /* ASDKThreeDsData.h */,
+				ED17236C47F62C63863FB91F8801E78C /* ASDKThreeDsData.m */,
+				A791519A8FDD25B205E80FA6A1179135 /* ASDKUtilsAmount.h */,
+				9D5551CB19E9772AC727C328DAFF199A /* ASDKUtilsAmount.m */,
+				BAF7C3331CE96F6A9F50523B3C22AAA6 /* ASDKUtilsRequest.h */,
+				B7B1CECEC03942F875DDDB6B183F8771 /* ASDKUtilsRequest.m */,
+				0A0C2322D826E515D273953A68B700A2 /* RSA.h */,
+				92DC4163BDA9C71BCD2ADA8D40825CA7 /* RSA.m */,
+				579FAA0802D732D1944C48759A0EAF05 /* Support Files */,
+			);
+			path = ASDKCore;
+			sourceTree = "<group>";
+		};
+		6E3889AF10F30C9333F9E59A7BD51AA7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1EA8F0B7BD763E6B8ECA8A2027DF8 /* ASDKUI.modulemap */,
+				24F34D2C230877FB00645230A18E6CCE /* ASDKUI.xcconfig */,
+				703899AECD42B10ABBB6DEF6DE61AC0D /* ASDKUI-dummy.m */,
+				D49EDB5258A2085CFB88FBCBDCC7BA95 /* ASDKUI-Info.plist */,
+				FED17800CA18708F9DF9D01F6C2AE6C8 /* ASDKUI-prefix.pch */,
+				CA0261B0E9074FEF5B79D47A73A27F9B /* ASDKUI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ASDKUI";
+			sourceTree = "<group>";
+		};
+		80CC0486FE5ED4F5ECB812CD0627035E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2167B646781A0D43E7A677310B20D2B5 /* ASDK3DSViewController.xib */,
+				D4E938F0E129E12F23E54FE262A4452E /* ASDKAddNewCardCell.xib */,
+				2E131381A845291FED03A186938A2255 /* ASDKCardCell.xib */,
+				913B4A4C37A6511D3CC638795BE8E3F3 /* ASDKCardInputTableViewCell.xib */,
+				4C4E4364C9A105171E4C47A7E70EAA7D /* ASDKDeleteCell.xib */,
+				1A816C140D35FCED9B6902786D853CAF /* ASDKEmailCell.xib */,
+				DAE7030478AEFE7EEEDC6B8FBD49BECE /* ASDKEmptyTableViewCell.xib */,
+				F2A45A46E0575256F8785C7E1BE3CCA9 /* ASDKExternalCardsCell.xib */,
+				B5EAF668C011E2C0F49F4778F51EC7EC /* ASDKFooterCell.xib */,
+				12FC408D5458D40B634FB26A6A0C668E /* ASDKLoaderViewController.xib */,
+				49EB0806FF1B0F021A4C1305394AF6E9 /* ASDKLocalizable.strings */,
+				CC60209C85FCFA32CBB26138FC144742 /* ASDKNumberCell.xib */,
+				ACA9FA720D827C83F6881640B3A4C930 /* ASDKPayButtonCell.xib */,
+				3DEADF7202042AAA7DCB12484BBB2CC6 /* ASDKPaymentFormHeaderCell.xib */,
+				668F9D7E8FF4B758C84489921EF2402C /* ASDKPaymentFormSummCell.xib */,
+				C30B118135557DFD97437E1E2FC82774 /* ASDKUIImages.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8D2101CB8FF1F2100E8524ED543BC153 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				667F8432F90E18B1D793A810092883A7 /* ASDKCore */,
+				5593DBCFE011EB7CF790907553624A59 /* ASDKUI */,
+				1320EEB04D73E8840FA1BD54DC114103 /* CardIO */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA3BEE077DB5C9A4519C92F8A3BFA481 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D995613173B51B6A981310D183FCA69 /* ASDKCore.framework */,
+				C047645921E97CA2741444EED77DDD47 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3104AC8A5B6F441C01D09184588E360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A842606928A7209DC3B91966C6A8C000 /* ASDKCore.framework */,
+				62EE38D6B266E0024D7B5391B2C0CC0A /* ASDKUI.framework */,
+				13E2606D1C7150D0C51991C9A49FF6D4 /* Pods_RNASDKTinkoff.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C047645921E97CA2741444EED77DDD47 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C58633255A71DFCDE0093F8A2A34D63C /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AA3BEE077DB5C9A4519C92F8A3BFA481 /* Frameworks */,
+				8D2101CB8FF1F2100E8524ED543BC153 /* Pods */,
+				B3104AC8A5B6F441C01D09184588E360 /* Products */,
+				5A530A987CED21E7D6F847F159A553B1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09424F4F09EAA9178EC8D8FB1497FFA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5DDCE64FB66C7A2AC8C03309B7249A /* ASDKAcquiringApi.h in Headers */,
+				B03FA0C55CD734FE1EA4A60BAA88A634 /* ASDKAcquiringRequest.h in Headers */,
+				22D2424C20793AB6984131CFE1604A63 /* ASDKAcquiringResponse.h in Headers */,
+				6CCBEDD99A3C288F3BC28B9F292B6C53 /* ASDKAcquiringSdk.h in Headers */,
+				18167049EEDFE38D1A08ECDE4605FB60 /* ASDKAcquringApiError.h in Headers */,
+				4738E1E68DF79B3560B35AFF966C1254 /* ASDKAcquringSdkError.h in Headers */,
+				9DFFC4556A8FBBE1A27752E1356DB8F2 /* ASDKApiKeys.h in Headers */,
+				017E5B7489251C2FD9AF039D6EE32AB2 /* ASDKBaseObject.h in Headers */,
+				E33A8EF913515CA81C4B7EBD0EA886E5 /* ASDKCancelRequest.h in Headers */,
+				7AB3A62B393343A82C49A278138AFE50 /* ASDKCancelRequestBuilder.h in Headers */,
+				FCC99AE3351CD5352A89F9C870410B90 /* ASDKCancelResponse.h in Headers */,
+				8EE94AA3C2B807586A878BBC85120869 /* ASDKCard.h in Headers */,
+				A3469FC0418895566F74C778DDFFAED8 /* ASDKCardData.h in Headers */,
+				22410CBF0281AD637ABFD66B223AEA03 /* ASDKChargeRequest.h in Headers */,
+				A35EFA8F948CB79A5ADFA33D2A0E9AF1 /* ASDKChargeRequestBuilder.h in Headers */,
+				B575BFE652F02F654E7C2B3AA187D2A1 /* ASDKChargeResponse.h in Headers */,
+				6683BCE35DAC3CEE729B24B3239E7342 /* ASDKCore-umbrella.h in Headers */,
+				0C4AB1A5FE2656C95699C10ED41BB9B1 /* ASDKCore.h in Headers */,
+				F453805DA7F2D276F4BA606025579BB7 /* ASDKCryptoUtils.h in Headers */,
+				C5691213178DEBB670071CDD835B7DA9 /* ASDKFinishAuthorizeRequest.h in Headers */,
+				2DF18E45BEC9F5EC9231BF5712D56887 /* ASDKFinishAuthorizeRequestBuilder.h in Headers */,
+				A31E83B2A6BF991FEE49C2D95D2F4DB4 /* ASDKFinishAuthorizeResponse.h in Headers */,
+				3372BCB07F048AB700E4A6B78892B8E1 /* ASDKGetCardListRequest.h in Headers */,
+				D06929C472E96CFAD64E941B58738B57 /* ASDKGetCardListRequestBuilder.h in Headers */,
+				5A02D44F6B3EF11643AD128D11FA9A5D /* ASDKGetCardListResponse.h in Headers */,
+				E8664F49E892C39E6CCB19E7A567E0CF /* ASDKGetStateRequest.h in Headers */,
+				EDE5FE3768FE70AFE42B14A6453D2DE9 /* ASDKGetStateRequestBuilder.h in Headers */,
+				7DE329B6A56D2F43E4CC25AB1AD1526F /* ASDKGetStateResponse.h in Headers */,
+				1FA47D6A38E4A5A28139D3BBA728780F /* ASDKInitRequest.h in Headers */,
+				50E9D12E17BD99D19BE10F1AA2809F27 /* ASDKInitRequestBuilder.h in Headers */,
+				56221720B696963E867E9544B2393E6B /* ASDKInitResponse.h in Headers */,
+				0C2DCBE1F32337BD0C5E6A2D7C570715 /* ASDKPaymentInfo.h in Headers */,
+				B7600148DDFB16B403BE2B66E8A46428 /* ASDKRemoveCardRequest.h in Headers */,
+				D20406D87BDD918F01714C6F3E64C0BC /* ASDKRemoveCardRequestBuilder.h in Headers */,
+				A4F49E8BBEE916CC86070DB89EBFC91D /* ASDKRemoveCardResponse.h in Headers */,
+				E26AB48D68A5F3EEF6480830CFA22D41 /* ASDKRequestAddCardInit.h in Headers */,
+				F7CFFAA48EDD9FEFD4DCFA4B78680442 /* ASDKRequestAttachCard.h in Headers */,
+				14AD728795B4866A3C0E0BA8C82D933B /* ASDKRequestBuilder.h in Headers */,
+				F1E73F9D32B7CE86A901A312C6AFE0E4 /* ASDKRequestBuilderAddCardInit.h in Headers */,
+				FE05820EAF98E14A40F1DDF433785992 /* ASDKRequestBuilderAttachCard.h in Headers */,
+				41E47C6E443798A3E13D4AC27E15B278 /* ASDKRequestBuilderCheck3dsVersion.h in Headers */,
+				02F6727BFBCD2C562267FF0DC4338EDC /* ASDKRequestBuilderGetAttachCardState.h in Headers */,
+				71859C8695872E2CECC7D046772D3A38 /* ASDKRequestBuilderSubmitRandomAmount.h in Headers */,
+				466EAE1B1050E9A4C4462B7DEFC78AC2 /* ASDKRequestCheck3dsVersion.h in Headers */,
+				4B71B766DB29CB97D08FA0B1CA4EE42F /* ASDKRequestGetAttachCardState.h in Headers */,
+				71FB15D2C822927980170C2855A3834D /* ASDKRequestSubmitRandomAmount.h in Headers */,
+				5C3CA247CA2CD0DED8C88774B3CFFEF2 /* ASDKResponseAddCardInit.h in Headers */,
+				ABE5E2838F6DDBAE5DE0DE811D9643C8 /* ASDKResponseAttachCard.h in Headers */,
+				676DA58BC3674CE842EC13EA1C40DDC3 /* ASDKResponseCheck3dsVersion.h in Headers */,
+				B23C82B9B85AA7FC9B985A4633DBF72A /* ASDKResponseGetAddCardState.h in Headers */,
+				9ACA2E056F30AFABDA59D1A83725D008 /* ASDKRSAEncryptor.h in Headers */,
+				B87BD2B22A139C4949D9C115A918C2C7 /* ASDKStringKeyCreator.h in Headers */,
+				3579884C03D10AA32EB7655091658503 /* ASDKThreeDsData.h in Headers */,
+				39ADE3BF2F94111644D1B6E8A12E2FE3 /* ASDKUtilsAmount.h in Headers */,
+				9062316BE0A870F433FE0E9ADC8C83C6 /* ASDKUtilsRequest.h in Headers */,
+				35381A1E9CB06CEA76FDDFD341305773 /* RSA.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AADFE7A35D78B9C2B2BCA65797051090 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271A8FB00301C912A6418ADBDC86B3D7 /* ASDK3DSViewController.h in Headers */,
+				13AACE156D4935EA3E5F88C94032B661 /* ASDKAddNewCardCell.h in Headers */,
+				BE02557EFE96F7DFC57E13B345180390 /* ASDKAttachCardViewController.h in Headers */,
+				CF2E24C9CEA5FC515131CE4374EC1759 /* ASDKBarButtonItem.h in Headers */,
+				03CC0F1C41CAFFCADB33BCB47B998066 /* ASDKBaseCell.h in Headers */,
+				93312F70015AAA6D969BB0A18CDEFB68 /* ASDKBaseTableViewController.h in Headers */,
+				4526A6562D1FF8B22BF3C86272AC005B /* ASDKBaseViewController.h in Headers */,
+				4669810D4BF98F137E8097AC7481862B /* ASDKCardCell.h in Headers */,
+				63A098FE85B0762AA58878FA2D07DCE5 /* ASDKCardInputTableViewCell.h in Headers */,
+				10F278D305C3C603157633044444CF87 /* ASDKCardsListDataController.h in Headers */,
+				BDC36C3128DC615629DC9DB19E44ABB1 /* ASDKCardsListViewController.h in Headers */,
+				C909F143C54D010E74594AC35F1A1E0F /* ASDKDeleteCell.h in Headers */,
+				A8D41FC8C11DAE5BAF2C4786278AC6C7 /* ASDKDesign.h in Headers */,
+				77DCFF125D3AF28ABD063854E1A6DDC2 /* ASDKDesignConfiguration.h in Headers */,
+				FD19D643155389CB0FA9FAA5186A3C03 /* ASDKEmailCell.h in Headers */,
+				97E436ED2D38890F9DB8E037FE966C1D /* ASDKEmptyTableViewCell.h in Headers */,
+				812918751E0D8AC7B493ABF635FF12E1 /* ASDKExternalCardsCell.h in Headers */,
+				32DD9C9CB9639DAA6977C69C06FE28DB /* ASDKFooterCell.h in Headers */,
+				69CC91BE4FF33BF13437FEBFA5737EE4 /* ASDKHighlightedButton.h in Headers */,
+				A9EB7434DC703E36D9DA97B3F139063E /* ASDKLabel.h in Headers */,
+				1E94A5749564F10E06530C54705EF43F /* ASDKLoaderViewController.h in Headers */,
+				53C63E655B96BAAE0D1CB093C7AB6D5C /* ASDKLocalized.h in Headers */,
+				EF3CE3CCC941389D626F49D6534C48E8 /* ASDKLoopViewController.h in Headers */,
+				88B993D04F2003F1C56253D675D40468 /* ASDKMacroses.h in Headers */,
+				24B0E980A2B1AAA4623C1B4368B03316 /* ASDKNavigationController.h in Headers */,
+				5E03E72B65DC313D37E8F64E2CE400CB /* ASDKNumberCell.h in Headers */,
+				8C658F74B74FEAD55CE201D5CCFBF9D7 /* ASDKPayButtonCell.h in Headers */,
+				26AB1AC5F3AAB613A8F006D8020B3FC4 /* ASDKPaymentFormHeaderCell.h in Headers */,
+				E35457E63519CCD0BA439D45BFAF5E24 /* ASDKPaymentFormStarter.h in Headers */,
+				002F967657A7421F5562B9F65FD854AB /* ASDKPaymentFormSummCell.h in Headers */,
+				C6F86DC2B83DF706550AF5D2A690F1B7 /* ASDKPaymentFormViewController.h in Headers */,
+				8B00CE3430231C6592FB0D93DB207A9C /* ASDKTextField.h in Headers */,
+				09BF0596044221CBFEF0AD03FC43AA0B /* ASDKUI-umbrella.h in Headers */,
+				E57FD125B6F4D35442EE28D7802AC78F /* ASDKUI.h in Headers */,
+				624E1605A989EE791AC0060562876B0F /* ASDKUtils.h in Headers */,
+				B9753A3ABBB06C73EC1F3EAD31C8F8B3 /* UIView+AutoLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31C7818F17F66485110E1C970480539 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6E4AA707E4DA537E3F73CC063EC9FF /* Pods-RNASDKTinkoff-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		13D747E3CD5F9839D0A3CAB49E5ABC32 /* ASDKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19407EDAABE36C95D40F271E67B10F10 /* Build configuration list for PBXNativeTarget "ASDKCore" */;
+			buildPhases = (
+				09424F4F09EAA9178EC8D8FB1497FFA8 /* Headers */,
+				F5FAE2D8BA9884368696394BE8FBDAEC /* Sources */,
+				B9F9BD607AAFC1056DF3528BEC0D2FEC /* Frameworks */,
+				5F3CE773BA8268BA9D301ED02BD46993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASDKCore;
+			productName = ASDKCore;
+			productReference = A842606928A7209DC3B91966C6A8C000 /* ASDKCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3190722EE86430DA43D7BB218F21055A /* ASDKUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4884CF73471590C5824ADD8E57C6400 /* Build configuration list for PBXNativeTarget "ASDKUI" */;
+			buildPhases = (
+				AADFE7A35D78B9C2B2BCA65797051090 /* Headers */,
+				1FC8E3ABF265DC30DD37E006FAFB050B /* Sources */,
+				1F93F092199131C059773B34C98E3624 /* Frameworks */,
+				394BC24AD3BD8DD48F32DACC6A4FDC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				749353C57CBF2BACDCB4BF816BC43460 /* PBXTargetDependency */,
+			);
+			name = ASDKUI;
+			productName = ASDKUI;
+			productReference = 62EE38D6B266E0024D7B5391B2C0CC0A /* ASDKUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72AEC3D7492AE19B6CF617C73BE616D5 /* Pods-RNASDKTinkoff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 146EF1C9BB79B780F7025BEC87F2D73D /* Build configuration list for PBXNativeTarget "Pods-RNASDKTinkoff" */;
+			buildPhases = (
+				E31C7818F17F66485110E1C970480539 /* Headers */,
+				E77A9C32FCBECFEE70035D179AA7CB3F /* Sources */,
+				E0C3A94B5513C5AA01999F8305E7646A /* Frameworks */,
+				C2E30894D3511A69AAC7D10E417EEC28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DF116B3404CB6A8FC2AA463B4C29CDE /* PBXTargetDependency */,
+				406B1B28EFA64E3CC52A35CBFD6D6C41 /* PBXTargetDependency */,
+				9A82E2A8A6F01A2FB1ED15A9B07D00F5 /* PBXTargetDependency */,
+			);
+			name = "Pods-RNASDKTinkoff";
+			productName = "Pods-RNASDKTinkoff";
+			productReference = 13E2606D1C7150D0C51991C9A49FF6D4 /* Pods_RNASDKTinkoff.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B3104AC8A5B6F441C01D09184588E360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13D747E3CD5F9839D0A3CAB49E5ABC32 /* ASDKCore */,
+				3190722EE86430DA43D7BB218F21055A /* ASDKUI */,
+				A5AFDBFF44C91B5332DDBF2B370A941E /* CardIO */,
+				72AEC3D7492AE19B6CF617C73BE616D5 /* Pods-RNASDKTinkoff */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		394BC24AD3BD8DD48F32DACC6A4FDC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC0735287FCBC1328C0A81E0EAB6E1E /* ASDK3DSViewController.xib in Resources */,
+				24C820EFE49BE1160EEBC37385A58CBD /* ASDKAddNewCardCell.xib in Resources */,
+				6717AFCE01CBE71FAC1428EABA85B786 /* ASDKCardCell.xib in Resources */,
+				39629EC8B99CB365CB1286ABC7B482C7 /* ASDKCardInputTableViewCell.xib in Resources */,
+				629EFC7560F5560DE0EFAD2B35678F0E /* ASDKDeleteCell.xib in Resources */,
+				A9B42C0442768984F2B9A8E138EABE2E /* ASDKEmailCell.xib in Resources */,
+				6CBE3EC5A00DFC6E322085C3EC5AE253 /* ASDKEmptyTableViewCell.xib in Resources */,
+				5A71B9F0AC1337271D8FBEFE8E845B0B /* ASDKExternalCardsCell.xib in Resources */,
+				C6C6A7E4BAA95F63E870BB8925F0E096 /* ASDKFooterCell.xib in Resources */,
+				12F05A513CFBE08F9E6DEEF47B38D4AD /* ASDKLoaderViewController.xib in Resources */,
+				3F4E4D59283C3768A382FC0309E69994 /* ASDKLocalizable.strings in Resources */,
+				BB5E0DA5178641B0919C1CE1E6C545E9 /* ASDKNumberCell.xib in Resources */,
+				7D8843778B1C923E522DE840550E2EB3 /* ASDKPayButtonCell.xib in Resources */,
+				3E025892467D3BF10AC813D5C7060F63 /* ASDKPaymentFormHeaderCell.xib in Resources */,
+				E43336117A4CED274EBE85AA341260F3 /* ASDKPaymentFormSummCell.xib in Resources */,
+				B188097D86423C12B72F8BE5EA6BF5FF /* ASDKUIImages.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3CE773BA8268BA9D301ED02BD46993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E30894D3511A69AAC7D10E417EEC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FC8E3ABF265DC30DD37E006FAFB050B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EAB85ECBF29DB4B9446BDD813489B1 /* ASDK3DSViewController.m in Sources */,
+				43257AA5E70D6E501731138F22AA1A93 /* ASDKAddNewCardCell.m in Sources */,
+				34AAB05ACE80461F88C1E923CC434C02 /* ASDKAttachCardViewController.m in Sources */,
+				EBAA5C1F98ED0F4FE72D8BE09283B847 /* ASDKBarButtonItem.m in Sources */,
+				C2AC71E3D5E9A23A107E24BD2B4F5EF0 /* ASDKBaseCell.m in Sources */,
+				931215B57431D673BDDFBA62EF23362E /* ASDKBaseTableViewController.m in Sources */,
+				2017F1DF06D628F3B92F7A4E83719BDA /* ASDKBaseViewController.m in Sources */,
+				39498A1D3186D580B6B37A1BCAFAB60F /* ASDKCardCell.m in Sources */,
+				C90D4F7172BB9ACD1FDA231010CE5692 /* ASDKCardInputTableViewCell.m in Sources */,
+				F156E99C8229ADDEDDA87F88977D13A6 /* ASDKCardsListDataController.m in Sources */,
+				E7E8169F24295D21BF4130B3DF051A66 /* ASDKCardsListViewController.m in Sources */,
+				B62ABD2CA72896C8D4339C05EA53409D /* ASDKDeleteCell.m in Sources */,
+				8AD431DA69B111BB98F50E18DA94FF5B /* ASDKDesign.m in Sources */,
+				707C82D38F946EA639ED179CA6FBA0F8 /* ASDKDesignConfiguration.m in Sources */,
+				147B0AC2B5A9C0EAA6BAA408B6CCEB0C /* ASDKEmailCell.m in Sources */,
+				C41B2710486F8CC0DC70788E0A76F96A /* ASDKEmptyTableViewCell.m in Sources */,
+				895AB49AF2E22C2DA4663165578B6A9D /* ASDKExternalCardsCell.m in Sources */,
+				CA80DCF5AD9903E3D2BA7B0989C8EF76 /* ASDKFooterCell.m in Sources */,
+				04B9E6ACAAB5297B1161B58F7F41DBD5 /* ASDKHighlightedButton.m in Sources */,
+				6CDB69D8912932904252613DD1D060EB /* ASDKLabel.m in Sources */,
+				5F5CCDF414F59008D5DB49839601E55E /* ASDKLoaderViewController.m in Sources */,
+				2CD5349B16BF4A9BFE954CBBCA5A191C /* ASDKLocalized.m in Sources */,
+				BA6B57675DBD5B2BCF62D540263759D2 /* ASDKLoopViewController.m in Sources */,
+				D75ADE0AA7C7573762FABEF6BB11CE77 /* ASDKNavigationController.m in Sources */,
+				1693D8D8616132F4FFF5EE6047AAC6DC /* ASDKNumberCell.m in Sources */,
+				A8B73D2F6DBD84382F638B2DF3CFB60F /* ASDKPayButtonCell.m in Sources */,
+				73386D85ECA913A333AECC0C1B4A3B1C /* ASDKPaymentFormHeaderCell.m in Sources */,
+				F3E1D8424097702FF7A8BCBC9D74F19C /* ASDKPaymentFormStarter.m in Sources */,
+				8E7B9010C46DB0051A7819AF4C5C17B6 /* ASDKPaymentFormSummCell.m in Sources */,
+				FA81D6A22A0152629B5EA93670876A10 /* ASDKPaymentFormViewController.m in Sources */,
+				A4ED6FC911B0C73A9D472FBDD4E12043 /* ASDKTextField.m in Sources */,
+				83C78A572F60D7B1DF21B5FC980D401C /* ASDKUI-dummy.m in Sources */,
+				C5061BBBD1EC4F4E41E3656E7F78758F /* ASDKUtils.m in Sources */,
+				1FF3BE5F38B5ED0290171E235152B27F /* UIView+AutoLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77A9C32FCBECFEE70035D179AA7CB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323E417C8F4E97F5E9C4F5997114DB26 /* Pods-RNASDKTinkoff-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FAE2D8BA9884368696394BE8FBDAEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6221EB61E072D82B8D2E141B9AA7C263 /* ASDKAcquiringApi.m in Sources */,
+				E67CC65F7CE7BC627A00D36EE9751117 /* ASDKAcquiringRequest.m in Sources */,
+				F35B8A0F9ED50214B05A34E94DF67B49 /* ASDKAcquiringResponse.m in Sources */,
+				3C1B4169467E1AC651F1000B5C4305E3 /* ASDKAcquiringSdk.m in Sources */,
+				A0476C67EECCAC897CE2E3E29891A111 /* ASDKAcquringApiError.m in Sources */,
+				9E6A0529D55304B9E34732BFD435CB1B /* ASDKAcquringSdkError.m in Sources */,
+				8FB34ADE28A1B67DD4E2E326804F127B /* ASDKBaseObject.m in Sources */,
+				3A75F7EAC1C225E50CEFA1763408FCB4 /* ASDKCancelRequest.m in Sources */,
+				4A2275AB80354A1EBA043A60A26F7A15 /* ASDKCancelRequestBuilder.m in Sources */,
+				7F93F0E248AFD726B5C3FC640829E3DC /* ASDKCancelResponse.m in Sources */,
+				36B04E93AE9EFADEA594ED5431296F85 /* ASDKCard.m in Sources */,
+				0C8C3E2A75CA70A816B641F22802DCF3 /* ASDKCardData.m in Sources */,
+				12F69A0FACE7CD20A0FC5154D6C701D0 /* ASDKChargeRequest.m in Sources */,
+				769EF3E56B922185FD577BB3508690EF /* ASDKChargeRequestBuilder.m in Sources */,
+				97F0FBEB3FB1960BDA704F622F4F3E3F /* ASDKChargeResponse.m in Sources */,
+				25A307998EA09D6A0F83D1C132AC9BF7 /* ASDKCore-dummy.m in Sources */,
+				5A8CB55072CAF07CEE44762BDE9C3B1D /* ASDKCryptoUtils.m in Sources */,
+				9F1EFEBC2392F973CC546E48342F95FA /* ASDKFinishAuthorizeRequest.m in Sources */,
+				87255FF1852B055999F99306A2DD60FE /* ASDKFinishAuthorizeRequestBuilder.m in Sources */,
+				1AAB205BAF8BB4DD3B99F2B4DD0095D5 /* ASDKFinishAuthorizeResponse.m in Sources */,
+				8A59718356C52CB236299AED8A5FA0D3 /* ASDKGetCardListRequest.m in Sources */,
+				E62BB388B2FB01E8452DF10DD394474F /* ASDKGetCardListRequestBuilder.m in Sources */,
+				3FC3C7D8E9FA180CE219D5E9C0F659D0 /* ASDKGetCardListResponse.m in Sources */,
+				FB1C7C34A55D159CBBFFFA8C42B0E0EA /* ASDKGetStateRequest.m in Sources */,
+				546D74657F315704CDAC0165E6A0F68B /* ASDKGetStateRequestBuilder.m in Sources */,
+				8AC94872DF352C31537829B790FD9971 /* ASDKGetStateResponse.m in Sources */,
+				E10D564C073E7B261B9EE2663A03FE79 /* ASDKInitRequest.m in Sources */,
+				B43B432DD84A02A0AB5F26EA11E50424 /* ASDKInitRequestBuilder.m in Sources */,
+				40D3ED8E5C5F7595DF191E36F6BD1BB1 /* ASDKInitResponse.m in Sources */,
+				5AC40F99F86F236B6EE807A23EC88BDE /* ASDKPaymentInfo.m in Sources */,
+				5B5EE06C165ED815CA95D95FEA4390FD /* ASDKRemoveCardRequest.m in Sources */,
+				2C73CA08E90F63A489B9F185678C2F23 /* ASDKRemoveCardRequestBuilder.m in Sources */,
+				409B27F0B8B7924B52692A48306788F2 /* ASDKRemoveCardResponse.m in Sources */,
+				9A8C19A5F00F0A9C3A0D5EA500B1DED5 /* ASDKRequestAddCardInit.m in Sources */,
+				98610249AD64F4B951491B658790DC35 /* ASDKRequestAttachCard.m in Sources */,
+				444F3712CA7278E31969CAB7D0470D76 /* ASDKRequestBuilder.m in Sources */,
+				943DBB7ECF53E1FB9F38968D3D58D37E /* ASDKRequestBuilderAddCardInit.m in Sources */,
+				8887F3575271B7F7BB31C7023AE875B5 /* ASDKRequestBuilderAttachCard.m in Sources */,
+				5C6A3C5D7EE457A95082E4A4BC84B155 /* ASDKRequestBuilderCheck3dsVersion.m in Sources */,
+				EE8DEF8D5E661281465CE8029D7A18AE /* ASDKRequestBuilderGetAttachCardState.m in Sources */,
+				13DFED01484C7B1E3692501E96EF43CC /* ASDKRequestBuilderSubmitRandomAmount.m in Sources */,
+				781251F7D4D5DEF41983E18B92FD6DDA /* ASDKRequestCheck3dsVersion.m in Sources */,
+				A3B4088A816CB3F77107FF4ED1ACF278 /* ASDKRequestGetAttachCardState.m in Sources */,
+				96F694D1175071487FFB4C114107CC94 /* ASDKRequestSubmitRandomAmount.m in Sources */,
+				55B267F8AB6475D447CEEA6D9D4EC99B /* ASDKResponseAddCardInit.m in Sources */,
+				44C9AF98EAB2DC06EAE41B0CDA19E304 /* ASDKResponseAttachCard.m in Sources */,
+				ECE2A27F4B0FDEFBDE1C7C9F6C23C735 /* ASDKResponseCheck3dsVersion.m in Sources */,
+				207E0A8EB95C07EC057CCC119151CD31 /* ASDKResponseGetAddCardState.m in Sources */,
+				900E347306C6029ADAB27F4A0F687EA5 /* ASDKRSAEncryptor.m in Sources */,
+				C827C9E64275D0AA08F68206A5625692 /* ASDKStringKeyCreator.m in Sources */,
+				C35CFDA2D4BFB2DFEF5A37D917AC3CC2 /* ASDKThreeDsData.m in Sources */,
+				55B3EC0ABD8364665C90FB7FB5E896BB /* ASDKUtilsAmount.m in Sources */,
+				EEADF718B34E2AACFA243E538CB444B6 /* ASDKUtilsRequest.m in Sources */,
+				EAE1C7587C8B8A7FA0356C8A02EA1374 /* RSA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DF116B3404CB6A8FC2AA463B4C29CDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ASDKCore;
+			target = 13D747E3CD5F9839D0A3CAB49E5ABC32 /* ASDKCore */;
+			targetProxy = B0625B826905D478A587811031D6C81B /* PBXContainerItemProxy */;
+		};
+		406B1B28EFA64E3CC52A35CBFD6D6C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ASDKUI;
+			target = 3190722EE86430DA43D7BB218F21055A /* ASDKUI */;
+			targetProxy = D9E06E6AEF01124915F332F710AE1354 /* PBXContainerItemProxy */;
+		};
+		749353C57CBF2BACDCB4BF816BC43460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ASDKCore;
+			target = 13D747E3CD5F9839D0A3CAB49E5ABC32 /* ASDKCore */;
+			targetProxy = BC5E004DD35563956720604D62A26848 /* PBXContainerItemProxy */;
+		};
+		9A82E2A8A6F01A2FB1ED15A9B07D00F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CardIO;
+			target = A5AFDBFF44C91B5332DDBF2B370A941E /* CardIO */;
+			targetProxy = B6E7B7EB6509D544BBAC51B1E9466F24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49EB0806FF1B0F021A4C1305394AF6E9 /* ASDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EA176ABFC0B8CE751A6ABB4B3EB61C4 /* ASDKLocalizable.strings */,
+				C678D581978033BD5035720896DD59CD /* ASDKLocalizable.strings */,
+			);
+			name = ASDKLocalizable.strings;
+			path = ASDKUI/Resources/Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2572843B70E0D6FB998E7732A17524C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F34D2C230877FB00645230A18E6CCE /* ASDKUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ASDKUI/ASDKUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASDKUI/ASDKUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASDKUI/ASDKUI.modulemap";
+				PRODUCT_MODULE_NAME = ASDKUI;
+				PRODUCT_NAME = ASDKUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A7882F90C994C1525DDB3DA4ABB1EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DB714F18B68A6CAE670E1F85ED93A4 /* CardIO.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A279BE0DDA90E5374D41030A8CCA42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB4FD0A4DA08306B09C6D021D0FDF5C /* ASDKCore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ASDKCore/ASDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASDKCore/ASDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASDKCore/ASDKCore.modulemap";
+				PRODUCT_MODULE_NAME = ASDKCore;
+				PRODUCT_NAME = ASDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD0703EC0911548B78DF3B426A1BDF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2418479195C67AF6F2FAEE267E8332 /* Pods-RNASDKTinkoff.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RNASDKTinkoff/Pods-RNASDKTinkoff-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RNASDKTinkoff/Pods-RNASDKTinkoff.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B1EB73D1426C47A7F135AB70BDD3294D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB4FD0A4DA08306B09C6D021D0FDF5C /* ASDKCore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ASDKCore/ASDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASDKCore/ASDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASDKCore/ASDKCore.modulemap";
+				PRODUCT_MODULE_NAME = ASDKCore;
+				PRODUCT_NAME = ASDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C628479226B6EA8E74E963C349DD8897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F34D2C230877FB00645230A18E6CCE /* ASDKUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ASDKUI/ASDKUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASDKUI/ASDKUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASDKUI/ASDKUI.modulemap";
+				PRODUCT_MODULE_NAME = ASDKUI;
+				PRODUCT_NAME = ASDKUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E80A229266181F1EDA5D3EBF0A3684BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A3419F268676CAEF18A30731F396522 /* Pods-RNASDKTinkoff.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RNASDKTinkoff/Pods-RNASDKTinkoff-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RNASDKTinkoff/Pods-RNASDKTinkoff.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEFC3014C06F5634040992540E3FB39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DB714F18B68A6CAE670E1F85ED93A4 /* CardIO.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		146EF1C9BB79B780F7025BEC87F2D73D /* Build configuration list for PBXNativeTarget "Pods-RNASDKTinkoff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD0703EC0911548B78DF3B426A1BDF6C /* Debug */,
+				E80A229266181F1EDA5D3EBF0A3684BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19407EDAABE36C95D40F271E67B10F10 /* Build configuration list for PBXNativeTarget "ASDKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A279BE0DDA90E5374D41030A8CCA42A /* Debug */,
+				B1EB73D1426C47A7F135AB70BDD3294D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2D23DBDD07ECE5D86E860EE36B0BD2 /* Build configuration list for PBXAggregateTarget "CardIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A7882F90C994C1525DDB3DA4ABB1EA7 /* Debug */,
+				EEFC3014C06F5634040992540E3FB39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4884CF73471590C5824ADD8E57C6400 /* Build configuration list for PBXNativeTarget "ASDKUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2572843B70E0D6FB998E7732A17524C8 /* Debug */,
+				C628479226B6EA8E74E963C349DD8897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

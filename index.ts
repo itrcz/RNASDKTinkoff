@@ -6,183 +6,252 @@
 
 import { NativeModules } from 'react-native';
 
-interface IPayWithCard {
+interface PayWithCardParams {
     /**
-     * номер заказа в системе Продавца
-    */
+     * Order identifier of mercahat
+     */
     orderId: string
     /**
-     * сумма
+     * Amount to pay
      */
     amount: number
     /**
-     * заголовок товара
+     * Title of payment
      */
     title: string
     /**
-     * описание товара
+     * Product description
      */
     description: string
     /**
-     * идентификатор карты в системе Банка
+     * Card identifier
      */
-    cardId?: string
+    cardId: string
     /**
-     * адрес почты покупателя
+     * Email address of customer
      */
     email?: string
     /**
-     * идентификатор покупателя в системе Продавца
+     * Unique customer identifier
      */
     customerKey?: string
     /**
-     * сделать платеж родительским
+     * Make payment recurring
      */
     recurrent?: boolean
     /**
-     * сделать charge
+     * Charge with no questions
      */
     makeCharge?: boolean
     /**
-     * дополнительные параметры (могут быть пустыми)
+     * Advanced payment data
+     * any object, can be empty
      */
     additionalPaymentData?: object
     /**
-     * данные чека (могут быть пустыми)
+     * Receipt DATA
+     * https://oplata.tinkoff.ru for object type
      */
     receiptData?: object
     /**
-     * Для маркетплейс
+     * For marketplace only
      */
-    shops?: IShop[]
+    shops?: MarketplaceShop[]
 }
 
-interface IPayWithApplePay {
+interface PayWithApplePayParams {
     /**
-     * сумма
+     * Amount to pay
      */
     amount: number
     /**
- * номер заказа в системе Продавца
-*/
+     * Order identifier of mercahat
+     */
     orderId: string
     /**
-     * описание товара
+     * Product description
      */
     description: string
     /**
-     * идентификатор покупателя в системе Продавца
+     * Unique customer identifier
      */
     customerKey?: string
     /**
-     * Отправить квитанцию об оплате
+     * Allow send receipt to customer
      */
     sendEmail?: boolean
     /**
-     * адрес почты покупателя
+     * Email address of customer
      */
     email?: string
 
     // /**
-    //  * Идентификатор мерчант ApplePay
+    //  * ???
     //  */
     // appleMerchantId: string
 
-    shippingMethods?: null
-    shippingContact?: null
-    shippingEditableFields?: null
-
     /**
-     * сделать платеж родительским
+     * Shipping methods for ApplePay
+     */
+    shippingMethods?: null
+    /**
+     * Shipping contact for ApplePay
+     */
+    shippingContact?: null
+    /**
+     * Shipping field for ApplePay
+     */
+    shippingEditableFields?: null
+    /**
+     * Make payment recurring
      */
     recurrent?: boolean
     /**
-     * дополнительные параметры (могут быть пустыми)
+     * Advanced payment data
+     * any object, can be empty
      */
     additionalPaymentData?: object
     /**
-     * данные чека (могут быть пустыми)
+     * Receipt DATA
+     * https://oplata.tinkoff.ru for object type
      */
     receiptData?: object
     /**
-     * Для маркетплейс
+     * Shops array for marketplace
      */
-    shops?: IShop[]
+    shops?: MarketplaceShop[]
 }
 
-interface IShop {
-    ShopCode: number | string,
+interface MarketplaceShop {
+    /**
+     * Marketplace shop code
+     */
+    ShopCode: number | string
+    /**
+     * Amount to pay
+     */
     Amount: number
+    /**
+     * Amount fee to charge
+     */
     Fee: number
+    /**
+     * Payment description
+     */
     Name: string
 }
 
-interface ICard {
+interface PaymentCard {
+    /**
+     * Card identifier
+     */
     CardId: string
+    /**
+     * Payment card type
+     */
     CardType: string
+    /**
+     * Expiration date of payment card
+     */
     ExpDate: string
+    /**
+     * Card number (masked)
+     */
     Pan: string
+    /**
+     * Recurring rebuild identifier
+     */
     RebillId: string
+    /**
+     * Status of payment
+     */
     Status: string
 }
 
-interface IPaymentInfo {
+interface PaymentInfo {
     /**
-     * Идентификатор платежа
+     * Payment identidier
      */
     paymentId: string
     /**
-     * Идентификатор заказа
+     * Order identifier
      */
     orderId: string
     /**
-     * Статус платежа
+     * Status of payment
      */
     status: string
     /**
-     * Сумма платежа
+     * Amount to pay
      */
     amount: number
 }
 
-interface IPChargePayment {
+interface ChargePaymentParams {
     /**
-     * Номер платежа
+     * Payment identidier
     */
-    paymentId: string,
+    paymentId: string
     /**
-     * ID реккурента
+     * Recurring rebuild identifier
      */
-    rebillId: number,
+    rebillId: number
 }
 
-interface IPGetCardList {
+interface GetCardListParams {
     /**
-     * идентификатор покупателя в системе Продавца
+     * Unique client identifier
      */
     customerKey: string
 }
 
-type IPRemoveCard = {
+type RemoveCardParams = {
+    /**
+     * Unique client identifier
+     */
     customerKey: string
+    /**
+     * Card identifier
+     */
     cardId: string
 };
 
 interface ASDKDesignConfiguration {
     /**
-     * Текст на кнопке оплаты
+     * Label of pay button
      */
     payButtonTitle?: string
 }
 
 interface ASDKTinkoffParams {
+    /**
+     * Terminal identifier
+     */
     terminal: string
+    /**
+     * Terminal password
+     */
     password: string
+    /**
+     * Public key for terminal
+     */
     publicKey: string
+    /**
+     * Set true for testing
+     */
     test: boolean
+    /**
+     * ApplePay merchant identifier
+     */
     appleMerchantId: string
-    design?: ASDKDesignConfiguration
+    /**
+     * Enable card scanner at payment form
+     */
     enableCardScanner?: boolean
+    /**
+     * Custom desing configuration
+     */
+    design?: ASDKDesignConfiguration
 }
 
 interface ASDKTinkoff {
@@ -199,23 +268,23 @@ class ASDKTinkoff {
     }
 
     /**
-     * Засетить текст на кнопку оплаты
+     * Set pay button label
      */
     set payButtonTitle(title: string) {
         this.params.design!.payButtonTitle = title;
     }
 
     /**
-     * Доступность ApplePay
+     * Check ApplePay available
      */
     async isApplePayAvailable(): Promise<boolean> {
         return NativeModules.RNASDKTinkoff.isApplePayAvailable();
     }
 
     /**
-     * Открыть окно оплаты
+     * Open modal view with payment form
      */
-    payWithCard(params: IPayWithCard): Promise<IPaymentInfo | null> {
+    payWithCard(params: PayWithCardParams): Promise<PaymentInfo | null> {
         return NativeModules.RNASDKTinkoff.payWithCard({
             ...this.params,
 
@@ -235,9 +304,9 @@ class ASDKTinkoff {
     }
 
     /**
-     * Открыть окно ApplePay
+     * Open ApplePay view
      */
-    payWithApplePay(params: IPayWithApplePay): Promise<IPaymentInfo | null> {
+    payWithApplePay(params: PayWithApplePayParams): Promise<PaymentInfo | null> {
         return NativeModules.RNASDKTinkoff.payWithApplePay({
             ...this.params,
 
@@ -255,10 +324,10 @@ class ASDKTinkoff {
     }
 
     /**
-     * Выполнить плату по реккурентному платежу
-     * @warning FUNC NOT TESTED
+     * Charge recurring payment
+     * @warning NOT TESTED
      */
-    chargePayment(params: IPChargePayment): Promise<IPaymentInfo | null> {
+    chargePayment(params: ChargePaymentParams): Promise<PaymentInfo | null> {
         return NativeModules.RNASDKTinkoff.chargePayment({
             ...this.params,
 
@@ -268,9 +337,9 @@ class ASDKTinkoff {
     }
 
     /**
-     * Список подключенных карт
+     * Get list of saved payment cards
      */
-    getCardList(params: IPGetCardList): Promise<ICard[]> {
+    getCardList(params: GetCardListParams): Promise<PaymentCard[]> {
         return NativeModules.RNASDKTinkoff.getCardList({
             ...this.params,
 
@@ -279,9 +348,9 @@ class ASDKTinkoff {
     }
 
     /**
-     * Список подключенных карт
+     * Remove payment card
      */
-    removeCard(params: IPRemoveCard): Promise<ICard> {
+    removeCard(params: RemoveCardParams): Promise<PaymentCard> {
         return NativeModules.RNASDKTinkoff.removeCard({
             ...this.params,
 
