@@ -8,6 +8,7 @@ import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableMapKeySetIterator;
 import com.facebook.react.bridge.Promise;
@@ -157,20 +158,20 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
          */
         if (params.hasKey("shops")) {
             ArrayList<Shop> shops = new ArrayList();
-
-            for (Object object : params.getArray("shops").toArrayList()) {
-                HashMap<String, String> shopHashString = ((HashMap<String, String>) object);
-                HashMap<String, Double> shopHashDouble = ((HashMap<String, Double>) object);
-
-                String ShopCode = shopHashString.get("ShopCode");
-                String ShopName = shopHashString.get("ShopName");
-                long ShopAmount = shopHashDouble.get("Amount").longValue();
-                long ShopFee = shopHashDouble.get("Fee").longValue();
-
-                shops.add(
-                        new Shop(ShopCode, ShopName, ShopAmount, ShopFee)
-                );
-            }
+//
+//            for (Object object : params.getArray("shops")) {
+//                HashMap<String, String> shopHashString = ((HashMap<String, String>) object);
+//                HashMap<String, Double> shopHashDouble = ((HashMap<String, Double>) object);
+//
+//                String ShopCode = shopHashString.get("ShopCode");
+//                String ShopName = shopHashString.get("ShopName");
+//                long ShopAmount = shopHashDouble.get("Amount").longValue();
+//                String ShopFee = shopHashString.get("Fee");
+//
+//                shops.add(
+//                        new Shop(ShopCode, ShopName, ShopAmount, ShopFee)
+//                );
+//            }
 //            // TODO: Receipts
             payForm.setShops(shops, null);
         }
@@ -181,7 +182,6 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
          */
         // TODO: Receipt
 
-
         /**
          * Открыть активити
          */
@@ -190,7 +190,7 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
     }
 
     @Override
-    public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == RNASDKTinkoffModule.REQUEST_CODE_PAYMENT) {
             if (resultCode == -1) {
                 this.promise.resolve(true);
@@ -203,7 +203,4 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
             }
         }
     }
-
-    @Override
-    public void onNewIntent(Intent intent) {}
 }
