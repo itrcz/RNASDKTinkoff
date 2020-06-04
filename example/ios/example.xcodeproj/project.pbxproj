@@ -63,6 +63,8 @@
 		96D287125371A4759EEED861 /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
 		9C50D8BBF052B8357C91ED3A /* Pods-example-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-example-tvOS/Pods-example-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ACB34B510C1B33BB5FE9DBE3 /* libPods-example-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ABE15D2488CDC7006B0144 /* libASDKCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libASDKCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2ABE15E2488CDC7006B0144 /* libASDKUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libASDKUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5FF0CDE8A0D28DE373266F /* libPods-example-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-example-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FE134E9B5A9D6EF3633BC5 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -139,6 +141,8 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2ABE15D2488CDC7006B0144 /* libASDKCore.a */,
+				D2ABE15E2488CDC7006B0144 /* libASDKUI.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				1D2005D1710FDD1CD576944E /* libPods-example.a */,

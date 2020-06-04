@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "rn-asdk-tinkoff": "^0.2.116"
+    "rn-asdk-tinkoff": "^0.2.118"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
