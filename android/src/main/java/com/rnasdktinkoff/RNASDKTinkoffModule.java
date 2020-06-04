@@ -190,7 +190,7 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
     }
 
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(Activity activity,int requestCode, int resultCode, Intent data) {
         if (requestCode == RNASDKTinkoffModule.REQUEST_CODE_PAYMENT) {
             if (resultCode == -1) {
                 this.promise.resolve(true);
@@ -202,5 +202,10 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
                 this.promise.reject("Ошибка выполнения платежа");
             }
         }
+    }
+
+    @Override
+    public void onNewIntent(Intent data) {
+
     }
 }
