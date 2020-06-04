@@ -34,24 +34,9 @@
 
 #### Для Android
 
-1. 🙏
-2. Открыть `android/app/src/main/java/[...]/MainActivity.java`
-  - Добавить `import com.rnasdktinkoff.RNASDKTinkoffPackage;` в начало файла
-  - Добавить `new RNASDKTinkoffPackage()` в список метода `getPackages()`
-3. Добавить в `android/settings.gradle`:
-  	```
-		include ':rn-asdk-tinkoff'
-		project(':rn-asdk-tinkoff').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-asdk-tinkoff/android')
-		include ':core'
-		project(':core').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-asdk-tinkoff/android/asdk/core')
-		include ':ui'
-		project(':ui').projectDir = new File(rootProject.projectDir, '../node_modules/rn-asdk-tinkoff/android/asdk/ui')
-  	```
-4. Добавить зависимость в блок `dependencies` в файл `android/app/build.gradle`:
-  	```
-      implementation project(':rn-asdk-tinkoff')
-  	```
-5. 🙏
+1. 🙏for gradle
+2. 🙏for maven
+3. 🙏for android
 
 ### Как юзать
 
