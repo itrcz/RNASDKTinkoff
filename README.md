@@ -1,6 +1,23 @@
 
 # rn-asdk-tinkoff
-## Интерфейс взаимодействия с эквайрингом банка Тинькофф для React-Native
+
+## Tinkoff Acquiring SDK for React-Native
+
+#### Acquiring SDK позволяет интегрировать Интернет-Эквайрингу Тинькофф банка в мобильные приложения для платформ iOS/Android (React-Native).
+
+### Возможности SDK
+
+1. Прием платежей (в том числе рекуррентных)
+2. Сохранение банковских карт клиента
+3. Сканирование и распознавание карт с помощью камеры
+4. Получение информации о клиенте и сохраненных картах
+5. Управление сохраненными картами
+6. Поддержка английского и своя локализация
+7. Оплата с помощью ApplePay
+
+### Требования
+
+Для работы Tinkoff Acquiring SDK необходима версия React-Native 0.60 и выше.
 
 ### Установка
 
@@ -10,16 +27,15 @@
 
 #### Для iOS
 
-1. В настройках проекта в XCode, найдите `Libraries` ➜ `Add Files to...`
-2. Добавте `RNASDKTinkoff.xcodeproj` из `./node_modules/rn-asdk-tinkoff` 
-3. Затем добавте `libRNASDKTinkoff.a, ASDKCore.framework, ASDKUI.framework` в разделе `Build Phases` ➜ `Link Binary With Libraries`
+1. Work out-of-box 👍
 
 #### Для Android
 
-1. Открыть `android/app/src/main/java/[...]/MainActivity.java`
+1. 🙏
+2. Открыть `android/app/src/main/java/[...]/MainActivity.java`
   - Добавить `import com.rnasdktinkoff.RNASDKTinkoffPackage;` в начало файла
   - Добавить `new RNASDKTinkoffPackage()` в список метода `getPackages()`
-2. Добавить в `android/settings.gradle`:
+3. Добавить в `android/settings.gradle`:
   	```
 		include ':rn-asdk-tinkoff'
 		project(':rn-asdk-tinkoff').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-asdk-tinkoff/android')
@@ -28,24 +44,24 @@
 		include ':ui'
 		project(':ui').projectDir = new File(rootProject.projectDir, '../node_modules/rn-asdk-tinkoff/android/asdk/ui')
   	```
-3. Добавить зависимость в блок `dependencies` в файл `android/app/build.gradle`:
+4. Добавить зависимость в блок `dependencies` в файл `android/app/build.gradle`:
   	```
       implementation project(':rn-asdk-tinkoff')
   	```
-
+5. 🙏
 
 ### Как юзать
 
 1. Подключаем ASDKTinkoff к проекту
 
 ```typescript
-import ASDKTinkoff from 'rn-asdk-tinkoff';
+import ASDK from 'rn-asdk-tinkoff';
 
 ```
-2. Создаем экземпляр класса `ASDKTinkoff`
+2. Создаем экземпляр класса
 
 ```typescript
-const Tinkoff = new ASDKTinkoff({
+const Tinkoff = new ASDK({
 	test: true,
 	terminal: "TestSDK",
 	password: "12345678",
@@ -61,7 +77,7 @@ const Tinkoff = new ASDKTinkoff({
 		orderId: (Math.random() * 100000000000).toFixed(0),
 		amount: 4500,
 		title: "Покупка",
-		description: "Розовые кеды ADADAS"
+		description: "Розовые кеды Adadas"
 	});
 
 ```

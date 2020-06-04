@@ -5376,10 +5376,10 @@ rimraf@~2.2.6:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
-rn-asdk-tinkoff@^0.1.110:
-  version "0.1.110"
-  resolved "https://registry.yarnpkg.com/rn-asdk-tinkoff/-/rn-asdk-tinkoff-0.1.110.tgz#c952c7135cd1d730685d8f90529fabb7f178eb7a"
-  integrity sha512-1SKtN2AMtwI4BJbD3kmowquP2sMPny7Ae8ea718Feu0RWCfWETZzvdmO1fvsZ2b9V2GBfF04Z37RWZkdw7kMmQ==
+rn-asdk-tinkoff@^0.2.113:
+  version "0.2.113"
+  resolved "https://registry.yarnpkg.com/rn-asdk-tinkoff/-/rn-asdk-tinkoff-0.2.113.tgz#1d770132615269b18d0a3f6f1a02e21c56c84aad"
+  integrity sha512-sshsNBJjNu0TecKKHdsaxUYqxDFrzOz8M9FieYcl/Y6bvhxNEP/NJdiih69gu0I1+bIDM1tIdsMpXRyemUVEZA==
 
 rsvp@^4.8.4:
   version "4.8.5"

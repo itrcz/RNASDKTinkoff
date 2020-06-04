@@ -49,7 +49,6 @@ const App = () => {
         // 	ShopCode: "100",
         // 	Amount: 1000,
         // 	Fee: 100,
-        // 	Name: '',
         // }]
       });
       if (res) {
