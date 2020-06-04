@@ -1,6 +1,6 @@
 {
   "name": "rn-asdk-tinkoff",
-  "version": "0.2.125",
+  "version": "0.2.126",
   "description": "Модуль работы с ASDK Тинькофф Банка",
   "main": "index.ts",
   "scripts": {},

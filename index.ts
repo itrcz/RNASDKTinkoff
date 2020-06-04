@@ -64,7 +64,7 @@ export interface PayWithCardParams extends PayGeneralParams, MarketplaceParams {
     /**
      * Card identifier
      */
-    cardId: string
+    cardId?: string
     /**
      * Charge with no questions
      */
