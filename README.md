@@ -73,4 +73,5 @@ const Tinkoff = new ASDK({
 ### Чего нужно доделать
 
 1. расширение design объекта
-  
+2. фискализация
+3. shops for android
