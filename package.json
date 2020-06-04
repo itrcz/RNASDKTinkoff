@@ -1,6 +1,6 @@
 {
   "name": "rn-asdk-tinkoff",
-  "version": "0.2.114",
+  "version": "0.2.115",
   "description": "Модуль работы с ASDK Тинькофф Банка",
   "main": "index.ts",
   "scripts": {},
@@ -9,12 +9,12 @@
     "tinkoff",
     "Тинькофф"
   ],
-  "author": "Ilya Trikoz <jleed@me.com>",
+  "author": "Ilya Trikoz <i7t@me.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jleed/RNASDKTinkoff.git"
+    "url": "https://github.com/itrcz/RNASDKTinkoff.git"
   },
-  "homepage": "https://github.com/jleed/RNASDKTinkoff.git",
+  "homepage": "https://github.com/itrcz/RNASDKTinkoff.git",
   "license": "GNU",
   "peerDependencies": {
     "react-native": "^0.62.2"
