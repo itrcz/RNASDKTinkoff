@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "pods": "cd ./ios && pod install",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -12,7 +13,7 @@
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "rn-asdk-tinkoff": "^0.2.115"
+    "rn-asdk-tinkoff": "^0.2.116"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
