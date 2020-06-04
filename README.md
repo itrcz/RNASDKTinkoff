@@ -27,7 +27,8 @@
 
 #### Для iOS
 
-1. Work out-of-box 👍
+1. Откройке файл workspace из вашего проекта в Xcode
+2. Переключить систему сборку в legacy: File -> Workspace Settings... -> Build System = Legacy Build System 👍
 
 #### Для Android
 

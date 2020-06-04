@@ -92,9 +92,9 @@ RCT_EXPORT_METHOD(payWithCard:(NSDictionary*) params
                                      recurrent:[params objectForKey:@"recurrent"]
                                     makeCharge:[params objectForKey:@"makeCharge"]
                          additionalPaymentData:[params objectForKey:@"additionalPaymentData"]
-                                         shops:[params objectForKey:@"shops"]
-
                                    receiptData:[params objectForKey:@"receiptData"]
+                                     shopsData:[params objectForKey:@"shopsData"]
+                              shopsReceiptsData:[params objectForKey:@"shopsReceiptsData"]
                                        success:^(ASDKPaymentInfo *paymentInfo) { resolve(paymentInfo); }
                                      cancelled:^{ resolve(NULL); }
                                          error:^(ASDKAcquringSdkError *error) { reject([NSString stringWithFormat:@"%ld", [error code]], [error errorMessage], error); }];
@@ -117,7 +117,7 @@ RCT_EXPORT_METHOD(payWithApplePay:(NSDictionary*) params
     
     
     ASDKPaymentFormStarter * form = [ASDKPaymentFormStarter paymentFormStarterWithAcquiringSdk:acquiringSdk];
-//
+    
     [form payWithApplePayFromViewController:rootViewController
                                      amount:[params objectForKey:@"amount"]
                                     orderId:[params objectForKey:@"orderId"]
@@ -131,8 +131,9 @@ RCT_EXPORT_METHOD(payWithApplePay:(NSDictionary*) params
                      shippingEditableFields:PKAddressFieldNone
                                   recurrent:[params objectForKey:@"recurrent"]
                       additionalPaymentData:[params objectForKey:@"additionalPaymentData"]
-                                      shops:[[NSArray alloc] initWithObjects: [params objectForKey:@"shops"], nil]
                                 receiptData:[params objectForKey:@"receiptData"]
+                                  shopsData:[[NSArray alloc] initWithObjects: [params objectForKey:@"shopsData"], nil]
+                          shopsReceiptsData:[[NSArray alloc] initWithObjects: [params objectForKey:@"shopsReceiptsData"], nil]
                                     success:^(ASDKPaymentInfo *paymentInfo) { resolve(paymentInfo); }
                                   cancelled:^{ resolve(NULL); }
                                       error:^(ASDKAcquringSdkError *error) { reject([NSString stringWithFormat:@"%ld", [error code]], [error errorMessage], error); }];
@@ -199,4 +200,3 @@ RCT_EXPORT_METHOD(removeCard:(NSDictionary*) params
 }
 
 @end
-

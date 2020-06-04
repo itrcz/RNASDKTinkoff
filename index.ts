@@ -6,7 +6,19 @@
 
 import { NativeModules } from 'react-native';
 
-interface PayWithCardParams {
+interface MarketplaceParams {
+    /**
+     * For marketplace only
+     */
+    shopsData?: MarketplaceShop[]
+    /**
+     * Receipt DATA for marketplace
+     * https://oplata.tinkoff.ru for object type
+     */
+    shopsReceiptsData?: object[]
+}
+
+interface PayGeneralParams {
     /**
      * Order identifier of mercahat
      */
@@ -16,80 +28,58 @@ interface PayWithCardParams {
      */
     amount: number
     /**
-     * Title of payment
-     */
-    title: string
-    /**
      * Product description
      */
     description: string
-    /**
-     * Card identifier
-     */
-    cardId: string
-    /**
-     * Email address of customer
-     */
-    email?: string
     /**
      * Unique customer identifier
      */
     customerKey?: string
     /**
+     * Email address of customer
+     */
+    email?: string
+    /**
      * Make payment recurring
      */
     recurrent?: boolean
-    /**
-     * Charge with no questions
-     */
-    makeCharge?: boolean
-    /**
-     * Advanced payment data
-     * any object, can be empty
-     */
-    additionalPaymentData?: object
     /**
      * Receipt DATA
      * https://oplata.tinkoff.ru for object type
      */
     receiptData?: object
     /**
-     * For marketplace only
+     * Advanced payment data
+     * any object, can be empty
      */
-    shops?: MarketplaceShop[]
+    additionalPaymentData?: object
 }
 
-interface PayWithApplePayParams {
+export interface PayWithCardParams extends PayGeneralParams, MarketplaceParams {
+    
     /**
-     * Amount to pay
+     * Title of payment
      */
-    amount: number
+    title: string
     /**
-     * Order identifier of mercahat
+     * Card identifier
      */
-    orderId: string
+    cardId: string
     /**
-     * Product description
+     * Charge with no questions
      */
-    description: string
-    /**
-     * Unique customer identifier
-     */
-    customerKey?: string
+    makeCharge?: boolean
+}
+
+export interface PayWithApplePayParams extends PayGeneralParams, MarketplaceParams {
     /**
      * Allow send receipt to customer
      */
     sendEmail?: boolean
     /**
-     * Email address of customer
+     * Apple Merchant identified
      */
-    email?: string
-
-    // /**
-    //  * ???
-    //  */
-    // appleMerchantId: string
-
+    appleMerchantId: string
     /**
      * Shipping methods for ApplePay
      */
@@ -102,27 +92,9 @@ interface PayWithApplePayParams {
      * Shipping field for ApplePay
      */
     shippingEditableFields?: null
-    /**
-     * Make payment recurring
-     */
-    recurrent?: boolean
-    /**
-     * Advanced payment data
-     * any object, can be empty
-     */
-    additionalPaymentData?: object
-    /**
-     * Receipt DATA
-     * https://oplata.tinkoff.ru for object type
-     */
-    receiptData?: object
-    /**
-     * Shops array for marketplace
-     */
-    shops?: MarketplaceShop[]
 }
 
-interface MarketplaceShop {
+export interface MarketplaceShop {
     /**
      * Marketplace shop code
      */
@@ -138,10 +110,10 @@ interface MarketplaceShop {
     /**
      * Payment description
      */
-    Name: string
+    Name?: string
 }
 
-interface PaymentCard {
+export interface PaymentCard {
     /**
      * Card identifier
      */
@@ -168,7 +140,7 @@ interface PaymentCard {
     Status: string
 }
 
-interface PaymentInfo {
+export interface PaymentInfo {
     /**
      * Payment identidier
      */
@@ -187,7 +159,7 @@ interface PaymentInfo {
     amount: number
 }
 
-interface ChargePaymentParams {
+export interface ChargePaymentParams {
     /**
      * Payment identidier
     */
@@ -198,14 +170,14 @@ interface ChargePaymentParams {
     rebillId: number
 }
 
-interface GetCardListParams {
+export interface GetCardListParams {
     /**
      * Unique client identifier
      */
     customerKey: string
 }
 
-type RemoveCardParams = {
+export type RemoveCardParams = {
     /**
      * Unique client identifier
      */
@@ -216,14 +188,14 @@ type RemoveCardParams = {
     cardId: string
 };
 
-interface ASDKDesignConfiguration {
+export interface ASDKDesignConfiguration {
     /**
      * Label of pay button
      */
     payButtonTitle?: string
 }
 
-interface ASDKTinkoffParams {
+export interface ASDKTinkoffParams {
     /**
      * Terminal identifier
      */
@@ -254,11 +226,9 @@ interface ASDKTinkoffParams {
     design?: ASDKDesignConfiguration
 }
 
-interface ASDKTinkoff {
-    params: ASDKTinkoffParams
-}
+export class ASDKTinkoff {
 
-class ASDKTinkoff {
+    params: ASDKTinkoffParams
 
     constructor(params: ASDKTinkoffParams) {
         this.params = params;
@@ -287,7 +257,6 @@ class ASDKTinkoff {
     payWithCard(params: PayWithCardParams): Promise<PaymentInfo | null> {
         return NativeModules.RNASDKTinkoff.payWithCard({
             ...this.params,
-
             orderId: params.orderId,
             amount: params.amount,
             title: params.title,
@@ -299,7 +268,8 @@ class ASDKTinkoff {
             makeCharge: params.makeCharge,
             additionalPaymentData: params.additionalPaymentData,
             receiptData: params.receiptData,
-            shops: params.shops
+            shopsData: params.shopsData,
+            shopsReceiptsData: params.shopsReceiptsData,
         })
     }
 
@@ -309,7 +279,6 @@ class ASDKTinkoff {
     payWithApplePay(params: PayWithApplePayParams): Promise<PaymentInfo | null> {
         return NativeModules.RNASDKTinkoff.payWithApplePay({
             ...this.params,
-
             orderId: params.orderId,
             amount: params.amount,
             description: params.description,
@@ -319,7 +288,8 @@ class ASDKTinkoff {
             recurrent: params.recurrent,
             additionalPaymentData: params.additionalPaymentData,
             receiptData: params.receiptData,
-            shops: params.shops
+            shopsData: params.shopsData,
+            shopsReceiptsData: params.shopsReceiptsData,
         })
     }
 
