@@ -30,6 +30,8 @@
 1. Откройке файл workspace из вашего проекта в Xcode
 2. Переключить систему сборку в legacy: File -> Workspace Settings... -> Build System = Legacy Build System 👍
 
+При ошибке "Directory not found for option '-L-L..." удалить "$(inherited)" из Library Search Paths
+
 #### Для Android
 
 1. 🙏
