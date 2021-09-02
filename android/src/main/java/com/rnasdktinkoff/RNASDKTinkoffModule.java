@@ -21,7 +21,10 @@ import ru.tinkoff.acquiring.sdk.PayFormActivity;
 import ru.tinkoff.acquiring.sdk.PayFormStarter;
 import ru.tinkoff.acquiring.sdk.Shop;
 import ru.tinkoff.acquiring.sdk.Journal;
-
+import ru.tinkoff.acquiring.sdk.Receipt;
+import ru.tinkoff.acquiring.sdk.Tax;
+import ru.tinkoff.acquiring.sdk.Taxation;
+import ru.tinkoff.acquiring.sdk.Item;
 
 public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements ActivityEventListener {
 
@@ -43,18 +46,15 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
     }
 
     /*
-     * Проверка ApplePay
+     * for iOS only
      */
     @ReactMethod
     public void isApplePayAvailable(Promise promise) {
-        /**
-         * конечно же false...
-         */
         promise.resolve(false);
     }
 
     /*
-     * Проверка GooglePay
+     * GooglePay
      */
     @ReactMethod
     public void payWithGooglePay(ReadableMap params, Promise promise) {
@@ -72,7 +72,7 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
      * Оплата картой
      */
     @ReactMethod
-    public void payWithCard(ReadableMap params, Promise promise) {
+    public void payWithCard(ReadableMap params, Promise promise) throws Exception {
 
         this.promise = promise;
 
@@ -90,7 +90,9 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
                 email = "";
 
         Boolean recurrent = false;
-        Integer amount = 0;
+        Double amount = 0.00;
+
+        ReadableMap receiptData = params.getMap("receiptData");
 
         /**
          * Основные параметры
@@ -104,7 +106,7 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
         if (params.hasKey("cardId")) cardId = params.getString("cardId");
         if (params.hasKey("email")) email = params.getString("email");
         if (params.hasKey("recurrent")) recurrent = params.getBoolean("recurrent");
-        if (params.hasKey("amount")) amount = params.getInt("amount");
+        if (params.hasKey("amount")) amount = params.getDouble("amount");
 
         /**
          * Форма оплаты
@@ -113,7 +115,7 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
 
         payForm.prepare(
                 orderId,
-                Money.ofCoins(amount),
+                Money.ofRubles(amount),
                 title,
                 description,
                 cardId,
@@ -122,6 +124,7 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
                 true
         );
 
+        payForm.setReceipt(createReceipt(receiptData.getArray("Items"), receiptData.getString("Email"), receiptData.getString("Taxation")));
 
         /**
          * Ключ клиента
@@ -176,7 +179,6 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
             payForm.setShops(shops, null);
         }
 
-
         /**
          * Для фискализации
          */
@@ -188,6 +190,77 @@ public class RNASDKTinkoffModule extends ReactContextBaseJavaModule implements A
         payForm.startActivityForResult(this.getCurrentActivity(), RNASDKTinkoffModule.REQUEST_CODE_PAYMENT);
 
     }
+
+     private Receipt createReceipt(ReadableArray jsItems, String email, String taxationName) throws Exception {
+        Taxation taxation;
+        switch (taxationName) {
+          case "osn":
+            taxation = Taxation.OSN;
+            break;
+          case "usn_income":
+            taxation = Taxation.USN_INCOME;
+            break;
+          case "usn_income_outcome":
+            taxation = Taxation.USN_INCOME_OUTCOME;
+            break;
+          case "envd":
+            taxation = Taxation.ENVD;
+            break;
+          case "esn":
+            taxation = Taxation.ESN;
+            break;
+          case "patent":
+            taxation = Taxation.PATENT;
+            break;
+          default:
+            throw new Exception("Incorrect taxation");
+        }
+
+        Item[] items = new Item[jsItems.size()];
+        for (int index = 0; index < jsItems.size(); index++) {
+          ReadableMap i = jsItems.getMap(index);
+          Tax tax;
+
+          switch (i.getString("Tax")) {
+            case "none":
+              tax = Tax.NONE;
+              break;
+            case "vat0":
+              tax = Tax.VAT_0;
+              break;
+            case "vat10":
+              tax = Tax.VAT_10;
+              break;
+            case "vat18":
+              tax = Tax.VAT_18;
+              break;
+            case "vat110":
+              tax = Tax.VAT_110;
+              break;
+            case "vat118":
+              tax = Tax.VAT_118;
+              break;
+            case "vat20":
+              tax = Tax.VAT_110;
+              break;
+            case "vat120":
+              tax = Tax.VAT_118;
+              break;
+            default:
+              throw new Exception("Incorrect item tax");
+          }
+
+          items[index] = new Item(
+            i.getString("Name"),
+            (long)i.getDouble("Price"),
+            i.getDouble("Quantity"),
+            (long)i.getDouble("Amount"),
+            tax
+          );
+        }
+
+        return new Receipt(items, email, taxation);
+      }
 
     @Override
     public void onActivityResult(Activity activity,int requestCode, int resultCode, Intent data) {
